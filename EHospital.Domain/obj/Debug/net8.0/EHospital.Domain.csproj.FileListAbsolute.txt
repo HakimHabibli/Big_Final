@@ -1,0 +1,14 @@
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.deps.json
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.dll
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.pdb
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.AssemblyInfoInputs.cache
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.AssemblyInfo.cs
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.csproj.CoreCompileInputs.cache
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.dll
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\refint\EHospital.Domain.dll
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.pdb
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\ref\EHospital.Domain.dll
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.runtimeconfig.json
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.csproj.AssemblyReference.cache
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.genruntimeconfig.cache
