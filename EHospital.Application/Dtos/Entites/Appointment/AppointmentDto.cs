@@ -18,7 +18,7 @@ public class AppointmentDto : BaseEntityDto
     public string Notes { get; set; }
     public bool IsConfirmed { get; set; }
 }
-public class AppointmentCreatDto : BaseAuditableEntityDto
+public class AppointmentCreateDto : BaseAuditableEntityDto
 {
 
     public int DoctorId { get; set; }

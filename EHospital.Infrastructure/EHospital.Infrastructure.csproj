@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\EHospital.Application\EHospital.Application.csproj" />
     <ProjectReference Include="..\EHospital.Domain\EHospital.Domain.csproj" />
     <ProjectReference Include="..\Ehospital.Persistence\EHospital.Persistence.csproj" />
