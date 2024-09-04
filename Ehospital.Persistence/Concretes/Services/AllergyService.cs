@@ -22,3 +22,14 @@ public class AllergyService : IAllergyService
         return allergies;
     }
 }
+public class DoctorSchedulesService : IDoctorSchedulesService
+{
+    private readonly IDoctorSchedulesWriteRepository _writeRepo;
+    private readonly IDoctorSchedulesReadRepository _readRepo;
+
+    public DoctorSchedulesService(IDoctorSchedulesWriteRepository writeRepo, IDoctorSchedulesReadRepository readRepo)
+    {
+        _writeRepo = writeRepo;
+        _readRepo = readRepo;
+    }
+}

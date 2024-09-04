@@ -13,7 +13,6 @@ public class Appointment : BaseEntity
 
     public DateTime AppointmentDate { get; set; }
     // Randevu vaxt slotu (misal üçün: "09:00 - 10:00")
-    public string TimeSlot { get; set; }
 
     public string Notes { get; set; }
     public bool IsConfirmed { get; set; } // Randevu təsdiqlənib-təsdiqlənmədiyini göstərir

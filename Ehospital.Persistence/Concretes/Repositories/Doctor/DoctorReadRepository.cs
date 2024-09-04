@@ -11,4 +11,3 @@ public class DoctorReadRepository : ReadRepository<Doctor>, IDoctorReadRepositor
     {
     }
 }
-

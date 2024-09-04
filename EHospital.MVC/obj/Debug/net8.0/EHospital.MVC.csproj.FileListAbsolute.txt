@@ -143,3 +143,4 @@ C:\Users\77upt\Desktop\FP\EHospital\EHospital.MVC\bin\Debug\net8.0\EHospital.Per
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.MVC\bin\Debug\net8.0\EHospital.Application.pdb
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.MVC\bin\Debug\net8.0\EHospital.Domain.pdb
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.MVC\obj\Debug\net8.0\EHospital.MVC.csproj.AssemblyReference.cache
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.MVC\obj\Debug\net8.0\EHospital.MVC.sourcelink.json

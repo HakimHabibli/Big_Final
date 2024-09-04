@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace EHospital.Configurations;
-
 public class DoctorMapping : BaseAuditableEntityMapping<Doctor>
 {
     public override void Configure(EntityTypeBuilder<Doctor> builder)

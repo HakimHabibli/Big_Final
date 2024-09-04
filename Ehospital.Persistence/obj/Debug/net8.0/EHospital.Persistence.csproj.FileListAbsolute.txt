@@ -17,3 +17,4 @@ C:\Users\77upt\Desktop\FP\EHospital\Ehospital.Persistence\obj\Debug\net8.0\refin
 C:\Users\77upt\Desktop\FP\EHospital\Ehospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.pdb
 C:\Users\77upt\Desktop\FP\EHospital\Ehospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.genruntimeconfig.cache
 C:\Users\77upt\Desktop\FP\EHospital\Ehospital.Persistence\obj\Debug\net8.0\ref\EHospital.Persistence.dll
+C:\Users\77upt\Desktop\FP\EHospital\Ehospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.sourcelink.json

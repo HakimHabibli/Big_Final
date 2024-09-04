@@ -17,3 +17,4 @@ C:\Users\77upt\Desktop\FP\EHospital\EHospital.Infrastructure\obj\Debug\net8.0\EH
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.Infrastructure\obj\Debug\net8.0\refint\EHospital.Infrastructure.dll
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.pdb
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.Infrastructure\obj\Debug\net8.0\ref\EHospital.Infrastructure.dll
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.sourcelink.json

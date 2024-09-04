@@ -11,11 +11,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EHospital.Infrastructure", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{659D3F43-7BAF-4AE0-813E-FFA11DC72405}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EHospital.Persistence", "Ehospital.Persistence\EHospital.Persistence.csproj", "{98960065-429C-426F-84AE-89CC9FCB2A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EHospital.Persistence", "Ehospital.Persistence\EHospital.Persistence.csproj", "{98960065-429C-426F-84AE-89CC9FCB2A60}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7AAB98A0-664C-4AF9-BCD8-9666E1EA08B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EHospital.MVC", "EHospital.MVC\EHospital.MVC.csproj", "{93479369-179E-4165-B7D0-AD1EC43B0799}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{64301CDA-4C10-42BC-95CF-D622DA902AF8}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile.txt = TextFile.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EHospital.API", "EHospital.API\EHospital.API.csproj", "{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +44,10 @@ Global
 		{98960065-429C-426F-84AE-89CC9FCB2A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98960065-429C-426F-84AE-89CC9FCB2A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98960065-429C-426F-84AE-89CC9FCB2A60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93479369-179E-4165-B7D0-AD1EC43B0799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93479369-179E-4165-B7D0-AD1EC43B0799}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93479369-179E-4165-B7D0-AD1EC43B0799}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93479369-179E-4165-B7D0-AD1EC43B0799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

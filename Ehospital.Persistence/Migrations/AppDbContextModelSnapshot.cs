@@ -76,11 +76,6 @@ namespace EHospital.Persistence.Migrations
                     b.Property<int>("PatientId")
                         .HasColumnType("int");
 
-                    b.Property<string>("TimeSlot")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("DoctorId");
@@ -144,10 +139,6 @@ namespace EHospital.Persistence.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETUTCDATE()");
 
-                    b.Property<string>("Doctoddddd")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -186,6 +177,43 @@ namespace EHospital.Persistence.Migrations
                     b.HasIndex("HospitalId");
 
                     b.ToTable("Doctors");
+                });
+
+            modelBuilder.Entity("EHospital.Domain.Entities.DoctorSchedules", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.Property<DateOnly>("Date")
+                        .HasColumnType("date");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeOnly>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<TimeOnly>("StartTime")
+                        .HasColumnType("time");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DoctorId");
+
+                    b.ToTable("DoctorSchedules");
                 });
 
             modelBuilder.Entity("EHospital.Domain.Entities.EmergencyContact", b =>
@@ -357,7 +385,7 @@ namespace EHospital.Persistence.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 8, 25, 14, 10, 6, 844, DateTimeKind.Utc).AddTicks(8158));
+                        .HasDefaultValue(new DateTime(2024, 9, 1, 6, 26, 51, 348, DateTimeKind.Utc).AddTicks(3906));
 
                     b.Property<int>("EmergencyContactId")
                         .HasColumnType("int");
@@ -454,6 +482,17 @@ namespace EHospital.Persistence.Migrations
                     b.Navigation("Hospital");
                 });
 
+            modelBuilder.Entity("EHospital.Domain.Entities.DoctorSchedules", b =>
+                {
+                    b.HasOne("EHospital.Domain.Entities.Doctor", "Doctor")
+                        .WithMany("DoctorSchedules")
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Doctor");
+                });
+
             modelBuilder.Entity("EHospital.Domain.Entities.MedicalHistory", b =>
                 {
                     b.HasOne("EHospital.Domain.Entities.Patient", "Patient")
@@ -528,6 +567,8 @@ namespace EHospital.Persistence.Migrations
             modelBuilder.Entity("EHospital.Domain.Entities.Doctor", b =>
                 {
                     b.Navigation("Appointments");
+
+                    b.Navigation("DoctorSchedules");
 
                     b.Navigation("PatientDoctors");
                 });

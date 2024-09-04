@@ -6,6 +6,10 @@ namespace EHospital.Persistence.DAL;
 
 public class AppDbContext : DbContext
 {
+    public AppDbContext(DbContextOptions<AppDbContext> options)
+      : base(options)
+    {
+    }
     public DbSet<Allergy> Allergies { get; set; }
     public DbSet<Appointment> Appointments { get; set; }
     public DbSet<ContactInfo> ContactInfos { get; set; }
@@ -16,14 +20,8 @@ public class AppDbContext : DbContext
     public DbSet<MedicalHistory> MedicalHistories { get; set; }
     public DbSet<Patient> Patients { get; set; }
     public DbSet<PatientDoctor> PatientDoctors { get; set; }
+    public DbSet<DoctorSchedules> DoctorSchedules { get; set; }
 
-
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-
-        optionsBuilder.UseSqlServer(@"Server=.,1433;Database=MyDatabase;User Id=sa;Password=Your_Strong_Password123!;TrustServerCertificate=True;");
-    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

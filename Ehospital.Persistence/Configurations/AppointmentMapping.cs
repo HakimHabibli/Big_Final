@@ -23,10 +23,6 @@ public class AppointmentMapping : BaseEntityMapping<Appointment>
         builder.Property(a => a.AppointmentDate)
             .IsRequired();
 
-        builder.Property(a => a.TimeSlot)
-            .IsRequired()
-            .HasMaxLength(50); // Uzunluğu lazım olan ölçüyə görə təyin edin
-
         builder.Property(a => a.Notes)
             .HasMaxLength(500); // Uzunluğu lazım olan ölçüyə görə təyin edin
 
