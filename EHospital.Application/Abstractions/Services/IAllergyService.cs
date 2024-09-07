@@ -1,9 +1,9 @@
-﻿using EHospital.Domain.Entities;
+﻿using EHospital.Application.Dtos.Entites.Allergy;
 
 namespace EHospital.Application.Abstractions.Services;
 
 public interface IAllergyService
 {
 
-    Task<List<Allergy>> GetAllAllergyAsync();
+    Task<List<AllergyDto>> GetAllAllergyAsync();
 }
