@@ -1,0 +1,3 @@
+﻿Patientdə olan Mappingini Məntiqə uyğun olaraq konfiqurasiya et
+
+BaseEntityDtolarina bax

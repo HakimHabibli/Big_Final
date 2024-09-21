@@ -1,0 +1,16 @@
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\bin\Debug\net8.0\EHospital.Application.deps.json
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\bin\Debug\net8.0\EHospital.Application.dll
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\bin\Debug\net8.0\EHospital.Application.pdb
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\bin\Debug\net8.0\EHospital.Domain.dll
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\bin\Debug\net8.0\EHospital.Domain.pdb
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\EHospital.Application.csproj.AssemblyReference.cache
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\EHospital.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\EHospital.Application.AssemblyInfoInputs.cache
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\EHospital.Application.AssemblyInfo.cs
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\EHospital.Application.csproj.CoreCompileInputs.cache
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\EHospital.Application.sourcelink.json
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\EHospita.6525816E.Up2Date
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\EHospital.Application.dll
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\refint\EHospital.Application.dll
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\EHospital.Application.pdb
+C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Application\obj\Debug\net8.0\ref\EHospital.Application.dll

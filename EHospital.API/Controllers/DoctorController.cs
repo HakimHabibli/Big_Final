@@ -1,43 +1,68 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EHospital.Application.Dtos.Entites.Doctor;
+using EHospital.Application.Futures.Commands.Doctor.Create;
+using EHospital.Application.Futures.Commands.Doctor.Delete;
+using EHospital.Application.Futures.Commands.Doctor.Update;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace EHospital.API.Controllers
+namespace EHospital.API.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class DoctorController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class DoctorController : ControllerBase
+    private readonly IMediator _mediator;
+
+    public DoctorController(IMediator mediator)
     {
-        // GET: api/<DoctorController>                 
-        [HttpGet]
-        public IEnumerable<string> Get()
+        _mediator = mediator;
+    }
+
+    // Create api/<DoctorController>
+    [HttpPost]
+    public async Task<IActionResult> CreateDoctorAsync([FromBody] DoctorCreateRequest request)
+    {
+        var response = await _mediator.Send(request);
+        return StatusCode(201, "Succesfully");
+    }
+
+
+    // GET api/<DoctorController>/5
+    [HttpGet("{id}")]
+    public string Get(int id)
+    {
+        return "value";
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> UpdateDoctor([FromBody] DoctorUpdateDto doctorUpdateDto)
+    {
+        if (doctorUpdateDto == null || doctorUpdateDto.Id <= 0)
         {
-            return new string[] { "value1", "value2" };
+            return BadRequest("Doctor ID is invalid or missing.");
         }
 
-        // GET api/<DoctorController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        // MediatR vasitəsilə sorğunu göndəririk
+        var request = new DoctorUpdateRequest { DoctorUpdateDto = doctorUpdateDto };
+        var response = await _mediator.Send(request);
+
+        // Əgər uğurlu olarsa, 204 (No Content) qaytarırıq
+        if (response.StatusCode == "204")
         {
-            return "value";
+            return NoContent();
         }
 
-        // POST api/<DoctorController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+        return StatusCode(500, "An error occurred while updating the doctor.");
+    }
 
-        // PUT api/<DoctorController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
 
-        // DELETE api/<DoctorController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+
+    // DELETE api/<DoctorController>/5
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(DoctorDeleteRequest request)
+    {
+        var response = await _mediator.Send(request);
+        return StatusCode(204, "ChangeSuccesfully");
     }
 }
