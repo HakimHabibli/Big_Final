@@ -1,7 +1,5 @@
 ﻿using EHospital.Application.Dtos.Common;
-using EHospital.Application.Dtos.Entites.Appointment;
 using EHospital.Application.Dtos.Entites.DoctorSchedules;
-using EHospital.Application.Dtos.Entites.Hospital;
 
 namespace EHospital.Application.Dtos.Entites.Doctor;
 
@@ -15,8 +13,9 @@ public class DoctorDto : BaseEntityDto
     public string Email { get; set; }          // Doktorun elektron poçt ünvanı
     public string Address { get; set; }        // Doktorun ünvanı
     public string Bio { get; set; }            // Doktor haqqında əlavə məlumat
-    public int HospitalId { get; set; }  // Xəstəxana ID (nullable)
-    public HospitalDto Hospital { get; set; } // Xəstəxana obyekti
+    public string HospitalName { get; set; }
+    public ICollection<DoctorSchedulesDto> DoctorSchedules { get; set; } // Həkimin cədvəlləri yalniz Ozune xas prolar olmalidi
+
 }
 
 public class DoctorReadDto : BaseEntityDto
@@ -29,10 +28,6 @@ public class DoctorReadDto : BaseEntityDto
     public string Email { get; set; } // Doktorun elektron poçt ünvanı
     public string Address { get; set; } // Doktorun ünvanı
     public string Bio { get; set; } // Doktor haqqında əlavə məlumat
-    public int HospitalId { get; set; }  // Xəstəxana ID (nullable)
-    public HospitalReadDto Hospital { get; set; } // Xəstəxana obyekti
-    public ICollection<DoctorSchedulesReadDto> DoctorSchedules { get; set; }//Doktorun məsləhətləri vaxtlari
-    public ICollection<AppointmentReadDto> Appointments { get; set; } // Doktorun məsləhət vaxtları
 
 }
 
@@ -46,8 +41,7 @@ public class DoctorCreateDto : BaseAuditableEntityDto
     public string Email { get; set; } // Doktorun elektron poçt ünvanı
     public string Address { get; set; } // Doktorun ünvanı
     public string Bio { get; set; } // Doktor haqqında əlavə məlumat
-    public int HospitalId { get; set; }  // Xəstəxana ID (nullable)
-
+    public string HospitalName { get; set; }    //Xəstəxana Adi
 }
 
 public class DoctorUpdateDto : BaseAuditableEntityDto
@@ -60,13 +54,10 @@ public class DoctorUpdateDto : BaseAuditableEntityDto
     public string Email { get; set; } // Doktorun elektron poçt ünvanı
     public string Address { get; set; } // Doktorun ünvanı
     public string Bio { get; set; } // Doktor haqqında əlavə 
-    //public int? HospitalId { get; set; }  // Xəstəxana ID (nullable)
+    public string HospitalName { get; set; }  // Xəstəxana ID (nullable)
 
-    //public ICollection<DoctorSchedulesReadDto>? DoctorSchedules { get; set; }//Doktorun məsləhətləri vaxtlari
-
-
+    public List<DoctorSchedulesReadDto> DoctorSchedules { get; set; }//Doktorun məsləhətləri vaxtlari
 }
-
 
 //Cascade olmamalidir
 public class DoctorDeleteDto : BaseEntityDto

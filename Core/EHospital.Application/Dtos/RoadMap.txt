@@ -1,0 +1,4 @@
+﻿Yazilmis Dtolar
+Doctor
+DoctorUpdateDto bitib --> HospitalName veririk birde DoctorSchedulesReadDto daxilinde yalniz zamanlari goruruk 
+DoctorCreateDto daxilinde --> HospitalName eliyeceyik yaratdigimiz zaman hansi Hospital oldugunu sece bileceyik 

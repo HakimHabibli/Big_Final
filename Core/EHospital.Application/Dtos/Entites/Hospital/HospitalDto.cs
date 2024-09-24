@@ -4,64 +4,33 @@ using EHospital.Application.Dtos.Entites.Patient;
 
 namespace EHospital.Application.Dtos.Entites.Hospital;
 
-public class HospitalDto : BaseEntityDto
+public class HospitalDto : BaseEntityDto//Admin panel ucun get methodu
 {
-
     public string Name { get; set; }
-
-
     public string Address { get; set; }
-
-
     public string ContactNumber { get; set; }
-
-
     public string Email { get; set; }
-
     public string Description { get; set; }  // Xəstəxana haqqında əlavə məlumat
-
-    public ICollection<DoctorDto> Doctors { get; set; } // Xəstəxanada çalışan həkimlərin kolleksiyası
-    public ICollection<PatientDto> Patients { get; set; }
-
+    public ICollection<DoctorReadDto> Doctors { get; set; } // Xəstəxanada çalışan həkimlərin kolleksiyası
+    public ICollection<PatientReadDto> Patients { get; set; }
 }
 
-public class HospitalCreateDto : BaseAuditableEntityDto
+public class HospitalCreateDto : BaseAuditableEntityDto//Create
 {
-
     public string Name { get; set; }
-
-
     public string Address { get; set; }
-
-
     public string ContactNumber { get; set; }
-
-
     public string Email { get; set; }
-
     public string Description { get; set; }  // Xəstəxana haqqında əlavə məlumat
-
-    public ICollection<DoctorDto> Doctors { get; set; } // Xəstəxanada çalışan həkimlərin kolleksiyası
-    public ICollection<PatientDto> Patients { get; set; }
-
 }
 public class HospitalUpdateDto : BaseEntityDto
 {
     public string Name { get; set; }
-
-
     public string Address { get; set; }
-
-
     public string ContactNumber { get; set; }
-
-
     public string Email { get; set; }
-
     public string Description { get; set; }  // Xəstəxana haqqında əlavə məlumat
 
-    public ICollection<DoctorDto> Doctors { get; set; } // Xəstəxanada çalışan həkimlərin kolleksiyası
-    public ICollection<PatientDto> Patients { get; set; }
 }
 public class HospitalDeleteDto : BaseEntityDto
 {
@@ -69,15 +38,8 @@ public class HospitalDeleteDto : BaseEntityDto
 public class HospitalReadDto : BaseEntityDto
 {
     public string Name { get; set; }
-
-
     public string Address { get; set; }
-
-
     public string ContactNumber { get; set; }
-
-
     public string Email { get; set; }
-
     public string Description { get; set; }  // Xəstəxana haqqında əlavə məlumat
 }

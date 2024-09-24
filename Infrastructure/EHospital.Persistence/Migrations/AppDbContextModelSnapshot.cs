@@ -201,6 +201,9 @@ namespace EHospital.Persistence.Migrations
                     b.Property<TimeOnly>("EndTime")
                         .HasColumnType("time");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
                     b.Property<TimeOnly>("StartTime")
                         .HasColumnType("time");
 
@@ -385,7 +388,7 @@ namespace EHospital.Persistence.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 9, 1, 6, 26, 51, 348, DateTimeKind.Utc).AddTicks(3906));
+                        .HasDefaultValue(new DateTime(2024, 9, 22, 16, 1, 46, 822, DateTimeKind.Utc).AddTicks(7701));
 
                     b.Property<int>("EmergencyContactId")
                         .HasColumnType("int");

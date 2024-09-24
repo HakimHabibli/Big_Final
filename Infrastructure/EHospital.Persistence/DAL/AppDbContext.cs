@@ -28,6 +28,11 @@ public class AppDbContext : DbContext
 
         base.OnModelCreating(modelBuilder);
     }
+    /*
+     *Add-Migration AddDoctorSchedule -Project EHospital.Persistence -StartupProject EHospital.API
+ 
+     Update-Database -Project EHospital.Persistence -StartupProject EHospital.API
 
+     */
 }
 

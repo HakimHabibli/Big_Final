@@ -11,6 +11,15 @@ using EHospital.Domain.Enums;
 
 namespace EHospital.Application.Dtos.Entites.Patient;
 
+public class PatientReadDto : BaseEntityDto
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public DateTime DateOfBirth { get; set; }
+    public Gender Gender { get; set; }
+    public string Address { get; set; }
+}
+
 public class PatientDto : BaseEntityDto
 {
     public string FirstName { get; set; }
@@ -36,6 +45,4 @@ public class PatientDto : BaseEntityDto
     public ICollection<AllergyDto> Allergies { get; set; }
     public ICollection<PatientDoctorDto> PatientDoctors { get; set; } // Əlaqə cədvəli
     public ICollection<AppointmentDto> Appointments { get; set; }
-
-
 }

@@ -2,6 +2,7 @@
 using EHospital.Application.Futures.Commands.Doctor.Create;
 using EHospital.Application.Futures.Commands.Doctor.Delete;
 using EHospital.Application.Futures.Commands.Doctor.Update;
+using EHospital.Application.Futures.Queries.Doctor.GetAllDoctors;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,16 +25,18 @@ public class DoctorController : ControllerBase
     public async Task<IActionResult> CreateDoctorAsync([FromBody] DoctorCreateRequest request)
     {
         var response = await _mediator.Send(request);
-        return StatusCode(201, "Succesfully");
+        return StatusCode(200, "Succesfully");
     }
 
-
-    // GET api/<DoctorController>/5
-    [HttpGet("{id}")]
-    public string Get(int id)
+    [HttpGet]
+    public async Task<IActionResult> GetAllDoctors()
     {
-        return "value";
+        var query = new GetAllDoctorQueryRequest();
+        var response = await _mediator.Send(query);
+
+        return Ok(response.DoctorReadDtos);
     }
+
 
     [HttpPut]
     public async Task<IActionResult> UpdateDoctor([FromBody] DoctorUpdateDto doctorUpdateDto)

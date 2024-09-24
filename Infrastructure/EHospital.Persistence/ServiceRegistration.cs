@@ -42,12 +42,14 @@ public static class ServiceRegistration
 
         services.AddScoped<IDoctorSchedulesReadRepository, DoctorSchedulesReadRepository>();
         services.AddScoped<IDoctorSchedulesWriteRepository, DoctorSchedulesWriteRepository>();
+        services.AddScoped<IHospitalReadRepository, HospitalReadRepository>();
+        services.AddScoped<IHospitalWriteRepository, HospitalWriteRepository>();
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         #endregion
 
         #region Services
-
+        services.AddScoped<IHospitalService, HospitalService>();
         services.AddScoped<IPatientService, PatientService>();
         services.AddScoped<IAppointmentService, AppointmentService>();
         services.AddScoped<IMedicalHistoryService, MedicalHistoryService>();
