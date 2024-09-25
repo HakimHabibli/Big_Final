@@ -2,7 +2,7 @@
 
 namespace EHospital.Application.Abstractions;
 
-public interface IUnitOfWork /*: IDisposable*/
+public interface IUnitOfWork
 {
     IAllergyReadRepository AllergyReadRepository { get; }
     IAllergyWriteRepository AllergyWriteRepository { get; }

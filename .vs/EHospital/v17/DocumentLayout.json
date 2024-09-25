@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\validators\\hospital\\hospitalcreatecommandrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\validators\\hospital\\hospitalcreatecommandrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\validators\\doctor\\createdoctorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\validators\\doctor\\createdoctorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\futures\\commands\\hospital\\create\\hospitalcreatecommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\futures\\commands\\hospital\\create\\hospitalcreatecommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\futures\\commands\\hospital\\create\\hospitalcreatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\futures\\commands\\hospital\\create\\hospitalcreatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\futures\\commands\\hospital\\create\\hospitalcreatecommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\futures\\commands\\hospital\\create\\hospitalcreatecommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\dtos\\entites\\hospital\\hospitaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\dtos\\entites\\hospital\\hospitaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7042148-C720-465C-89B0-D82489A1809B}|Infrastructure\\EHospital.Persistence\\EHospital.Persistence.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\infrastructure\\ehospital.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7042148-C720-465C-89B0-D82489A1809B}|Infrastructure\\EHospital.Persistence\\EHospital.Persistence.csproj|solutionrelative:infrastructure\\ehospital.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,79 +39,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HospitalCreateCommandRequestValidation.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Validators\\Hospital\\HospitalCreateCommandRequestValidation.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Validators\\Hospital\\HospitalCreateCommandRequestValidation.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Validators\\Hospital\\HospitalCreateCommandRequestValidation.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Validators\\Hospital\\HospitalCreateCommandRequestValidation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\ServiceRegistration.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\ServiceRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T12:11:55.973Z",
+              "WhenOpened": "2024-09-25T13:09:36.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateDoctorValidator.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Validators\\Doctor\\CreateDoctorValidator.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Validators\\Doctor\\CreateDoctorValidator.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Validators\\Doctor\\CreateDoctorValidator.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Validators\\Doctor\\CreateDoctorValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T12:10:49.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HospitalCreateCommandRequest.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandRequest.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandRequest.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandRequest.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T12:07:43.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HospitalCreateCommandResponse.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandResponse.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandResponse.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandResponse.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandResponse.cs",
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Infrastructure\\EHospital.Persistence\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\EHospital.Persistence\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Infrastructure\\EHospital.Persistence\\ServiceRegistration.cs",
+              "RelativeToolTip": "Infrastructure\\EHospital.Persistence\\ServiceRegistration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T12:07:42.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HospitalCreateCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandHandler.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandHandler.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Futures\\Commands\\Hospital\\Create\\HospitalCreateCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T12:07:37.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HospitalDto.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Dtos\\Entites\\Hospital\\HospitalDto.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Dtos\\Entites\\Hospital\\HospitalDto.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Dtos\\Entites\\Hospital\\HospitalDto.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Dtos\\Entites\\Hospital\\HospitalDto.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:55:23.411Z",
+              "WhenOpened": "2024-09-25T13:08:44.317Z",
               "EditorCaption": ""
             }
           ]
