@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\behaviors\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\behaviors\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\validators\\hospital\\hospitalcreatecommandrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\validators\\hospital\\hospitalcreatecommandrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\77upt\\desktop\\fp\\ehospital\\core\\ehospital.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,6 +55,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Exceptions\\ValidationException.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T19:13:36.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwBkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T19:10:51.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ValidationBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Behaviors\\ValidationBehavior.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Behaviors\\ValidationBehavior.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Behaviors\\ValidationBehavior.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Behaviors\\ValidationBehavior.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T19:06:46.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HospitalCreateCommandRequestValidation.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Validators\\Hospital\\HospitalCreateCommandRequestValidation.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Validators\\Hospital\\HospitalCreateCommandRequestValidation.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\Validators\\Hospital\\HospitalCreateCommandRequestValidation.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Validators\\Hospital\\HospitalCreateCommandRequestValidation.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T19:04:38.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Application\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "Core\\EHospital.Application\\ServiceRegistration.cs",
@@ -51,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Infrastructure\\EHospital.Persistence\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "Infrastructure\\EHospital.Persistence\\ServiceRegistration.cs",
@@ -59,8 +127,7 @@
               "RelativeToolTip": "Infrastructure\\EHospital.Persistence\\ServiceRegistration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:08:44.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T13:08:44.317Z"
             }
           ]
         }
