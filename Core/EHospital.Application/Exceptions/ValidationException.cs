@@ -4,7 +4,7 @@ namespace EHospital.Application.Exceptions;
 
 public class ValidationException : Exception
 {
-    public List<string> ValidationErrors { get; }
+    public List<string> ValidationErrors { get; } = new();
 
     public ValidationException(IEnumerable<ValidationFailure> failures)
     {

@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "RuAeuE0Y1TU0MgIixRYWuUZWZIzJ00zinvttc+vxrtE=",
+  "Hash": "VVNRM39drYPPB30kkphRpKe6mM3J02mHjESFyWfBOG8=",
   "Source": "EHospital.API",
   "BasePath": "_content/EHospital.API",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\src\\EHospitalLogger\\Loging.Api\\Loging.Api.csproj",
+      "Version": 2,
+      "Source": "Loging.Api",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }
