@@ -35,12 +35,12 @@ public class AppointmentMapping : BaseEntityMapping<Appointment>
         builder.HasOne(a => a.Doctor)
        .WithMany(d => d.Appointments)
        .HasForeignKey(a => a.DoctorId)
-       .OnDelete(DeleteBehavior.Restrict); // Doktor silindikdə appointment təsirlənməz
+       .OnDelete(DeleteBehavior.SetNull); // Doktor silindikdə appointment təsirlənməz
 
         builder.HasOne(a => a.Patient)
             .WithMany(p => p.Appointments)
             .HasForeignKey(a => a.PatientId)
-            .OnDelete(DeleteBehavior.Restrict); // Xəstə silindikdə appointment təsirlənməz
+            .OnDelete(DeleteBehavior.SetNull); // Xəstə silindikdə appointment təsirlənməz
         #endregion
 
         #region Prop

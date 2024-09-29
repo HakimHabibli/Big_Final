@@ -22,13 +22,14 @@ public class ContactInfoMapping : BaseEntityMapping<ContactInfo>
 
         builder.HasOne(c => c.Patient)
                .WithOne(p => p.ContactInfo)
-               .HasForeignKey<Patient>(p => p.ContactInfoId).OnDelete(DeleteBehavior.Cascade);
+               .HasForeignKey<Patient>(p => p.ContactInfoId).OnDelete(DeleteBehavior.SetNull);
         #endregion
 
         #region Prop
         /*
             public string Email { get; set; }+
             public string Number { get; set; }+
+
             public int PatientId { get; set; }
             public Patient Patient { get; set; }
          */

@@ -4,11 +4,11 @@ public class MongoLogService : ILogService
 {
     private readonly IMongoCollection<LogEntry> _logCollection;
 
-    public MongoLogService(string connectionString, string databaseName, string collectionName)
+    public MongoLogService()
     {
-        var client = new MongoClient(connectionString);
-        var database = client.GetDatabase(databaseName);
-        _logCollection = database.GetCollection<LogEntry>(collectionName);
+        var client = new MongoClient("mongodb://localhost:27017");
+        var database = client.GetDatabase("LogingDb_EHospital");
+        _logCollection = database.GetCollection<LogEntry>("Log");
     }
 
     public async Task LogAsync(LogEntry logEntry)

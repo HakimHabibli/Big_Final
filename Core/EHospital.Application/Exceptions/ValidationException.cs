@@ -4,7 +4,7 @@ namespace EHospital.Application.Exceptions;
 
 public class ValidationException : Exception
 {
-    public List<string> ValidationErrors { get; } = new();
+    public List<string>? ValidationErrors { get; }
 
     public ValidationException(IEnumerable<ValidationFailure> failures)
     {
@@ -42,4 +42,9 @@ public class BusinessRuleException : Exception
     public BusinessRuleException(string message, Exception innerException) : base(message, innerException)
     {
     }
+}
+public class UnAuthorizedException : Exception
+{
+    public UnAuthorizedException(string message) : base(message) { }
+    public UnAuthorizedException(string message, Exception innerException) : base(message, innerException) { }
 }

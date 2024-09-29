@@ -16,7 +16,7 @@ public class Doctor : BaseAuditableEntity
     public Hospital Hospital { get; set; } // Xəstəxana obyekti
 
     public ICollection<DoctorSchedules> DoctorSchedules { get; set; }//Doktorun məsləhətləri vaxtlari
-    public ICollection<Appointment> Appointments { get; set; } // Doktorun məsləhət vaxtları
+    public ICollection<Appointment> Appointments { get; set; }     // Doktorun məsləhət vaxtları
     public ICollection<PatientDoctor> PatientDoctors { get; set; } // Əlaqə cədvəli
 
 

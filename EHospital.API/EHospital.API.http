@@ -1,6 +1,3 @@
-@EHospital.API_HostAddress = http://localhost:5234
-
-GET {{EHospital.API_HostAddress}}/weatherforecast/
-Accept: application/json
+@EHospital.API_HostAddress = http://localhost:5000
 
 ###

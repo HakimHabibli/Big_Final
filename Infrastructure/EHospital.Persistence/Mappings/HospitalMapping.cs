@@ -22,14 +22,14 @@ public class HospitalMapping : BaseAuditableEntityMapping<Hospital>
             .WithOne(d => d.Hospital)
             .HasForeignKey(d => d.HospitalId)
             .IsRequired()
-            .OnDelete(DeleteBehavior.Cascade);
+            .OnDelete(DeleteBehavior.SetNull);
 
         builder
             .HasMany(h => h.Patients)
             .WithOne(p => p.Hospital)
             .HasForeignKey(p => p.HospitalId)
             .IsRequired()
-            .OnDelete(DeleteBehavior.Cascade);
+            .OnDelete(DeleteBehavior.SetNull);
 
         #region Prop
         /*

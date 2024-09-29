@@ -19,10 +19,13 @@ public class DoctorService : IDoctorService
         _mapper = mapper;
     }
 
-    public async Task<DoctorDto>? GetDoctorByIdAsync(int id)
+
+
+
+    public async Task<DoctorReadDto>? GetDoctorByIdAsync(int id)
     {
         var doctor = await _unitOfWork.DoctorReadRepository.GetByIdAsync(id);
-        return _mapper.Map<DoctorDto>(doctor);
+        return _mapper.Map<DoctorReadDto>(doctor);
     }
 
     public async Task<IEnumerable<DoctorReadDto>> GetAllDoctorsAsync()
@@ -64,22 +67,6 @@ public class DoctorService : IDoctorService
 
         // Məlumatları yeniləyin
         _mapper.Map(doctorUpdateDto, doctor);
-
-
-        //if (doctorUpdateDto.DoctorSchedules != null && doctorUpdateDto.DoctorSchedules.Count > 0)
-        //{
-        //    Burada mövcud vaxtları silə və ya yeniləyə bilərsiniz
-        //     Məsələn, ilk öncə hamısını silmək:
-        //    await _unitOfWork.DoctorSchedulesWriteRepository.ClearSchedulesByDoctorIdAsync(doctor.Id);
-
-        //    Sonra yeni vaxtları əlavə etmək:
-        //    foreach (var schedule in doctorUpdateDto.DoctorSchedules)
-        //    {
-        //        var newSchedule = _mapper.Map<Docto>(schedule);
-        //        newSchedule.DoctorId = doctor.Id; // Həkim ID-ni əlavə et
-        //        await _unitOfWork.DoctorSchedulesWriteRepository.CreateAsync(newSchedule);
-        //    }
-        //}
 
         await _unitOfWork.DoctorWriteRepository.UpdateAsync(doctor);
     }

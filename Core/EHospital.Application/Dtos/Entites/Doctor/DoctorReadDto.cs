@@ -14,7 +14,7 @@ public class DoctorDto : BaseEntityDto
     public string Address { get; set; }        // Doktorun ünvanı
     public string Bio { get; set; }            // Doktor haqqında əlavə məlumat
     public string HospitalName { get; set; }
-    public ICollection<DoctorSchedulesDto> DoctorSchedules { get; set; } // Həkimin cədvəlləri yalniz Ozune xas prolar olmalidi
+    public ICollection<DoctorSchedulesDto> DoctorSchedules { get; set; } // Həkimin cədvəlləri yalniz Ozune xas proplar olmalidi
 
 }
 
@@ -28,6 +28,7 @@ public class DoctorReadDto : BaseEntityDto
     public string Email { get; set; } // Doktorun elektron poçt ünvanı
     public string Address { get; set; } // Doktorun ünvanı
     public string Bio { get; set; } // Doktor haqqında əlavə məlumat
+    public string HospitalName { get; set; } //Hansi xəstəxanaya aid oldugunu görmək üçün 
 
 }
 
@@ -39,9 +40,10 @@ public class DoctorCreateDto : BaseAuditableEntityDto
     public string Specialization { get; set; } // Doktorun ixtisası
     public string ContactNumber { get; set; } // Doktorun əlaqə nömrəsi
     public string Email { get; set; } // Doktorun elektron poçt ünvanı
-    public string Address { get; set; } // Doktorun ünvanı
+    public string? Address { get; set; } // Doktorun ünvanı
     public string Bio { get; set; } // Doktor haqqında əlavə məlumat
     public string HospitalName { get; set; }    //Xəstəxana Adi
+
 }
 
 public class DoctorUpdateDto : BaseAuditableEntityDto
@@ -55,11 +57,9 @@ public class DoctorUpdateDto : BaseAuditableEntityDto
     public string Address { get; set; } // Doktorun ünvanı
     public string Bio { get; set; } // Doktor haqqında əlavə 
     public string HospitalName { get; set; }  // Xəstəxana ID (nullable)
-
-    public List<DoctorSchedulesReadDto> DoctorSchedules { get; set; }//Doktorun məsləhətləri vaxtlari
 }
 
-//Cascade olmamalidir
+//Cascade olmamalidir(++)
 public class DoctorDeleteDto : BaseEntityDto
 {
 }

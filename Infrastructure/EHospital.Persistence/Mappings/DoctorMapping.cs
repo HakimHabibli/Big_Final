@@ -45,17 +45,17 @@ public class DoctorMapping : BaseAuditableEntityMapping<Doctor>
         builder.HasOne(d => d.Hospital)
                  .WithMany(h => h.Doctors)
                  .HasForeignKey(d => d.HospitalId)
-                 .OnDelete(DeleteBehavior.Cascade); // Xəstəxana silindiyində, doktorun xəstəxanasını null olaraq təyin edər
+                 .OnDelete(DeleteBehavior.SetNull); // Xəstəxana silindiyində, doktorun xəstəxanasını null olaraq təyin edər
 
         builder.HasMany(d => d.Appointments)
                .WithOne(a => a.Doctor)
                .HasForeignKey(a => a.DoctorId)
-               .OnDelete(DeleteBehavior.Cascade); // Randevu silindiyində, doktorun randevusunu da silər
+               .OnDelete(DeleteBehavior.SetNull); // Randevu silindiyində, doktorun randevusunu da silər
 
         builder.HasMany(d => d.PatientDoctors)
                .WithOne(pd => pd.Doctor)
                .HasForeignKey(pd => pd.DoctorId)
-               .OnDelete(DeleteBehavior.Cascade); // `PatientDoctor` silindiyində, doktorun `PatientDoctor` qeydini də silər
+               .OnDelete(DeleteBehavior.SetNull); // `PatientDoctor` silindiyində, doktorun `PatientDoctor` qeydini də silər
 
         #region Prop
         //public string FirstName { get; set; } // Doktorun adı

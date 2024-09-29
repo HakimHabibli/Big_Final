@@ -12,6 +12,7 @@ public class DoctorSchedulesReadDto : BaseEntityDto
 public class DoctorSchedulesDto : BaseEntityDto
 {
     public int DoctorId { get; set; }
+    public List<DoctorDto> Doctors { get; set; }
     public DateOnly Date { get; set; }
     public TimeOnly StartTime { get; set; }
     public TimeOnly EndTime { get; set; }
