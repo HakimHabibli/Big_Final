@@ -28,7 +28,7 @@ public class MedicalHistoryMapping : BaseEntityMapping<MedicalHistory>
         builder.HasOne(mh => mh.Patient)
             .WithMany(p => p.MedicalHistories)
             .HasForeignKey(mh => mh.PatientId)
-            .OnDelete(DeleteBehavior.SetNull); // MedicalHistory silindikdə müvafiq Patient təsirlənir
+            .OnDelete(DeleteBehavior.Restrict); // MedicalHistory silindikdə müvafiq Patient təsirlənir
     }
 }
 /*

@@ -1,4 +1,5 @@
 ﻿using EHospital.Application.Abstractions.Services;
+using EHospital.Application.Dtos.Entites.Hospital;
 using MediatR;
 
 namespace EHospital.Application.Futures.Commands.Hospital.Create;
@@ -20,4 +21,12 @@ public class HospitalCreateCommandHandler : IRequestHandler<HospitalCreateComman
 
         return response;
     }
+}
+public class HospitalCreateCommandRequest : IRequest<HospitalCreateCommandResponse>
+{
+    public HospitalCreateDto HospitalCreateDto { get; set; }
+}
+public class HospitalCreateCommandResponse
+{
+    public string StatusCode { get; set; }
 }

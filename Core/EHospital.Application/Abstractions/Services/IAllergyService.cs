@@ -4,8 +4,12 @@ namespace EHospital.Application.Abstractions.Services;
 
 public interface IAllergyService
 {
-    public virtual async Task<List<AllergyDto>> GetAllAllergyAsync()
-    {
-        return default;
-    }
+
+    Task CreateAllergyAsync(AllergyCreateDto allergyCreateDto);
+    Task UpdateAllergyAsync(AllergyUpdateDto allergyUpdateDto);
+    Task DeleteAllergyAsync(AllergyDeleteDto allergyDeleteDto);
+    Task<IEnumerable<AllergyReadDto>> GetAllAllergiesAsync();
+    Task<AllergyReadDto> GetAllergyByIdAsync(int id);
+    Task<IEnumerable<AllergyReadDto>> GetAllergiesByPatientIdAsync(int patientId);
+
 }

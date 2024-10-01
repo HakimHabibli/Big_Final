@@ -10,6 +10,7 @@ public class EmergencyContactDto : BaseEntityDto
     public string Number { get; set; }
 
     public string Relationship { get; set; }
+
     public int PatientId { get; set; }
     public PatientDto Patient { get; set; }
 }
@@ -40,8 +41,8 @@ public class EmergencyContactCreateDto : BaseAuditableEntityDto
     public string Number { get; set; }
 
     public string Relationship { get; set; }
-    public int PatientId { get; set; }
-    public PatientDto Patient { get; set; }
+    public string PatientName { get; set; }
+
 }
 public class EmergencyContactDeleteDto : BaseEntityDto
 {

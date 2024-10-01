@@ -3,7 +3,7 @@ using EHospital.Application.Dtos.Entites.Patient;
 
 namespace EHospital.Application.Dtos.Entites.MedicalHistory;
 
-public class MedicalHistoryDto : BaseEntityDto
+public class MedicalHistoryCreateDto : BaseEntityDto//Bir MH yaradib Patiente vermek ucun nezerde tutulub(HemCreate ucun hemde read ucun ola bilerdi)
 {
     public string Condition { get; set; }//Mövcud vəziyyət
 
@@ -13,11 +13,10 @@ public class MedicalHistoryDto : BaseEntityDto
 
     public string Notes { get; set; }
 
-
-    public int PatientId { get; set; }
-    public PatientDto Patient { get; set; }
+    public string PatientSerialNumber { get; set; }
 }
-public class MedicalHistoryReadDto : BaseEntityDto
+
+public class MedicalHistoryReadDto : BaseEntityDto//Medicakl historyl'rini getirmek ucun 
 {
     public string Condition { get; set; }//Mövcud vəziyyət
 
@@ -26,9 +25,6 @@ public class MedicalHistoryReadDto : BaseEntityDto
     public string Treatment { get; set; }//Hansı müalicədən keçib 
 
     public string Notes { get; set; }
-
-
-    public int PatientId { get; set; }
     public PatientDto Patient { get; set; }
 }
 public class MedicalHistoryUpdateDto : BaseEntityDto
@@ -40,12 +36,10 @@ public class MedicalHistoryUpdateDto : BaseEntityDto
     public string Treatment { get; set; }//Hansı müalicədən keçib 
 
     public string Notes { get; set; }
+    public string PatientSerialNumber { get; set; }
 
-
-    public int PatientId { get; set; }
-    public PatientDto Patient { get; set; }
 }
-public class MedicalHistoryCreateDto : BaseAuditableEntityDto
+public class MedicalHistoryDto : BaseAuditableEntityDto
 {
     public string Condition { get; set; }//Mövcud vəziyyət
 

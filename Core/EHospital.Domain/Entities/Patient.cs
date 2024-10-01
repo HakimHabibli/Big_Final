@@ -10,7 +10,8 @@ public class Patient : BaseEntity
     public DateTime DateOfBirth { get; set; }
     public Gender Gender { get; set; }
     public string Address { get; set; }
-
+    //SerialNumber əlavə olunmalıdır
+    public string SerialNumber { get; set; }
 
     public int ContactInfoId { get; set; }
     public ContactInfo ContactInfo { get; set; }

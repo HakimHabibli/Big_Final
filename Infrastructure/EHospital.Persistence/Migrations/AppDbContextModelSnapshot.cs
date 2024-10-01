@@ -62,7 +62,7 @@ namespace EHospital.Persistence.Migrations
                     b.Property<DateTime>("AppointmentDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("DoctorId")
+                    b.Property<int?>("DoctorId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsConfirmed")
@@ -73,7 +73,8 @@ namespace EHospital.Persistence.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<int>("PatientId")
+                    b.Property<int?>("PatientId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -388,7 +389,7 @@ namespace EHospital.Persistence.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 9, 22, 16, 1, 46, 822, DateTimeKind.Utc).AddTicks(7701));
+                        .HasDefaultValue(new DateTime(2024, 10, 1, 16, 4, 35, 234, DateTimeKind.Utc).AddTicks(6480));
 
                     b.Property<int>("EmergencyContactId")
                         .HasColumnType("int");
@@ -412,6 +413,11 @@ namespace EHospital.Persistence.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("SerialNumber")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.HasKey("Id");
 
@@ -460,8 +466,7 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.Doctor", "Doctor")
                         .WithMany("Appointments")
                         .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("EHospital.Domain.Entities.Patient", "Patient")
                         .WithMany("Appointments")
@@ -479,7 +484,7 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.Hospital", "Hospital")
                         .WithMany("Doctors")
                         .HasForeignKey("HospitalId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Hospital");
@@ -490,7 +495,7 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.Doctor", "Doctor")
                         .WithMany("DoctorSchedules")
                         .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Doctor");

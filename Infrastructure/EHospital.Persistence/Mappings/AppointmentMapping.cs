@@ -15,7 +15,7 @@ public class AppointmentMapping : BaseEntityMapping<Appointment>
 
         #region Properties
         builder.Property(a => a.DoctorId)
-          .IsRequired();
+          .IsRequired(false);
 
         builder.Property(a => a.PatientId)
             .IsRequired();
@@ -40,7 +40,7 @@ public class AppointmentMapping : BaseEntityMapping<Appointment>
         builder.HasOne(a => a.Patient)
             .WithMany(p => p.Appointments)
             .HasForeignKey(a => a.PatientId)
-            .OnDelete(DeleteBehavior.SetNull); // Xəstə silindikdə appointment təsirlənməz
+            .OnDelete(DeleteBehavior.Restrict); // Xəstə silindikdə appointment təsirlənməz
         #endregion
 
         #region Prop
