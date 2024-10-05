@@ -21,7 +21,7 @@ public class AllergyCreateDto : BaseAuditableEntityDto
     public AllergySeverity Severity { get; set; }//Enum yazilacaq
 
     public int PatientId { get; set; } // Foreign key
-    public PatientDto Patient { get; set; } // Navigation property
+
 }
 public class AllergyReadDto : BaseEntityDto
 {

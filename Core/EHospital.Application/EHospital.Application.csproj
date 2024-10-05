@@ -19,9 +19,5 @@
 	  <ProjectReference Include="..\..\src\EHospitalLogger\Loging.Api\Loging.Api.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Futures\Commands\Patient\" />
-  </ItemGroup>
-
 
 </Project>

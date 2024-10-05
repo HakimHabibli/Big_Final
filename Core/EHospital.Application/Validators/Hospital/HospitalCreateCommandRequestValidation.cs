@@ -1,5 +1,6 @@
-﻿using EHospital.Application.Dtos.Entites.Hospital;
-using EHospital.Application.Futures.Commands.Hospital.Create;
+﻿using EHospital.Application.Futures.Commands.Hospital.Create;
+using EHospital.Application.Futures.Commands.Hospital.Delete;
+using EHospital.Application.Futures.Commands.Hospital.Update;
 using FluentValidation;
 
 namespace EHospital.Application.Validators.Hospital;
@@ -29,39 +30,39 @@ public class HospitalCreateCommandRequestValidation : AbstractValidator<Hospital
     }
 }
 
-public class HospitalDeleteCommandRequestValidation : AbstractValidator<HospitalDeleteDto>
+public class HospitalDeleteCommandRequestValidation : AbstractValidator<HospitalDeleteCommandRequest>
 {
     public HospitalDeleteCommandRequestValidation()
     {
-        RuleFor(c => c.Id)
+        RuleFor(c => c.HospitalDeleteDto.Id)
             .GreaterThan(0).WithMessage("Hospital ID must be greater than zero.");
     }
 }
 
-public class HospitalUpdateCommandRequestValidation : AbstractValidator<HospitalUpdateDto>
+public class HospitalUpdateCommandRequestValidation : AbstractValidator<HospitalUpdateCommandRequest>
 {
     public HospitalUpdateCommandRequestValidation()
     {
-        RuleFor(c => c.Id)
+        RuleFor(c => c.HospitalUpdateDto.Id)
             .GreaterThan(0).WithMessage("Hospital ID must be greater than zero.");
 
-        RuleFor(c => c.Name)
+        RuleFor(c => c.HospitalUpdateDto.Name)
             .NotEmpty().WithMessage("Hospital Name is required.")
             .Length(2, 100).WithMessage("Hospital Name must be between 2 and 100 characters.");
 
-        RuleFor(c => c.Address)
+        RuleFor(c => c.HospitalUpdateDto.Address)
             .NotEmpty().WithMessage("Address is required.")
             .Length(5, 200).WithMessage("Address must be between 5 and 200 characters.");
 
-        RuleFor(c => c.ContactNumber)
+        RuleFor(c => c.HospitalUpdateDto.ContactNumber)
             .NotEmpty().WithMessage("Contact Number is required.")
             .Matches(@"^\+?\d{10,15}$").WithMessage("Contact Number must be a valid phone number.");
 
-        RuleFor(c => c.Email)
+        RuleFor(c => c.HospitalUpdateDto.Email)
             .NotEmpty().WithMessage("Email is required.")
             .EmailAddress().WithMessage("Email must be a valid email address.");
 
-        RuleFor(c => c.Description)
+        RuleFor(c => c.HospitalUpdateDto.Description)
             .MaximumLength(500).WithMessage("Description must not exceed 500 characters.");
     }
 }

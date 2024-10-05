@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using EHospital.Application.Abstractions;
 using EHospital.Application.Abstractions.Services;
+using EHospital.Application.Dtos.Entites.Patient;
+using EHospital.Domain.Entities;
 
 namespace EHospital.Application.Concretes.Services;
 
@@ -14,5 +16,71 @@ public class PatientService : IPatientService
         _unitOfWork = unitOfWork;
         _mapper = mapper;
     }
+
+    public async Task CreatePatientAsync(PatientDto patientDto)
+    {
+        var patientEntity = _mapper.Map<Patient>(patientDto);
+        await _unitOfWork.PatientWriteRepository.CreateAsync(patientEntity);
+    }
+
+    public async Task DeletePatientAsync(int id)
+    {
+        var patient = await _unitOfWork.PatientReadRepository.GetByIdAsync(id);
+
+        if (patient == null)
+        {
+            throw new Exception("Patient not found");
+        }
+
+        await _unitOfWork.PatientWriteRepository.DeleteAsync(patient);
+    }
+
+    public async Task<List<PatientReadDto>> GetAllPatients()
+    {
+        var patients = await _unitOfWork.PatientReadRepository.GetAllAsync();
+        if (patients == null) throw new Exception("Patients not found");
+        return _mapper.Map<List<PatientReadDto>>(patients);
+    }
+
+    public async Task<PatientReadDto> GetPatientByIdAsync(int id)
+    {
+        var patient = await _unitOfWork.PatientReadRepository.GetByIdAsync(id);
+
+        if (patient == null)
+        {
+            throw new Exception("Patient not found");
+        }
+
+        return _mapper.Map<PatientReadDto>(patient);
+
+    }
+
+    public async Task<PatientReadDto> GetPatientBySerialNumberAsync(string serialNumber)
+    {
+        var patient = await _unitOfWork.PatientReadRepository.GetBySerialNumberAsync(serialNumber);
+
+        if (patient == null)
+        {
+            throw new Exception("Patient not found");
+        }
+
+        return _mapper.Map<PatientReadDto>(patient);
+
+    }
+
+    public async Task UpdatePatientAsync(PatientDto patientDto)
+    {
+        var patient = await _unitOfWork.PatientReadRepository.GetByIdAsync(patientDto.Id);
+
+        if (patient == null)
+        {
+            throw new Exception("Patient not found");
+        }
+
+        _mapper.Map(patientDto, patient); // Mövcud patient obyektini DTO ilə yeniləyirik
+        await _unitOfWork.PatientWriteRepository.UpdateAsync(patient);
+
+    }
+
 
 }

@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "JsFC1cu+9+zs7Bm0aMpcEHJYC4L5yRhXecDGGZ36/fk=",
+  "Source": "ImageService",
+  "BasePath": "_content/ImageService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ImageService\\wwwroot",
+      "Source": "ImageService",
+      "ContentRoot": "C:\\Users\\77upt\\Desktop\\MicroServiceİmag\\ProductService\\ImageService\\wwwroot\\",
+      "BasePath": "_content/ImageService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

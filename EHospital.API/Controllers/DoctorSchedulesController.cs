@@ -41,7 +41,7 @@ public class DoctorSchedulesController : ControllerBase
     }
 
 
-    [HttpGet]
+    [HttpGet("schedules/{doctorName}")]
     public async Task<IActionResult> GetDoctorScheduleByName(string doctorName)
     {
         var query = new GetDoctorSchedulesByDoctorNameQuery { DoctorName = doctorName };
@@ -57,7 +57,7 @@ public class DoctorSchedulesController : ControllerBase
     }
 
 
-    [HttpGet]
+    [HttpGet("active")]
     public async Task<IActionResult> GetActiveSchedules()
     {
         var query = new GetAllActiveDoctorSchedulesRequest();

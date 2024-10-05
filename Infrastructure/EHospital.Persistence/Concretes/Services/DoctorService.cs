@@ -65,7 +65,6 @@ public class DoctorService : IDoctorService
 
         doctor.HospitalId = hospital.Id;
 
-        // Məlumatları yeniləyin
         _mapper.Map(doctorUpdateDto, doctor);
 
         await _unitOfWork.DoctorWriteRepository.UpdateAsync(doctor);

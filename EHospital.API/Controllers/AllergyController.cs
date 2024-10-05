@@ -54,7 +54,7 @@ public class AllergyController : ControllerBase
         var response = await _mediator.Send(request);
         return StatusCode(StatusCodes.Status204NoContent, response.StatusCode);
     }
-    [HttpGet]
+    [HttpGet("all")]
     public async Task<IActionResult> GetAllAllergies()
     {
         var query = new GetAllAllergiesQueryRequest();
@@ -62,7 +62,7 @@ public class AllergyController : ControllerBase
         return Ok(response.Allergies);
     }
 
-    [HttpGet]
+    [HttpGet("{id}")]
     public async Task<IActionResult> GetAllergyById(int id)
     {
         var query = new GetAllergyByIdQueryRequest { Id = id };
@@ -70,7 +70,7 @@ public class AllergyController : ControllerBase
         return Ok(response.Allergy);
     }
 
-    [HttpGet]
+    [HttpGet("patient/{patientId}")]
     public async Task<IActionResult> GetAllergiesByPatientId(int patientId)
     {
         var query = new GetAllergiesByPatientIdQueryRequest { PatientId = patientId };

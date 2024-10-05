@@ -19,6 +19,9 @@ public class Doctor : BaseAuditableEntity
     public ICollection<Appointment> Appointments { get; set; }     // Doktorun məsləhət vaxtları
     public ICollection<PatientDoctor> PatientDoctors { get; set; } // Əlaqə cədvəli
 
+    //public string ImageUrl { get; set; }
 
+    //[NotMapped]
+    //public IFormFile ImageFile { get; set; }
 
 }

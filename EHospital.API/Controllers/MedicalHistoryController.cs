@@ -27,7 +27,7 @@ public class MedicalHistoryController : ControllerBase
         return StatusCode(StatusCodes.Status201Created, response.StatusCode);
     }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteMedicalHistory(MedicalHistoryDeleteDto medical)
     {
         var request = new MedicalHistoryDeleteCommandRequest { MedicalHistoryDeleteDto = medical };
@@ -52,9 +52,13 @@ public class MedicalHistoryController : ControllerBase
     {
         var query = new GetAllMedicalHistoriesQueryRequest();
         var response = await _mediator.Send(query);
+        if (response.MedicalHistoryReadDtos == null || !response.MedicalHistoryReadDtos.Any())
+        {
+            return NoContent();
+        }
         return Ok(response.MedicalHistoryReadDtos);
     }
-    [HttpGet]
+    [HttpGet("bySerialNumber/{serialNumber}")]
     public async Task<IActionResult> GetMedicalHistoryBySerialNumber(string serialNumber)
     {
         var query = new GetMedicalHistoryBySerialNumberQueryRequest { SerialNumber = serialNumber };

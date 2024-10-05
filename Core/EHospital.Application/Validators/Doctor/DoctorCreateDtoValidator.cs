@@ -1,4 +1,7 @@
 ﻿using EHospital.Application.Dtos.Entites.Doctor;
+using EHospital.Application.Futures.Commands.Doctor.Create;
+using EHospital.Application.Futures.Commands.Doctor.Delete;
+using EHospital.Application.Futures.Commands.Doctor.Update;
 using FluentValidation;
 
 namespace EHospital.Application.Validators.Doctor;
