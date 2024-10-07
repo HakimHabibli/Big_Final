@@ -4,5 +4,5 @@ namespace EHospital.Application.Abstractions.Repositories;
 
 public interface IHospitalReadRepository : IReadRepository<Hospital>
 {
-    Task<Hospital> GetByNameAsync(string name);
+    Task<string> GetByNameAsync(string name);
 }

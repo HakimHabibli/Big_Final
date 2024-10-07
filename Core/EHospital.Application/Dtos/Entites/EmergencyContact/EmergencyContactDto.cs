@@ -11,8 +11,7 @@ public class EmergencyContactDto : BaseEntityDto
 
     public string Relationship { get; set; }
 
-    public int PatientId { get; set; }
-    public PatientDto Patient { get; set; }
+
 }
 public class EmergencyContactReadDto : BaseEntityDto
 {

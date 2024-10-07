@@ -10,7 +10,6 @@ public class PatientMapping : BaseEntityMapping<Patient>
     {
         base.Configure(builder);
 
-        // Özelliklerin yapılandırılması
         builder.Property(p => p.FirstName)
                .HasMaxLength(50)
                .IsRequired();
@@ -26,47 +25,46 @@ public class PatientMapping : BaseEntityMapping<Patient>
                .HasMaxLength(10)
                .IsRequired();
 
-        // İlişkilerin yapılandırılması
         builder.HasOne(p => p.ContactInfo)
                .WithOne(c => c.Patient)
                .HasForeignKey<Patient>(p => p.ContactInfoId)
                //.HasForeignKey(c => c.ContactInfoId)
-               .OnDelete(DeleteBehavior.Restrict); // İletişim bilgisi silindiğinde hasta etkilenmez
+               .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasOne(p => p.EmergencyContact)
-            .WithOne(ec => ec.Patient) // Təcili əlaqə bir xəstəyə aid
+            .WithOne(ec => ec.Patient)
             .HasForeignKey<Patient>(p => p.EmergencyContactId)
             .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasOne(p => p.InsuranceDetails)
-               .WithOne(id => id.Patient) // Sığorta məlumatı bir xəstəyə aid
+               .WithOne(id => id.Patient)
                .HasForeignKey<Patient>(p => p.InsuranceDetailsId)
                .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasMany(p => p.MedicalHistories)
                .WithOne(mh => mh.Patient)
                .HasForeignKey(mh => mh.PatientId)
-               .OnDelete(DeleteBehavior.Restrict); // Tıbbi geçmiş silindiğinde hasta etkilenir
+               .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasMany(p => p.Allergies)
                .WithOne(a => a.Patient)
                .HasForeignKey(a => a.PatientId)
-               .OnDelete(DeleteBehavior.Restrict); // Alerji silindiğinde hasta etkilenir
+               .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasMany(p => p.PatientDoctors)
                .WithOne(pd => pd.Patient)
                .HasForeignKey(pd => pd.PatientId)
-               .OnDelete(DeleteBehavior.Restrict); // Doktor ilişiği silindiğinde hasta etkilenir
+               .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasMany(p => p.Appointments)
                .WithOne(a => a.Patient)
                .HasForeignKey(a => a.PatientId)
-               .OnDelete(DeleteBehavior.Restrict); // Randevu silindiğinde hasta etkilenir
+               .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasOne(p => p.Hospital)
                .WithMany(h => h.Patients)
                .HasForeignKey(p => p.HospitalId)
-               .OnDelete(DeleteBehavior.Restrict); // Xəstəxana silindiğinde hasta etkilenmez, HospitalId null olarak ayarlanır
+               .OnDelete(DeleteBehavior.Restrict);
     }
 }
 

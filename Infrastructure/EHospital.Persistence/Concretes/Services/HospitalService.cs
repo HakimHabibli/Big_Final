@@ -75,6 +75,5 @@ public class HospitalService : IHospitalService
 
         _mapper.Map(hospitalUpdateDto, hospital);
         await _unitOfWork.HospitalWriteRepository.UpdateAsync(hospital);
-        //await _unitOfWork.HospitalWriteRepository.SaveChangesAsync();
     }
 }

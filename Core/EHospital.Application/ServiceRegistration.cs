@@ -21,7 +21,6 @@ public static class ServiceRegistration
         services.AddFluentValidationAutoValidation();
 
 
-        services.AddSingleton<ILogService>(sp =>
-            new MongoLogService());
+        services.AddSingleton<ILogService>(sp => new MongoLogService());
     }
 }

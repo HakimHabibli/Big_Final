@@ -3,6 +3,7 @@ using EHospital.Application.Abstractions;
 using EHospital.Application.Abstractions.Services;
 using EHospital.Application.Dtos.Entites.Doctor;
 using EHospital.Application.Dtos.Entites.Patient;
+using EHospital.Application.Exceptions;
 using EHospital.Domain.Entities;
 
 namespace EHospital.Application.Concretes.Services;
@@ -36,7 +37,17 @@ public class DoctorService : IDoctorService
 
     public async Task CreateDoctorAsync(DoctorCreateDto doctorCreateDTO)
     {
+        var hospital = await _unitOfWork.HospitalReadRepository.GetByNameAsync(doctorCreateDTO.HospitalName);
+
+        if (hospital == null)
+        {
+            throw new NotFoundException($"Hospital with name {doctorCreateDTO.HospitalName} not found");
+        }
+
         var doctor = _mapper.Map<Doctor>(doctorCreateDTO);
+
+        doctor.Hospital.Name = hospital;
+
         await _unitOfWork.DoctorWriteRepository.CreateAsync(doctor);
     }
 
@@ -61,9 +72,12 @@ public class DoctorService : IDoctorService
         }
 
         var hospital = await _unitOfWork.HospitalReadRepository.GetByNameAsync(doctorUpdateDto.HospitalName);
-        if (hospital == null) { throw new Exception("Hospital not found"); }
+        if (hospital == null)
+        {
+            throw new Exception("Hospital not found");
+        }
 
-        doctor.HospitalId = hospital.Id;
+        doctor.Hospital.Name = hospital;
 
         _mapper.Map(doctorUpdateDto, doctor);
 

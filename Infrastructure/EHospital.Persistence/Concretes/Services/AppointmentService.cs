@@ -31,7 +31,9 @@ public class AppointmentService : IAppointmentService
 
     public async Task<List<AppointmentReadDto>> GetAllAppointmentAsync()
     {
-        var appointment = await _unitOfWork.AppointmentReadRepository.GetAllAsync();
+        var appointment = await _unitOfWork.AppointmentReadRepository
+            .GetAllAsync(false, "Doctor", "Patient");
+
         return _mapper.Map<List<AppointmentReadDto>>(appointment);
     }
 
@@ -55,9 +57,10 @@ public class AppointmentService : IAppointmentService
             throw new KeyNotFoundException("Appointment not found.");
         }
 
-        _mapper.Map<Appointment>(appointmentUpdateDto);
-        await _unitOfWork.AppointmentWriteRepository.UpdateAsync(appointment);
 
-        //await _unitOfWork.AppointmentWriteRepository.SaveChangesAsync();
+        //_mapper.Map<Appointment>(appointmentUpdateDto);
+        _mapper.Map(appointmentUpdateDto, appointment);
+
+        await _unitOfWork.AppointmentWriteRepository.UpdateAsync(appointment);
     }
 }

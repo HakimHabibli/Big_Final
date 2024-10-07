@@ -7,8 +7,7 @@ public class ContactInfoDto : BaseEntityDto
 {
     public string Email { get; set; }
     public string Number { get; set; }
-    public int PatientId { get; set; }
-    public PatientDto Patient { get; set; }
+
 }
 public class ContactInfoReadDto : BaseEntityDto
 {

@@ -17,8 +17,7 @@ public class InsuranceDetailsDto : BaseEntityDto
     public string PlanType { get; set; }
 
     public string AdditionalInfo { get; set; }//Sığorta ilə bağlı əlavə məlumatları saxlayır.
-    public int PatientId { get; set; }
-    public PatientDto Patient { get; set; }
+
 }
 
 public class InsuranceDetailsCreateDto : BaseAuditableEntityDto

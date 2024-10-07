@@ -1,4 +1,5 @@
 ﻿using EHospital.Application.Abstractions.Repositories;
+using EHospital.Application.Exceptions;
 using EHospital.Concretes.Repositories;
 using EHospital.Domain.Entities;
 using EHospital.Persistence.DAL;
@@ -11,14 +12,19 @@ public class HospitalReadRepository : ReadRepository<Hospital>, IHospitalReadRep
     public HospitalReadRepository(AppDbContext appDbContext) : base(appDbContext)
     {
     }
-    public async Task<Hospital> GetByNameAsync(string name)
+    public async Task<string> GetByNameAsync(string name)
     {
+        var hospital = await _appDbContext.Hospitals
+            .Where(h => h.Name == name)
+            .Select(h => h.Name)  // Burada xəstəxananın adını seçirik
+            .FirstOrDefaultAsync();
 
-        var hospitalName = await _appDbContext.Hospitals
-            .FirstOrDefaultAsync(h => h.Name == name);
-        if (hospitalName == null) throw new Exception("Hospital not found");
+        if (hospital == null)
+        {
+            throw new NotFoundException("Hospital not found");
+        }
 
-        return hospitalName;
+        return hospital;  // Burada sadəcə xəstəxananın adını qaytarırıq
     }
 
 }

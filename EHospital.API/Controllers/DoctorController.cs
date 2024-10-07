@@ -25,7 +25,6 @@ public class DoctorController : ControllerBase
 
 
 
-    // POST api/<DoctorController>
     [HttpPost]
     public async Task<IActionResult> CreateDoctor([FromBody] DoctorCreateDto doctorCreateDto)
     {
@@ -45,7 +44,6 @@ public class DoctorController : ControllerBase
     }
 
 
-    // PUT api/<DoctorController>
     [HttpPut]
     public async Task<IActionResult> UpdateDoctor([FromBody] DoctorUpdateDto doctorUpdateDto)
     {
@@ -57,7 +55,7 @@ public class DoctorController : ControllerBase
         var response = await _mediator.Send(request);
         return NoContent();
     }
-    // DELETE api/<DoctorController>/5
+
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(DoctorDeleteRequest request)
     {
@@ -65,10 +63,6 @@ public class DoctorController : ControllerBase
         return StatusCode(204, "ChangeSuccesfully");
     }
 
-
-
-
-    // GET api/<DoctorController>/patients/{doctorId}
     [HttpGet("patients/{doctorId}")]
     public async Task<IActionResult> GetAllPatientsByDoctorId(int doctorId)
     {
@@ -82,7 +76,6 @@ public class DoctorController : ControllerBase
     }
 
 
-    // GET api/<DoctorController>/{id}
     [HttpGet("{id}")]
     public async Task<IActionResult> GetDoctorById(int id)
     {
