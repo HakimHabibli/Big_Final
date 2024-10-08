@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JsFC1cu+9+zs7Bm0aMpcEHJYC4L5yRhXecDGGZ36/fk=",
+  "Hash": "t3gTXhPmCIfJ34hMfq5yyiEPUGXqi0ysI+PsQ/34fH0=",
   "Source": "ImageService",
   "BasePath": "_content/ImageService",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "ImageService\\wwwroot",
       "Source": "ImageService",
-      "ContentRoot": "C:\\Users\\77upt\\Desktop\\MicroServiceİmag\\ProductService\\ImageService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\src\\EHospitalImage\\wwwroot\\",
       "BasePath": "_content/ImageService",
       "Pattern": "**"
     }

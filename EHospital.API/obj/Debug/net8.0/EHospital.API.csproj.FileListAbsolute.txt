@@ -1,13 +1,9 @@
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.exe
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\Loging.Api.deps.json
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\Loging.Api.runtimeconfig.json
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\Loging.Api.exe
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\appsettings.json
-C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.exe
-C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.deps.json
-C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.runtimeconfig.json
-C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.dll
-C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.pdb
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\AWSSDK.Core.dll
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
@@ -283,5 +279,9 @@ C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\obj\Debug\net8.0\EHospita.AD02
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\obj\Debug\net8.0\EHospital.API.dll
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\obj\Debug\net8.0\refint\EHospital.API.dll
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\obj\Debug\net8.0\EHospital.API.pdb
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.deps.json
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.runtimeconfig.json
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.dll
+C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.pdb
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\obj\Debug\net8.0\EHospital.API.genruntimeconfig.cache
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\obj\Debug\net8.0\ref\EHospital.API.dll

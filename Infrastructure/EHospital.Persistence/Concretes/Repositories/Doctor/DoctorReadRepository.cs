@@ -22,6 +22,10 @@ public class DoctorReadRepository : ReadRepository<Doctor>, IDoctorReadRepositor
     public async Task<IEnumerable<Patient>> GetPatientsByDoctorIdAsync(int doctorId)
     {
         return await _appDbContext.Patients
+            .Include(p => p.ContactInfo)
+            .Include(p => p.EmergencyContact)
+            .Include(p => p.InsuranceDetails)
+            .Include(p => p.Hospital)
             .Where(p => p.PatientDoctors.Any(pd => pd.DoctorId == doctorId))
             .ToListAsync();
     }

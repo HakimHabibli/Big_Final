@@ -1,5 +1,4 @@
 using EHospital.Application;
-using EHospital.Application.Middleware;
 using EHospital.Persistence;
 using EHospital.Persistence.DAL;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +22,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Middleware-i pipeline-a ?lav? edin
-app.UseMiddleware<ExceptionMiddleware>();
+//app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

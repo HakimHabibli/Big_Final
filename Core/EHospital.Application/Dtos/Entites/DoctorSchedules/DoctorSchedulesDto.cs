@@ -26,13 +26,10 @@ public class DoctorSchedulesDto : BaseEntityDto//Ana sehife ucun
 public class DoctorSchedulesCreateDto : BaseAuditableEntityDto
 {
 
-    public DateOnly Date { get; set; }
-    public TimeSpan StartTime { get; set; }
-    public TimeSpan EndTime { get; set; }
-
-
+    public DateTime Date { get; set; }
+    public TimeOnly StartTime { get; set; }
+    public TimeOnly EndTime { get; set; }
     public int DoctorId { get; set; }
-    public string Doctor { get; set; }
 }
 
 public class DoctorSchedulesUpdateDto : BaseEntityDto

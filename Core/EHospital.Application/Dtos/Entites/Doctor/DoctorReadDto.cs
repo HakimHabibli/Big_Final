@@ -42,7 +42,7 @@ public class DoctorCreateDto : BaseAuditableEntityDto
     public string Email { get; set; } // Doktorun elektron poçt ünvanı
     public string? Address { get; set; } // Doktorun ünvanı
     public string Bio { get; set; } // Doktor haqqında əlavə məlumat
-    public string HospitalName { get; set; }    //Xəstəxana Adi
+    public int HospitalId { get; set; }    //Xəstəxana Adi
 
 }
 
@@ -56,7 +56,7 @@ public class DoctorUpdateDto : BaseAuditableEntityDto
     public string Email { get; set; } // Doktorun elektron poçt ünvanı
     public string Address { get; set; } // Doktorun ünvanı
     public string Bio { get; set; } // Doktor haqqında əlavə 
-    public string HospitalName { get; set; }  // Xəstəxana ID (nullable)
+    public int HospitalId { get; set; }  // Xəstəxana ID (nullable)
 }
 
 //Cascade olmamalidir(++)

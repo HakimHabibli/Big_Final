@@ -25,30 +25,36 @@ public class DoctorService : IDoctorService
 
     public async Task<DoctorReadDto>? GetDoctorByIdAsync(int id)
     {
-        var doctor = await _unitOfWork.DoctorReadRepository.GetByIdAsync(id);
+        var doctor = await _unitOfWork.DoctorReadRepository.GetByIdAsync(id, "Hospital");
         return _mapper.Map<DoctorReadDto>(doctor);
     }
 
     public async Task<IEnumerable<DoctorReadDto>> GetAllDoctorsAsync()
     {
-        var doctors = await _unitOfWork.DoctorReadRepository.GetAllAsync();
+        var doctors = await _unitOfWork.DoctorReadRepository.GetAllAsync(false, "Hospital");
         return doctors.Select(d => _mapper.Map<DoctorReadDto>(d));
     }
 
     public async Task CreateDoctorAsync(DoctorCreateDto doctorCreateDTO)
     {
-        var hospital = await _unitOfWork.HospitalReadRepository.GetByNameAsync(doctorCreateDTO.HospitalName);
+
+        var hospital = await _unitOfWork.HospitalReadRepository.GetByIdAsync(doctorCreateDTO.HospitalId);
 
         if (hospital == null)
         {
-            throw new NotFoundException($"Hospital with name {doctorCreateDTO.HospitalName} not found");
+            throw new NotFoundException($"Hospital with Id {doctorCreateDTO.Id} not found");
         }
 
         var doctor = _mapper.Map<Doctor>(doctorCreateDTO);
 
-        doctor.Hospital.Name = hospital;
+        doctor.Hospital = hospital;
 
+        // Doctoru yazırıq
         await _unitOfWork.DoctorWriteRepository.CreateAsync(doctor);
+
+
+
+
     }
 
     public async Task DeleteDoctorAsync(DoctorDeleteDto doctorDeleteDto)
@@ -68,16 +74,16 @@ public class DoctorService : IDoctorService
         var doctor = await _unitOfWork.DoctorReadRepository.GetByIdAsync(doctorUpdateDto.Id);
         if (doctor == null)
         {
-            throw new Exception("Doctor not found");
+            throw new NotFoundException("Doctor not found");
         }
 
-        var hospital = await _unitOfWork.HospitalReadRepository.GetByNameAsync(doctorUpdateDto.HospitalName);
+        var hospital = await _unitOfWork.HospitalReadRepository.GetByIdAsync(doctorUpdateDto.HospitalId);
         if (hospital == null)
         {
-            throw new Exception("Hospital not found");
+            throw new NotFoundException("Hospital not found");
         }
 
-        doctor.Hospital.Name = hospital;
+        doctor.Hospital = hospital;
 
         _mapper.Map(doctorUpdateDto, doctor);
 

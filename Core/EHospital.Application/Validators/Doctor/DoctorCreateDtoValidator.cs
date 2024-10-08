@@ -1,7 +1,4 @@
 ﻿using EHospital.Application.Dtos.Entites.Doctor;
-using EHospital.Application.Futures.Commands.Doctor.Create;
-using EHospital.Application.Futures.Commands.Doctor.Delete;
-using EHospital.Application.Futures.Commands.Doctor.Update;
 using FluentValidation;
 
 namespace EHospital.Application.Validators.Doctor;
@@ -34,8 +31,8 @@ public class DoctorCreateDtoValidator : AbstractValidator<DoctorCreateDto>
         RuleFor(d => d.Bio)
             .MaximumLength(500).WithMessage("Bio cannot exceed 500 characters.");
 
-        RuleFor(d => d.HospitalName)
-            .NotEmpty().WithMessage("Hospital name is required.");
+        RuleFor(d => d.HospitalId)
+            .NotEmpty().WithMessage("Hospital Id is required.");
 
         RuleFor(d => d.Address)
             .NotEmpty().WithMessage("Hospital address is required");
@@ -76,8 +73,8 @@ public class DoctorUpdateDtoValidator : AbstractValidator<DoctorUpdateDto>
         RuleFor(d => d.Bio)
             .MaximumLength(500).WithMessage("Bio must not exceed 500 characters.");
 
-        RuleFor(d => d.HospitalName)
-            .NotEmpty().WithMessage("Hospital name is required.");
+        RuleFor(d => d.HospitalId)
+            .NotEmpty().WithMessage("Hospital Id is required.");
     }
 }
 public class DoctorDeleteDtoValidator : AbstractValidator<DoctorDeleteDto>

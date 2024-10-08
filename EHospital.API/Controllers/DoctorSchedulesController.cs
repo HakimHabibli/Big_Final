@@ -17,6 +17,7 @@ public class DoctorSchedulesController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateDoctorSchedule([FromBody] DoctorSchedulesCreateDto createDto)
     {
+        if (!ModelState.IsValid) { return BadRequest(ModelState); }
         var command = new DoctorScheduleCreateCommandRequest { DoctorSchedulesCreateDto = createDto };
         var result = await _mediator.Send(command);
         return StatusCode(int.Parse(result.StatusCode), result);

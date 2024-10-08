@@ -13,6 +13,7 @@ public class MedicalHistoryCreateDto : BaseEntityDto//Bir MH yaradib Patiente ve
 
     public string Notes { get; set; }
 
+    public int PatientId { get; set; }
     public string PatientSerialNumber { get; set; }
 }
 

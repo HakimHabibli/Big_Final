@@ -7,7 +7,11 @@ using EHospital.Application.Dtos.Entites.MedicalHistory;
 using EHospital.Domain.Enums;
 
 namespace EHospital.Application.Dtos.Entites.Patient;
+public class PatientSerialNUmberDto : BaseEntityDto
+{
+    public string SerialNumber { get; set; }
 
+}
 public class PatientReadDto : BaseEntityDto
 {
     public string FirstName { get; set; }

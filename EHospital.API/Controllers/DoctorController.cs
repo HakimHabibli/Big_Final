@@ -28,9 +28,17 @@ public class DoctorController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateDoctor([FromBody] DoctorCreateDto doctorCreateDto)
     {
-        var request = new DoctorCreateRequest { DoctorCreateDto = doctorCreateDto };
-        var response = await _mediator.Send(request);
-        return StatusCode(StatusCodes.Status201Created, "Successfully created doctor.");
+        try
+        {
+            var request = new DoctorCreateRequest { DoctorCreateDto = doctorCreateDto };
+            var response = await _mediator.Send(request);
+            return StatusCode(StatusCodes.Status201Created, "Successfully created doctor.");
+        }
+        catch (Exception ex)
+        {
+
+            return StatusCode(500, new { message = ex.Message });
+        }
     }
 
 
