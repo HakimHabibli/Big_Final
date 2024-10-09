@@ -18,7 +18,7 @@ public class AppointmentMapping : BaseEntityMapping<Appointment>
           .IsRequired(false);
 
         builder.Property(a => a.PatientId)
-            .IsRequired();
+            .IsRequired(false);
 
         builder.Property(a => a.AppointmentDate)
             .IsRequired();

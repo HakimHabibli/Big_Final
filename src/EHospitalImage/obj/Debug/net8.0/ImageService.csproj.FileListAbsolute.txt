@@ -65,3 +65,37 @@ C:\Users\77upt\Desktop\FP\EHospital\src\EHospitalImage\obj\Debug\net8.0\refint\I
 C:\Users\77upt\Desktop\FP\EHospital\src\EHospitalImage\obj\Debug\net8.0\ImageService.pdb
 C:\Users\77upt\Desktop\FP\EHospital\src\EHospitalImage\obj\Debug\net8.0\ImageService.genruntimeconfig.cache
 C:\Users\77upt\Desktop\FP\EHospital\src\EHospitalImage\obj\Debug\net8.0\ref\ImageService.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\appsettings.json
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.staticwebassets.runtime.json
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.exe
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.deps.json
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.runtimeconfig.json
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.pdb
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.AssemblyInfo.cs
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.sourcelink.json
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\staticwebassets\msbuild.ImageService.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\staticwebassets\msbuild.build.ImageService.props
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ImageService.props
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ImageService.props
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\scopedcss\bundle\ImageService.styles.css
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageSer.4959AB5E.Up2Date
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\refint\ImageService.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.pdb
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ImageService.genruntimeconfig.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\obj\Debug\net8.0\ref\ImageService.dll

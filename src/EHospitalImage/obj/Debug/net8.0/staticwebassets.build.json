@@ -1,19 +1,11 @@
 {
   "Version": 1,
-  "Hash": "t3gTXhPmCIfJ34hMfq5yyiEPUGXqi0ysI+PsQ/34fH0=",
+  "Hash": "FfYy9E+f5lZERU0U7BV/IUH3Ffw75/SbJrkaGTvilbU=",
   "Source": "ImageService",
   "BasePath": "_content/ImageService",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "ImageService\\wwwroot",
-      "Source": "ImageService",
-      "ContentRoot": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\src\\EHospitalImage\\wwwroot\\",
-      "BasePath": "_content/ImageService",
-      "Pattern": "**"
-    }
-  ],
+  "DiscoveryPatterns": [],
   "Assets": []
 }

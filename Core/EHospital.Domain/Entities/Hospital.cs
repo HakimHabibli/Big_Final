@@ -11,8 +11,8 @@ public class Hospital : BaseAuditableEntity
     public string Description { get; set; }  // Xəstəxana haqqında əlavə məlumat
     //public string ImageUrl { get; set; }
 
-    public ICollection<Doctor> Doctors { get; set; } // Xəstəxanada çalışan həkimlərin kolleksiyası
-    public ICollection<Patient> Patients { get; set; }
+    public ICollection<Doctor>? Doctors { get; set; } // Xəstəxanada çalışan həkimlərin kolleksiyası
+    public ICollection<Patient>? Patients { get; set; }
 
 
     //[NotMapped]

@@ -22,7 +22,8 @@ public class ContactInfoMapping : BaseEntityMapping<ContactInfo>
 
         builder.HasOne(c => c.Patient)
                .WithOne(p => p.ContactInfo)
-               .HasForeignKey<Patient>(p => p.ContactInfoId).OnDelete(DeleteBehavior.Restrict);
+               .HasForeignKey<Patient>(p => p.ContactInfoId)
+               .OnDelete(DeleteBehavior.Restrict);
         #endregion
 
         #region Prop

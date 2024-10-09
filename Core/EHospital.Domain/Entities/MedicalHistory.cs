@@ -13,6 +13,6 @@ public class MedicalHistory : BaseEntity
     public string Notes { get; set; }
 
 
-    public int PatientId { get; set; }
+    public int? PatientId { get; set; }
     public Patient Patient { get; set; }
 }

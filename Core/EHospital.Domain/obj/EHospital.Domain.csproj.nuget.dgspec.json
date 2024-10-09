@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Domain\\EHospital.Domain.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\EHospital.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Domain\\EHospital.Domain.csproj": {
+    "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\EHospital.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Domain\\EHospital.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\EHospital.Domain.csproj",
         "projectName": "EHospital.Domain",
-        "projectPath": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Domain\\EHospital.Domain.csproj",
-        "packagesPath": "C:\\Users\\77upt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\Core\\EHospital.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\EHospital.Domain.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\77upt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -23,7 +23,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\77upt\\Desktop\\Nugets": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -92,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400-preview.0.24324.5/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

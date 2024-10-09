@@ -23,3 +23,28 @@ C:\Users\77upt\Desktop\FP\EHospital\Infrastructure\EHospital.Infrastructure\obj\
 C:\Users\77upt\Desktop\FP\EHospital\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\refint\EHospital.Infrastructure.dll
 C:\Users\77upt\Desktop\FP\EHospital\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.pdb
 C:\Users\77upt\Desktop\FP\EHospital\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\ref\EHospital.Infrastructure.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\Loging.Api.deps.json
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\Loging.Api.runtimeconfig.json
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\appsettings.json
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\Loging.Api.exe
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Infrastructure.deps.json
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Infrastructure.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Infrastructure.pdb
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Application.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Domain.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\Loging.Api.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Application.pdb
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Domain.pdb
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\Loging.Api.pdb
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.AssemblyInfo.cs
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.sourcelink.json
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospita.6B571ECD.Up2Date
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\refint\EHospital.Infrastructure.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\EHospital.Infrastructure.pdb
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\obj\Debug\net8.0\ref\EHospital.Infrastructure.dll

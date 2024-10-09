@@ -6,3 +6,5 @@ public enum AllergySeverity
     Moderate,
     Severe
 }
+
+

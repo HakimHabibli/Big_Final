@@ -32,13 +32,15 @@ namespace EHospital.Persistence.Migrations
 
                     b.Property<string>("Details")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("PatientId")
+                    b.Property<int?>("PatientId")
                         .HasColumnType("int");
 
                     b.Property<int>("Severity")
@@ -74,7 +76,6 @@ namespace EHospital.Persistence.Migrations
                         .HasColumnType("nvarchar(500)");
 
                     b.Property<int?>("PatientId")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -104,7 +105,7 @@ namespace EHospital.Persistence.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.Property<int>("PatientId")
+                    b.Property<int?>("PatientId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -150,7 +151,8 @@ namespace EHospital.Persistence.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("HospitalId")
+                    b.Property<int?>("HospitalId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
@@ -196,7 +198,7 @@ namespace EHospital.Persistence.Migrations
                     b.Property<DateOnly>("Date")
                         .HasColumnType("date");
 
-                    b.Property<int>("DoctorId")
+                    b.Property<int?>("DoctorId")
                         .HasColumnType("int");
 
                     b.Property<TimeOnly>("EndTime")
@@ -238,7 +240,7 @@ namespace EHospital.Persistence.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
-                    b.Property<int>("PatientId")
+                    b.Property<int?>("PatientId")
                         .HasColumnType("int");
 
                     b.Property<string>("Relationship")
@@ -311,10 +313,10 @@ namespace EHospital.Persistence.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<DateTime?>("CoverageEndDate")
+                    b.Property<DateTime>("CoverageEndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("CoverageStartDate")
+                    b.Property<DateTime>("CoverageStartDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("InsuranceProvider")
@@ -322,7 +324,7 @@ namespace EHospital.Persistence.Migrations
                         .HasMaxLength(75)
                         .HasColumnType("nvarchar(75)");
 
-                    b.Property<int>("PatientId")
+                    b.Property<int?>("PatientId")
                         .HasColumnType("int");
 
                     b.Property<string>("PlanType")
@@ -356,7 +358,7 @@ namespace EHospital.Persistence.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
-                    b.Property<int>("PatientId")
+                    b.Property<int?>("PatientId")
                         .HasColumnType("int");
 
                     b.Property<string>("Treatment")
@@ -383,15 +385,15 @@ namespace EHospital.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ContactInfoId")
+                    b.Property<int?>("ContactInfoId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("DateOfBirth")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 10, 1, 16, 4, 35, 234, DateTimeKind.Utc).AddTicks(6480));
+                        .HasDefaultValue(new DateTime(2024, 10, 9, 19, 37, 52, 597, DateTimeKind.Utc).AddTicks(1638));
 
-                    b.Property<int>("EmergencyContactId")
+                    b.Property<int?>("EmergencyContactId")
                         .HasColumnType("int");
 
                     b.Property<string>("FirstName")
@@ -406,7 +408,7 @@ namespace EHospital.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<int>("InsuranceDetailsId")
+                    b.Property<int?>("InsuranceDetailsId")
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
@@ -422,25 +424,28 @@ namespace EHospital.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ContactInfoId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[ContactInfoId] IS NOT NULL");
 
                     b.HasIndex("EmergencyContactId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[EmergencyContactId] IS NOT NULL");
 
                     b.HasIndex("HospitalId");
 
                     b.HasIndex("InsuranceDetailsId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[InsuranceDetailsId] IS NOT NULL");
 
                     b.ToTable("Patients");
                 });
 
             modelBuilder.Entity("EHospital.Domain.Entities.PatientDoctor", b =>
                 {
-                    b.Property<int>("PatientId")
+                    b.Property<int?>("PatientId")
                         .HasColumnType("int");
 
-                    b.Property<int>("DoctorId")
+                    b.Property<int?>("DoctorId")
                         .HasColumnType("int");
 
                     b.HasKey("PatientId", "DoctorId");
@@ -455,8 +460,7 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.Patient", "Patient")
                         .WithMany("Allergies")
                         .HasForeignKey("PatientId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Patient");
                 });
@@ -471,8 +475,7 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.Patient", "Patient")
                         .WithMany("Appointments")
                         .HasForeignKey("PatientId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Doctor");
 
@@ -495,8 +498,7 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.Doctor", "Doctor")
                         .WithMany("DoctorSchedules")
                         .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Doctor");
                 });
@@ -506,8 +508,7 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.Patient", "Patient")
                         .WithMany("MedicalHistories")
                         .HasForeignKey("PatientId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Patient");
                 });
@@ -517,14 +518,12 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.ContactInfo", "ContactInfo")
                         .WithOne("Patient")
                         .HasForeignKey("EHospital.Domain.Entities.Patient", "ContactInfoId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("EHospital.Domain.Entities.EmergencyContact", "EmergencyContact")
                         .WithOne("Patient")
                         .HasForeignKey("EHospital.Domain.Entities.Patient", "EmergencyContactId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("EHospital.Domain.Entities.Hospital", "Hospital")
                         .WithMany("Patients")
@@ -535,8 +534,7 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.InsuranceDetails", "InsuranceDetails")
                         .WithOne("Patient")
                         .HasForeignKey("EHospital.Domain.Entities.Patient", "InsuranceDetailsId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("ContactInfo");
 

@@ -11,7 +11,7 @@ public class Allergy:BaseEntity
     public string Details { get; set; }
     public AllergySeverity Severity { get; set; }//Enum yazilacaq
 
-    public int PatientId { get; set; } // Foreign key
+    public int? PatientId { get; set; } // Foreign key
     public Patient Patient { get; set; } // Navigation property
 }
 

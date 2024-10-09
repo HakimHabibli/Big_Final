@@ -23,7 +23,7 @@ public class AllergyMapping : BaseEntityMapping<Allergy>
         builder.HasOne(a => a.Patient)
                .WithMany(p => p.Allergies)
                .HasForeignKey(a => a.PatientId)
-               .OnDelete(DeleteBehavior.Cascade);
+               .OnDelete(DeleteBehavior.Restrict);
     }
 }
 

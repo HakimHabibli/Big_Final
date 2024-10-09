@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "VVNRM39drYPPB30kkphRpKe6mM3J02mHjESFyWfBOG8=",
+  "Hash": "nkGOgWIZIqvVkF0e69TqPDnjRHO75Xry9sauFJErwmw=",
   "Source": "EHospital.API",
   "BasePath": "_content/EHospital.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\77upt\\Desktop\\FP\\EHospital\\src\\EHospitalLogger\\Loging.Api\\Loging.Api.csproj",
+      "Identity": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalLogger\\Loging.Api\\Loging.Api.csproj",
       "Version": 2,
       "Source": "Loging.Api",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
