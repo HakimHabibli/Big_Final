@@ -21,19 +21,20 @@ public class PatientReadRepository : ReadRepository<Patient>, IPatientReadReposi
     //}
     public async Task<Patient> GetBySerialNumberAsync(string serialNumber, bool asNoTracking = false)
     {
-        if (string.IsNullOrWhiteSpace(serialNumber))
-            throw new ArgumentException("Serial number cannot be null or empty", nameof(serialNumber));
 
+        if (string.IsNullOrWhiteSpace(serialNumber))
+        {
+            throw new ArgumentException("Serial number cannot be null or empty", nameof(serialNumber));
+        }
         var query = _appDbContext.Patients.AsQueryable();
 
+      
         if (asNoTracking)
         {
             query = query.AsNoTracking();
         }
-
         return await query.FirstOrDefaultAsync(p => p.SerialNumber == serialNumber);
     }
-
 
     public async Task<IEnumerable<Patient>> GetPatientsByHospitalIdAsync(int hospitalId)
     {

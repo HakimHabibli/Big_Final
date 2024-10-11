@@ -12,6 +12,7 @@ public class PatientSerialNUmberDto : BaseEntityDto
     public string SerialNumber { get; set; }
 
 }
+
 public class PatientReadDto : BaseEntityDto
 {
     public string FirstName { get; set; }

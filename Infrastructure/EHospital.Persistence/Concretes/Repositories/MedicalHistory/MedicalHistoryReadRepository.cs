@@ -12,13 +12,14 @@ public class MedicalHistoryReadRepository : ReadRepository<MedicalHistory>, IMed
     {
     }
 
-    public async Task<MedicalHistory> GetByPatientIdAsync(int patientId)
+    public async Task<IEnumerable<MedicalHistory>> GetByPatientIdAsync(int patientId)
     {
         if (patientId <= 0)
             throw new ArgumentException("PatientId must be greater than zero", nameof(patientId));
 
-        return await _appDbContext.MedicalHistories
-            .FirstOrDefaultAsync(mh => mh.PatientId == patientId);
+        return await _appDbContext.MedicalHistories.Include(mh=>mh.Patient)
+            .Where(mh=>mh.PatientId == patientId)
+            .ToListAsync();
 
     }
 }

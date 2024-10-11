@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "LogsController",
+    "Method": "Post",
+    "RelativePath": "Logs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logEntry",
+        "Type": "Loging.Api.Models.LogEntry",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

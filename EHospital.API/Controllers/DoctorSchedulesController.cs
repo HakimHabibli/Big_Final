@@ -14,7 +14,7 @@ public class DoctorSchedulesController : ControllerBase
     }
 
 
-    [HttpPost]
+    [HttpPost("Create")]
     public async Task<IActionResult> CreateDoctorSchedule([FromBody] DoctorSchedulesCreateDto createDto)
     {
         if (!ModelState.IsValid) { return BadRequest(ModelState); }

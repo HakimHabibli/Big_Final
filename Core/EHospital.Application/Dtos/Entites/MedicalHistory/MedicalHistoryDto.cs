@@ -26,7 +26,10 @@ public class MedicalHistoryReadDto : BaseEntityDto//Medicakl historyl'rini getir
     public string Treatment { get; set; }//Hansı müalicədən keçib 
 
     public string Notes { get; set; }
-    public PatientDto Patient { get; set; }
+    public string PatientName { get; set; }
+    public string PatientSurname { get; set; }
+    public string PatientSerialNumber { get; set; }
+    public string PatientGender { get; set; }
 }
 public class MedicalHistoryUpdateDto : BaseEntityDto
 {
@@ -37,6 +40,7 @@ public class MedicalHistoryUpdateDto : BaseEntityDto
     public string Treatment { get; set; }//Hansı müalicədən keçib 
 
     public string Notes { get; set; }
+    
     public string PatientSerialNumber { get; set; }
 
 }

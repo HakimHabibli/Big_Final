@@ -13,7 +13,7 @@ public class GetMedicalHistoryBySerialNumberQueryHandler : IRequestHandler<GetMe
 
     public async Task<GetMedicalHistoryBySerialNumberQueryResponse> Handle(GetMedicalHistoryBySerialNumberQueryRequest request, CancellationToken cancellationToken)
     {
-        var medicalHistory = await _medicalHistoryService.GetMedicalHistoryBySerialNumberAsync(request.SerialNumber);
+        var medicalHistory = await _medicalHistoryService.GetMedicalHistoriesBySerialNumberAsync(request.SerialNumber);
 
         if (medicalHistory == null)
         {
@@ -32,5 +32,5 @@ public class GetMedicalHistoryBySerialNumberQueryRequest : IRequest<GetMedicalHi
 }
 public class GetMedicalHistoryBySerialNumberQueryResponse
 {
-    public MedicalHistoryReadDto MedicalHistoryReadDto { get; set; }
+    public IEnumerable<MedicalHistoryReadDto> MedicalHistoryReadDto { get; set; }
 }

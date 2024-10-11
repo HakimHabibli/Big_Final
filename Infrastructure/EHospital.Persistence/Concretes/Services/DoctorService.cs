@@ -5,6 +5,7 @@ using EHospital.Application.Dtos.Entites.Doctor;
 using EHospital.Application.Dtos.Entites.Patient;
 using EHospital.Application.Exceptions;
 using EHospital.Domain.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EHospital.Application.Concretes.Services;
 
@@ -95,6 +96,17 @@ public class DoctorService : IDoctorService
         var patients = await _unitOfWork.DoctorReadRepository.GetPatientsByDoctorIdAsync(doctorId);
         return _mapper.Map<List<PatientDto>>(patients);
     }
+    //[HttpGet("patients/{doctorId}")]
+    //public async Task<IActionResult> GetAllPatientsByDoctorId(int doctorId)
+    //{
+    //    var patients = await _patientDoctorService.GetAllPatientsByDoctorIdAsync(doctorId);
+    //    if (patients == null || !patients.Any())
+    //    {
+    //        throw new NotFoundException($"No patients found for Doctor with ID {doctorId}");
+    //    }
+
+    //    return Ok(patients);
+    //}
 
 
 }

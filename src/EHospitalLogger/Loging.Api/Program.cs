@@ -1,30 +1,36 @@
-﻿namespace Loging.Api
+﻿using MongoDB.Driver;
+
+namespace Loging.Api;
+
+public class Program
 {
-    public class Program
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
+        var builder = WebApplication.CreateBuilder(args);
+
+        builder.Services.AddScoped<ILogService, MongoLogService>();
+
+        builder.Services.AddSingleton<IMongoClient>(sp =>
         {
-            var builder = WebApplication.CreateBuilder(args);
+            var connectionString = "mongodb://localhost:27017/"; // Burada MongoDB bağlantısını qeyd edin
+            return new MongoClient(connectionString);
+        });
 
-            // MongoDbSettings bölməsini konfiqurasiyadan əldə edirik
-            builder.Services.AddSingleton<ILogService, MongoLogService>();
-
-            builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+        builder.Services.AddControllers();
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen();
 
 
-            var app = builder.Build();
+        var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-
-            app.UseAuthorization();
-            app.MapControllers();
-            app.Run();
+        if (app.Environment.IsDevelopment())
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI();
         }
+
+        app.UseAuthorization();
+        app.MapControllers();
+        app.Run();
     }
 }

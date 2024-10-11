@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 [Route("[controller]")]
 public class LogsController : ControllerBase
 {
-    private readonly MongoLogService _logService;
+    private readonly ILogService _logService;
 
     public LogsController(MongoLogService logService)
     {

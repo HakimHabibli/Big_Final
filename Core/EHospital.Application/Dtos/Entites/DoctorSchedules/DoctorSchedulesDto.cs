@@ -12,7 +12,7 @@ public class DoctorSchedulesReadDto : BaseEntityDto//Doctor daxilinde istifade e
 public class DoctorSchedulesDto : BaseEntityDto//Ana sehife ucun 
 {
     public int DoctorId { get; set; }
-    public List<DoctorDto> Doctors { get; set; }
+    //public List<DoctorDto> Doctors { get; set; }
     public DateOnly Date { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
@@ -25,10 +25,9 @@ public class DoctorSchedulesDto : BaseEntityDto//Ana sehife ucun
 
 public class DoctorSchedulesCreateDto : BaseAuditableEntityDto
 {
-
     public DateTime Date { get; set; }
-    public TimeOnly StartTime { get; set; }
-    public TimeOnly EndTime { get; set; }
+    public TimeSpan StartTime { get; set; }
+    public TimeSpan EndTime { get; set; }
     public int DoctorId { get; set; }
 }
 

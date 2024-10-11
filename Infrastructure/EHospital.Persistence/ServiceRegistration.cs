@@ -5,6 +5,7 @@ using EHospital.Application.Concretes.Repositories;
 using EHospital.Application.Concretes.Services;
 using EHospital.Persistence.Concretes;
 using EHospital.Persistence.Concretes.Repositories;
+using EHospital.Persistence.Concretes.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EHospital.Persistence;
@@ -16,6 +17,8 @@ public static class ServiceRegistration
 
 
         #region Repositories
+
+
         services.AddScoped<IPatientReadRepository, PatientReadRepository>();
         services.AddScoped<IPatientWriteRepository, PatientWriteRepository>();
 
@@ -58,6 +61,7 @@ public static class ServiceRegistration
         services.AddScoped<IDoctorService, DoctorService>();
         services.AddScoped<IContactInfoService, ContactInfoService>();
         services.AddScoped<IAllergyService, AllergyService>();
+        services.AddScoped<IPatientDoctorService, PatientsDoctorsService>();
         services.AddScoped<IDoctorSchedulesService, DoctorSchedulesService>();
         #endregion
 

@@ -47,7 +47,7 @@ public class HospitalService : IHospitalService
 
     public async Task<HospitalDto> GetHospitalDetailsAsync(int id)
     {
-        var hospital = await _unitOfWork.HospitalReadRepository.GetByIdAsync(id);
+        var hospital = await _unitOfWork.HospitalReadRepository.GetByIdAsync(id, "Doctors", "Patients");
         if (hospital == null)
         {
             throw new KeyNotFoundException("Hospital not found.");

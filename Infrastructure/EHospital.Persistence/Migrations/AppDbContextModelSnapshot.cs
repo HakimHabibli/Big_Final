@@ -391,7 +391,7 @@ namespace EHospital.Persistence.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 10, 9, 19, 37, 52, 597, DateTimeKind.Utc).AddTicks(1638));
+                        .HasDefaultValue(new DateTime(2024, 10, 10, 10, 49, 32, 374, DateTimeKind.Utc).AddTicks(1298));
 
                     b.Property<int?>("EmergencyContactId")
                         .HasColumnType("int");

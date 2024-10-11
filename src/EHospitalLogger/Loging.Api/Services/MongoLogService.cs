@@ -4,10 +4,10 @@ public class MongoLogService : ILogService
 {
     private readonly IMongoCollection<LogEntry> _logCollection;
 
-    public MongoLogService()
+
+    public MongoLogService(IMongoClient mongoClient)
     {
-        var client = new MongoClient("mongodb://localhost:27017");
-        var database = client.GetDatabase("LogingDb_EHospital");
+        var database = mongoClient.GetDatabase("LogingDb_EHospital");
         _logCollection = database.GetCollection<LogEntry>("Log");
     }
 

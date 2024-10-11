@@ -4,7 +4,7 @@ namespace EHospital.Application.Abstractions.Services;
 
 public interface IMedicalHistoryService
 {
-    Task<MedicalHistoryReadDto> GetMedicalHistoryBySerialNumberAsync(string serialNumber);
+    Task<IEnumerable<MedicalHistoryReadDto>> GetMedicalHistoriesBySerialNumberAsync(string serialNumber);
     Task<IEnumerable<MedicalHistoryReadDto>> GetAllMedicalHistoriesAsync();
 
     Task CreateMedicalHistoryAsync(MedicalHistoryCreateDto medicalHistoryCreateDto);
