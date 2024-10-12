@@ -16,6 +16,7 @@ public class MedicalHistoryMapper : Profile
         .ForMember(dest => dest.PatientSurname, opt => opt.MapFrom(src => src.Patient.LastName))
         .ForMember(dest => dest.PatientSerialNumber, opt => opt.MapFrom(src => src.Patient.SerialNumber))
         .ForMember(dest => dest.PatientGender, opt => opt.MapFrom(src => src.Patient.Gender.ToString()));
-        CreateMap<MedicalHistory, MedicalHistoryUpdateDto>().ReverseMap();
+        CreateMap<MedicalHistory, MedicalHistoryUpdateDto>()
+        .ForMember(dest => dest.PatientSerialNumber, opt => opt.MapFrom(src => src.Patient.SerialNumber));
     }
 }

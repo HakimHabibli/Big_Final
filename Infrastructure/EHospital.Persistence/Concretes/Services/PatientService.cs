@@ -19,10 +19,39 @@ public class PatientService : IPatientService
 
     public async Task CreatePatientAsync(PatientDto patientDto)
     {
-        var patientEntity = _mapper.Map<Patient>(patientDto);
+        var contactInfo = new ContactInfo
+        {
+            Number = patientDto.ContactInfo.Number,
+            Email = patientDto.ContactInfo.Email
+        };
+
+        var emergencyContact = new EmergencyContact
+        {
+            Name = patientDto.EmergencyContact.Name,
+            Number = patientDto.EmergencyContact.Number,
+            Relationship = patientDto.EmergencyContact.Relationship
+        };
+
+        var insuranceDetails = new InsuranceDetails
+        {
+            AdditionalInfo = patientDto.InsuranceDetails.AdditionalInfo,
+            CoverageStartDate = patientDto.InsuranceDetails.CoverageStartDate,
+            CoverageEndDate = patientDto.InsuranceDetails.CoverageEndDate,
+            InsuranceProvider = patientDto.InsuranceDetails.InsuranceProvider,
+            PlanType = patientDto.InsuranceDetails.PlanType
+        };
+
+        var hospital = await _unitOfWork.HospitalReadRepository.GetByNameAsync(patientDto.HospitalName);
+        var patientEntity = new Patient
+        {
+            ContactInfo = contactInfo,
+            EmergencyContact = emergencyContact,
+            InsuranceDetails = insuranceDetails,
+            HospitalName = hospital 
+        };
+
         await _unitOfWork.PatientWriteRepository.CreateAsync(patientEntity);
     }
-
     public async Task DeletePatientAsync(int id)
     {
         var patient = await _unitOfWork.PatientReadRepository.GetByIdAsync(id);
@@ -39,7 +68,9 @@ public class PatientService : IPatientService
     {
         var patients = await _unitOfWork.PatientReadRepository.GetAllAsync();
         if (patients == null) throw new Exception("Patients not found");
-        return _mapper.Map<List<PatientReadDto>>(patients);
+     
+        return    _mapper.Map<List<PatientReadDto>>(patients);
+       
     }
 
     public async Task<PatientReadDto> GetPatientByIdAsync(int id)

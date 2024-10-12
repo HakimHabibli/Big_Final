@@ -40,7 +40,7 @@ public class PatientReadDto : BaseEntityDto
 
 public class PatientDto : BaseEntityDto
 {
-    public string FirstName { get; set; }
+    public string FirstName { get; set; }   
     public string LastName { get; set; }
     public DateTime DateOfBirth { get; set; }
     public Gender Gender { get; set; }
@@ -49,12 +49,9 @@ public class PatientDto : BaseEntityDto
     public string HospitalName { get; set; }
 
 
-    public ContactInfoDto ContactInfo { get; set; }
-    public int ContactInfoId { get; set; }
+    public ContactInfoDto? ContactInfo { get; set; }
 
-    public EmergencyContactDto EmergencyContact { get; set; }
-    public int EmergencyContactId { get; set; }
+    public EmergencyContactDto? EmergencyContact { get; set; }
 
-    public InsuranceDetailsDto InsuranceDetails { get; set; }
-    public int InsuranceDetailsId { get; set; }
+    public InsuranceDetailsDto? InsuranceDetails { get; set; }
 }

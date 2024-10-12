@@ -285,11 +285,11 @@ C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\bin\Debug\net8.0\EHospital.API.pdb
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\obj\Debug\net8.0\EHospital.API.genruntimeconfig.cache
 C:\Users\77upt\Desktop\FP\EHospital\EHospital.API\obj\Debug\net8.0\ref\EHospital.API.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\appsettings.json
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Loging.Api.deps.json
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Loging.Api.runtimeconfig.json
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Loging.Api.exe
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\appsettings.json
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.API.exe
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.API.deps.json
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.API.runtimeconfig.json

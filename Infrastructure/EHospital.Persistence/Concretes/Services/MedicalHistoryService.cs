@@ -82,7 +82,7 @@ public class MedicalHistoryService : IMedicalHistoryService
             throw new KeyNotFoundException($"Medical history with ID {medicalHistoryUpdateDto.Id} not found.");
 
         
-        // Manual mapping
+        
         medicalHistory.Condition = medicalHistoryUpdateDto.Condition;
         medicalHistory.Treatment = medicalHistoryUpdateDto.Treatment;
         medicalHistory.DiagnosisDate = medicalHistoryUpdateDto.DiagnosisDate;

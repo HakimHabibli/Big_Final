@@ -17,6 +17,8 @@ public class Patient : BaseEntity
     public ContactInfo ContactInfo { get; set; }
 
     public int?   HospitalId { get; set; } // Xəstəxana ID (nullable)
+    public string HospitalName { get; set; }
+
     public Hospital Hospital { get; set; }
 
     public EmergencyContact EmergencyContact { get; set; }//Təcili əlaqə

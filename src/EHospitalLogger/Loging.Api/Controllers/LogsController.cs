@@ -7,7 +7,7 @@ public class LogsController : ControllerBase
 {
     private readonly ILogService _logService;
 
-    public LogsController(MongoLogService logService)
+    public LogsController(ILogService logService)
     {
         _logService = logService;
     }

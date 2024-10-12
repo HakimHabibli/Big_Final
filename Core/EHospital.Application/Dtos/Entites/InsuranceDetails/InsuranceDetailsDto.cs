@@ -8,10 +8,10 @@ public class InsuranceDetailsDto : BaseEntityDto
     public string InsuranceProvider { get; set; }
 
 
-    public DateTime? CoverageStartDate { get; set; }
+    public DateTime CoverageStartDate { get; set; }
 
 
-    public DateTime? CoverageEndDate { get; set; }//Sigortanın başlama və bitmə tarixləri
+    public DateTime CoverageEndDate { get; set; }//Sigortanın başlama və bitmə tarixləri
 
 
     public string PlanType { get; set; }

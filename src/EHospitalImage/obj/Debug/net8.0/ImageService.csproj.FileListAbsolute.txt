@@ -67,7 +67,6 @@ C:\Users\77upt\Desktop\FP\EHospital\src\EHospitalImage\obj\Debug\net8.0\ImageSer
 C:\Users\77upt\Desktop\FP\EHospital\src\EHospitalImage\obj\Debug\net8.0\ref\ImageService.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\appsettings.json
-C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.staticwebassets.runtime.json
 C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.exe
 C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.deps.json
 C:\Users\Asus\Desktop\New folder\Big_Final\src\EHospitalImage\bin\Debug\net8.0\ImageService.runtimeconfig.json

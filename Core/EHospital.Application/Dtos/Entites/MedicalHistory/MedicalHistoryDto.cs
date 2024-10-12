@@ -40,9 +40,8 @@ public class MedicalHistoryUpdateDto : BaseEntityDto
     public string Treatment { get; set; }//Hansı müalicədən keçib 
 
     public string Notes { get; set; }
-    
-    public string PatientSerialNumber { get; set; }
 
+    public string PatientSerialNumber { get; set; }
 }
 public class MedicalHistoryDto : BaseAuditableEntityDto
 {
