@@ -38,7 +38,7 @@ public class ImagesController : ControllerBase
             await file.CopyToAsync(stream);
         }
 
-        return Ok(new { path = filePath });
+        return Ok(new { path = file.FileName });
     }
 
     [HttpGet("{fileName}")]
@@ -52,13 +52,13 @@ public class ImagesController : ControllerBase
         }
 
         var fileBytes = System.IO.File.ReadAllBytes(filePath);
-        var contentType = "application/octet-stream"; // Genel bir content type, bunu dosya tipine göre değiştirebilirsiniz.
+        var contentType = "application/octet-stream"; 
         return File(fileBytes, contentType, fileName);
     }
 
 
 
-    // DELETE: /images/delete/{fileName}
+    
     [HttpDelete("delete/{fileName}")]
     public IActionResult DeleteImage(string fileName)
     {

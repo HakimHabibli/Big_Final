@@ -24,7 +24,7 @@ public class HospitalController : ControllerBase
 
     // Create api/<HospitalController>
     [HttpPost]
-    public async Task<IActionResult> CreateHospitalAsync([FromBody] HospitalCreateCommandRequest request)
+    public async Task<IActionResult> CreateHospitalAsync([FromForm] HospitalCreateCommandRequest request)
     {
         var response = await _mediator.Send(request);
 
@@ -75,7 +75,7 @@ public class HospitalController : ControllerBase
 
     // PUT api/<HospitalController>
     [HttpPut]
-    public async Task<IActionResult> UpdateHospital([FromBody] HospitalUpdateDto hospitalUpdateDto)
+    public async Task<IActionResult> UpdateHospital([FromForm] HospitalUpdateDto hospitalUpdateDto)
     {
         if (hospitalUpdateDto == null || hospitalUpdateDto.Id <= 0)
         {

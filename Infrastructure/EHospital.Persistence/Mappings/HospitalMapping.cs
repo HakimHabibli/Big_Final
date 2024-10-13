@@ -16,6 +16,7 @@ public class HospitalMapping : BaseAuditableEntityMapping<Hospital>
         builder.Property(h => h.Address).IsRequired();
         builder.Property(h => h.ContactNumber).HasMaxLength(25).IsRequired();
         builder.Property(h => h.Email).HasMaxLength(100);
+        builder.Property(h => h.ImageUrl).IsRequired(false);
         // Hospital konfiqurasiyası
         builder
             .HasMany(h => h.Doctors)

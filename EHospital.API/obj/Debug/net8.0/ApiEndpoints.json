@@ -357,9 +357,54 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "EHospital.Application.Futures.Commands.Hospital.Create.HospitalCreateCommandRequest",
-        "IsRequired": true
+        "Name": "HospitalCreateDto.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HospitalCreateDto.Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HospitalCreateDto.ContactNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HospitalCreateDto.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HospitalCreateDto.Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HospitalCreateDto.ImageUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HospitalCreateDto.ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "HospitalCreateDto.Id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "HospitalCreateDto.CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "HospitalCreateDto.UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -383,9 +428,44 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "hospitalUpdateDto",
-        "Type": "EHospital.Application.Dtos.Entites.Hospital.HospitalUpdateDto",
-        "IsRequired": true
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContactNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

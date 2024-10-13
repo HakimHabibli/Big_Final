@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "FfYy9E+f5lZERU0U7BV/IUH3Ffw75/SbJrkaGTvilbU=",
+  "Hash": "g3cA7BaLAWCQVhVpsY5fGOgbYChK1PeDvQwBwF9YRl0=",
   "Source": "ImageService",
   "BasePath": "_content/ImageService",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ImageService\\wwwroot",
+      "Source": "ImageService",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\",
+      "BasePath": "_content/ImageService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\WhatsApp Image 2024-10-13 at 15.40.33 (1).jpeg",
+      "SourceId": "ImageService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\",
+      "BasePath": "_content/ImageService",
+      "RelativePath": "images/WhatsApp Image 2024-10-13 at 15.40.33 (1).jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\WhatsApp Image 2024-10-13 at 15.40.33 (1).jpeg"
+    }
+  ]
 }

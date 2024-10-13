@@ -285,6 +285,9 @@ namespace EHospital.Persistence.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -391,7 +394,7 @@ namespace EHospital.Persistence.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 10, 12, 13, 24, 0, 666, DateTimeKind.Utc).AddTicks(5798));
+                        .HasDefaultValue(new DateTime(2024, 10, 13, 13, 35, 24, 614, DateTimeKind.Utc).AddTicks(6413));
 
                     b.Property<int?>("EmergencyContactId")
                         .HasColumnType("int");

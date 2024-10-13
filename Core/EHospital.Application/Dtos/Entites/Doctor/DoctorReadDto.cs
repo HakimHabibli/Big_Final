@@ -46,7 +46,7 @@ public class DoctorCreateDto : BaseAuditableEntityDto
 
 }
 
-public class DoctorUpdateDto : BaseAuditableEntityDto
+public class DoctorUpdateDto : BaseEntityDto
 {
     public string FirstName { get; set; } // Doktorun adı
     public string LastName { get; set; } // Doktorun soyadı

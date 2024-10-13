@@ -20,8 +20,8 @@ public static class ServiceRegistration
         });
         services.AddValidatorsFromAssemblyContaining<HospitalCreateCommandRequestValidation>();
         services.AddFluentValidationAutoValidation();
-        
 
+        services.AddHttpClient();
 
         //services.AddSingleton<ILogService>(sp => new MongoLogService());
     }

@@ -78,6 +78,12 @@ public class DoctorService : IDoctorService
             throw new NotFoundException("Doctor not found");
         }
 
+        // Nullable HospitalId dəyərini yoxlayın
+        if (doctorUpdateDto.HospitalId == null)
+        {
+            throw new ArgumentException("HospitalId cannot be null");
+        }
+
         var hospital = await _unitOfWork.HospitalReadRepository.GetByIdAsync(doctorUpdateDto.HospitalId);
         if (hospital == null)
         {
@@ -90,7 +96,6 @@ public class DoctorService : IDoctorService
 
         await _unitOfWork.DoctorWriteRepository.UpdateAsync(doctor);
     }
-
     public async Task<List<PatientDto>> GetAllPatientsAsync(int doctorId)
     {
         var patients = await _unitOfWork.DoctorReadRepository.GetPatientsByDoctorIdAsync(doctorId);
