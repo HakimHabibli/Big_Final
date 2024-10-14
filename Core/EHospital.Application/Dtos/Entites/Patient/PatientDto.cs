@@ -46,6 +46,7 @@ public class PatientDto : BaseEntityDto
     public Gender Gender { get; set; }
     public string Address { get; set; }
     public string SerialNumber { get; set; }
+    public int HospitalId { get; set; }
     public string HospitalName { get; set; }
 
 

@@ -40,14 +40,23 @@ public class PatientService : IPatientService
             InsuranceProvider = patientDto.InsuranceDetails.InsuranceProvider,
             PlanType = patientDto.InsuranceDetails.PlanType
         };
-
+        var hospitalId = await _unitOfWork.HospitalReadRepository.GetByIdAsync(patientDto.HospitalId);
         var hospital = await _unitOfWork.HospitalReadRepository.GetByNameAsync(patientDto.HospitalName);
         var patientEntity = new Patient
         {
+            FirstName = patientDto.FirstName,
+            LastName = patientDto.LastName,
+            SerialNumber = patientDto.SerialNumber,
+            Address = patientDto.Address,
+            DateOfBirth = patientDto.DateOfBirth,
+            Gender = patientDto.Gender,
+            
             ContactInfo = contactInfo,
             EmergencyContact = emergencyContact,
             InsuranceDetails = insuranceDetails,
+            HospitalId = hospitalId.Id,
             HospitalName = hospital 
+            
         };
 
         await _unitOfWork.PatientWriteRepository.CreateAsync(patientEntity);

@@ -3,7 +3,7 @@ using EHospital.Application.Dtos.Entites.Patient;
 
 namespace EHospital.Application.Dtos.Entites.ContactInfo;
 
-public class ContactInfoDto : BaseEntityDto
+public class ContactInfoDto 
 {
     public string Email { get; set; }
     public string Number { get; set; }

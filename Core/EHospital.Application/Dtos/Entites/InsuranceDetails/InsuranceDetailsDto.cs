@@ -3,7 +3,7 @@ using EHospital.Application.Dtos.Entites.Patient;
 
 namespace EHospital.Application.Dtos.Entites.InsuranceDetails;
 
-public class InsuranceDetailsDto : BaseEntityDto
+public class InsuranceDetailsDto 
 {
     public string InsuranceProvider { get; set; }
 
