@@ -1,8 +1,24 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\WhatsApp Image 2024-10-13 at 15.40.33 (1).jpeg",
-      "PackagePath": "staticwebassets\\images\\WhatsApp Image 2024-10-13 at 15.40.33 (1).jpeg"
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\HospitalName.jpeg",
+      "PackagePath": "staticwebassets\\images\\HospitalName.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\HospitalName2.jpeg",
+      "PackagePath": "staticwebassets\\images\\HospitalName2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\HospitalName6.jpeg",
+      "PackagePath": "staticwebassets\\images\\HospitalName6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\Image.jpeg",
+      "PackagePath": "staticwebassets\\images\\Image.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\Salam.jpeg",
+      "PackagePath": "staticwebassets\\images\\Salam.jpeg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ImageService.Microsoft.AspNetCore.StaticWebAssets.props",

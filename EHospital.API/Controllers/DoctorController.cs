@@ -26,7 +26,7 @@ public class DoctorController : ControllerBase
 
 
     [HttpPost]
-    public async Task<IActionResult> CreateDoctor([FromBody] DoctorCreateDto doctorCreateDto)
+    public async Task<IActionResult> CreateDoctor([FromForm] DoctorCreateDto doctorCreateDto)
     {
         try
         {
@@ -53,7 +53,7 @@ public class DoctorController : ControllerBase
 
 
     [HttpPut]
-    public async Task<IActionResult> UpdateDoctor([FromBody] DoctorUpdateDto doctorUpdateDto)
+    public async Task<IActionResult> UpdateDoctor([FromForm] DoctorUpdateDto doctorUpdateDto)
     {
         if (doctorUpdateDto == null || doctorUpdateDto.Id <= 0)
         {

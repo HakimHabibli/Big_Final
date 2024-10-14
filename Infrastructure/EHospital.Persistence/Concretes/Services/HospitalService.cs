@@ -38,11 +38,16 @@ public class HospitalService : IHospitalService
         if (hospitalCreateDto.ImageFile != null)
         {
             var content = new MultipartFormDataContent();
+            string newFileName = null; 
+
             using (var ms = new MemoryStream())
             {
                 await hospitalCreateDto.ImageFile.CopyToAsync(ms);
                 var fileBytes = ms.ToArray();
-                content.Add(new ByteArrayContent(fileBytes), "file", hospitalCreateDto.ImageFile.FileName);
+
+                newFileName = Guid.NewGuid().ToString() + Path.GetExtension(hospitalCreateDto.ImageFile.FileName);
+
+                content.Add(new ByteArrayContent(fileBytes), "file", newFileName);
             }
 
             var response = await _httpClient.PostAsync("http://localhost:5217/images/upload", content);
@@ -52,22 +57,44 @@ public class HospitalService : IHospitalService
                 throw new Exception("Şəkili yükləmək mümkün olmadı.");
             }
 
-            var fileName = Path.GetFileName(hospitalCreateDto.ImageFile.FileName);
-            hospital.ImageUrl = fileName; 
-
+           
+            hospital.ImageUrl = newFileName; 
         }
 
         await _unitOfWork.HospitalWriteRepository.CreateAsync(hospital);
     }
 
-
-
-
     public async Task DeleteHospitalAsync(HospitalDeleteDto hospitalDeleteDto)
     {
         var hospital = await _unitOfWork.HospitalReadRepository.GetByIdAsync(hospitalDeleteDto.Id);
-        if (hospital == null) { throw new KeyNotFoundException("Hospital not Found"); }
+
+        if (hospital == null)
+        {
+            throw new KeyNotFoundException("Hospital not found.");
+        }
+
+        var fileName = hospital.ImageUrl;
+        var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+        var rootPath = Path.Combine(Directory.GetCurrentDirectory(), fileName); 
+
+        
+        if (!string.IsNullOrEmpty(fileName))
+        {
+            if (File.Exists(imagePath))
+            {
+                File.Delete(imagePath);
+            }
+
+            if (File.Exists(rootPath))
+            {
+                File.Delete(rootPath);
+            }
+        }
+
+       
         await _unitOfWork.HospitalWriteRepository.DeleteAsync(hospital);
+
+       
     }
     public async Task<IEnumerable<HospitalReadDto>> GetAllHospitalsAsync()
     {
@@ -116,6 +143,7 @@ public class HospitalService : IHospitalService
 
     public async Task UpdateHospitalAsync(HospitalUpdateDto hospitalUpdateDto)
     {
+        string newFileName=null;
         var hospital = await _unitOfWork.HospitalReadRepository.GetByIdAsync(hospitalUpdateDto.Id);
         if (hospital == null)
         {
@@ -140,6 +168,7 @@ public class HospitalService : IHospitalService
             {
                 await hospitalUpdateDto.ImageFile.CopyToAsync(ms);
                 var fileBytes = ms.ToArray();
+                newFileName = Guid.NewGuid().ToString() + Path.GetExtension(hospitalUpdateDto.ImageFile.FileName);
                 content.Add(new ByteArrayContent(fileBytes), "file", hospitalUpdateDto.ImageFile.FileName);
             }
 
@@ -149,12 +178,10 @@ public class HospitalService : IHospitalService
             {
                 throw new Exception("Yeni şəkili yükləmək mümkün olmadı.");
             }
-
-            var imageUrl = await uploadResponse.Content.ReadAsStringAsync();
-            hospital.ImageUrl = imageUrl; 
         }
 
         _mapper.Map(hospitalUpdateDto, hospital);
+        hospital.ImageUrl = newFileName;
         await _unitOfWork.HospitalWriteRepository.UpdateAsync(hospital);
     }
 

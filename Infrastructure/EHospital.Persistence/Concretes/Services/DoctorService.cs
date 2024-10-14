@@ -2,6 +2,7 @@
 using EHospital.Application.Abstractions;
 using EHospital.Application.Abstractions.Services;
 using EHospital.Application.Dtos.Entites.Doctor;
+using EHospital.Application.Dtos.Entites.Hospital;
 using EHospital.Application.Dtos.Entites.Patient;
 using EHospital.Application.Exceptions;
 using EHospital.Domain.Entities;
@@ -14,11 +15,13 @@ public class DoctorService : IDoctorService
 
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
+    private readonly HttpClient _httpClient;
 
-    public DoctorService(IUnitOfWork unitOfWork, IMapper mapper)
+    public DoctorService(IUnitOfWork unitOfWork, IMapper mapper, HttpClient httpClient)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
+        _httpClient = httpClient;
     }
 
 
@@ -47,15 +50,30 @@ public class DoctorService : IDoctorService
         }
 
         var doctor = _mapper.Map<Doctor>(doctorCreateDTO);
+        if (doctorCreateDTO.ImageFile != null) 
+        {
+            var content = new MultipartFormDataContent();
+            string newFileName = null;
+            using (var ms = new MemoryStream())
+            { 
+                await doctorCreateDTO.ImageFile.CopyToAsync(ms);
+                var fileBytes = ms.ToArray();
+                newFileName = Guid.NewGuid().ToString() + Path.GetExtension(doctorCreateDTO.ImageFile.FileName);
+                content.Add(new ByteArrayContent(fileBytes), "file", newFileName);
+
+            }
+            var response = await _httpClient.PostAsync("http://localhost:5217/images/upload", content);
+            if (!response.IsSuccessStatusCode) 
+            {
+                throw new Exception("Sekil yukelemk olmadi");
+            }
+            doctor.ImageUrl = newFileName;
+        }
 
         doctor.Hospital = hospital;
 
         // Doctoru yazırıq
         await _unitOfWork.DoctorWriteRepository.CreateAsync(doctor);
-
-
-
-
     }
 
     public async Task DeleteDoctorAsync(DoctorDeleteDto doctorDeleteDto)
@@ -66,12 +84,20 @@ public class DoctorService : IDoctorService
             throw new KeyNotFoundException("Doctor not found.");
         }
 
+        var fileName = doctor.ImageUrl;
+        var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+        var rootPath = Path.Combine(Directory.GetCurrentDirectory(), fileName);
+        if (!string.IsNullOrEmpty(fileName)) 
+        {
+            if (File.Exists(imagePath)) { File.Delete(imagePath); }
+            if (File.Exists(rootPath)) { File.Delete(rootPath); }
+        }
         await _unitOfWork.DoctorWriteRepository.DeleteAsync(doctor);
-
     }
 
     public async Task UpdateDoctorAsync(DoctorUpdateDto doctorUpdateDto)
     {
+        string newFileName = null;
         var doctor = await _unitOfWork.DoctorReadRepository.GetByIdAsync(doctorUpdateDto.Id);
         if (doctor == null)
         {
@@ -85,14 +111,45 @@ public class DoctorService : IDoctorService
         }
 
         var hospital = await _unitOfWork.HospitalReadRepository.GetByIdAsync(doctorUpdateDto.HospitalId);
+
         if (hospital == null)
         {
             throw new NotFoundException("Hospital not found");
         }
 
-        doctor.Hospital = hospital;
+        if (!string.IsNullOrEmpty(doctor.ImageUrl))
+        {
+            var oldFileName = Path.GetFileName(doctor.ImageUrl);
+            var deleteResponse = await _httpClient.DeleteAsync($"http://localhost:5217/images/delete/{oldFileName}");
+
+            if (!deleteResponse.IsSuccessStatusCode)
+            {
+                throw new Exception("Köhnə şəkili silmək mümkün olmadı.");
+            }
+        }
+        if (doctorUpdateDto.ImageFile != null) 
+        {
+            var content = new MultipartFormDataContent();
+            using (var ms = new MemoryStream())
+            {
+                await doctorUpdateDto.ImageFile.CopyToAsync(ms);
+                var fileBytes = ms.ToArray();
+                newFileName = Guid.NewGuid().ToString() + Path.GetExtension(doctorUpdateDto.ImageFile.FileName);
+                content.Add(new ByteArrayContent(fileBytes), "file", doctorUpdateDto.ImageFile.FileName);
+            }
+
+            var uploadResponse = await _httpClient.PostAsync("http://localhost:5217/images/upload", content);
+
+            if (!uploadResponse.IsSuccessStatusCode)
+            {
+                throw new Exception("Yeni şəkili yükləmək mümkün olmadı.");
+            }
+        }
 
         _mapper.Map(doctorUpdateDto, doctor);
+
+        doctor.Hospital = hospital;
+        doctor.ImageUrl = newFileName;
 
         await _unitOfWork.DoctorWriteRepository.UpdateAsync(doctor);
     }

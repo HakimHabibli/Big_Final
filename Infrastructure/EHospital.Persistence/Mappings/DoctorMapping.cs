@@ -40,6 +40,9 @@ public class DoctorMapping : BaseAuditableEntityMapping<Doctor>
                .IsRequired()
                .HasMaxLength(250);
 
+        builder.Property(d => d.ImageUrl)
+               .IsRequired(false);
+
         builder.Property(d => d.Bio)
                .HasMaxLength(500);
 

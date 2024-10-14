@@ -1149,7 +1149,8 @@
           "FluentValidation.AspNetCore": "11.3.0",
           "Loging.Api": "1.0.0",
           "MediatR": "12.4.0",
-          "Microsoft.EntityFrameworkCore": "8.0.8"
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "EHospital.Application.dll": {
