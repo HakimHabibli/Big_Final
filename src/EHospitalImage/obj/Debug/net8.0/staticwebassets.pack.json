@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\77ba8d11-5ae0-4f17-8ad2-0f3bd0c74a9d.jpeg",
+      "PackagePath": "staticwebassets\\images\\77ba8d11-5ae0-4f17-8ad2-0f3bd0c74a9d.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\DoctorName.jpeg",
+      "PackagePath": "staticwebassets\\images\\DoctorName.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\DoctorName3.jpeg",
+      "PackagePath": "staticwebassets\\images\\DoctorName3.jpeg"
+    },
+    {
       "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\HospitalName.jpeg",
       "PackagePath": "staticwebassets\\images\\HospitalName.jpeg"
     },

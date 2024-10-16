@@ -40,19 +40,15 @@ public class PatientReadDto : BaseEntityDto
 
 public class PatientDto : BaseEntityDto
 {
-    public string FirstName { get; set; }   
+    public string FirstName { get; set; }
     public string LastName { get; set; }
     public DateTime DateOfBirth { get; set; }
     public Gender Gender { get; set; }
     public string Address { get; set; }
     public string SerialNumber { get; set; }
-    public int HospitalId { get; set; }
-    public string HospitalName { get; set; }
-
+    public string HospitalName { get; set; }  // Yalnız HospitalName istifadə olunur
 
     public ContactInfoDto? ContactInfo { get; set; }
-
     public EmergencyContactDto? EmergencyContact { get; set; }
-
     public InsuranceDetailsDto? InsuranceDetails { get; set; }
 }

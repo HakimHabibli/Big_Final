@@ -33,6 +33,7 @@ public class DoctorReadDto : BaseEntityDto
     public string Bio { get; set; } // Doktor haqqında əlavə məlumat
     public string ImageUrl { get; set; }
     public string HospitalName { get; set; } //Hansi xəstəxanaya aid oldugunu görmək üçün 
+  
 
 }
 

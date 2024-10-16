@@ -21,27 +21,32 @@ public class PatientService : IPatientService
     {
         var contactInfo = new ContactInfo
         {
-            Number = patientDto.ContactInfo.Number,
-            Email = patientDto.ContactInfo.Email
+            Number = patientDto.ContactInfo?.Number,
+            Email = patientDto.ContactInfo?.Email
         };
 
         var emergencyContact = new EmergencyContact
         {
-            Name = patientDto.EmergencyContact.Name,
-            Number = patientDto.EmergencyContact.Number,
-            Relationship = patientDto.EmergencyContact.Relationship
+            Name = patientDto.EmergencyContact?.Name,
+            Number = patientDto.EmergencyContact?.Number,
+            Relationship = patientDto.EmergencyContact?.Relationship
         };
 
         var insuranceDetails = new InsuranceDetails
         {
-            AdditionalInfo = patientDto.InsuranceDetails.AdditionalInfo,
+            AdditionalInfo = patientDto.InsuranceDetails?.AdditionalInfo,
             CoverageStartDate = patientDto.InsuranceDetails.CoverageStartDate,
             CoverageEndDate = patientDto.InsuranceDetails.CoverageEndDate,
-            InsuranceProvider = patientDto.InsuranceDetails.InsuranceProvider,
-            PlanType = patientDto.InsuranceDetails.PlanType
+            InsuranceProvider = patientDto.InsuranceDetails?.InsuranceProvider,
+            PlanType = patientDto.InsuranceDetails?.PlanType
         };
-        var hospitalId = await _unitOfWork.HospitalReadRepository.GetByIdAsync(patientDto.HospitalId);
-        var hospital = await _unitOfWork.HospitalReadRepository.GetByNameAsync(patientDto.HospitalName);
+
+        var hospitalName = await _unitOfWork.HospitalReadRepository.GetByNameAsync(patientDto.HospitalName);
+        if (hospitalName == null)
+        {
+            throw new Exception("Invalid Hospital Name, hospital not found.");
+        }
+
         var patientEntity = new Patient
         {
             FirstName = patientDto.FirstName,
@@ -50,17 +55,16 @@ public class PatientService : IPatientService
             Address = patientDto.Address,
             DateOfBirth = patientDto.DateOfBirth,
             Gender = patientDto.Gender,
-            
+
             ContactInfo = contactInfo,
             EmergencyContact = emergencyContact,
             InsuranceDetails = insuranceDetails,
-            HospitalId = hospitalId.Id,
-            HospitalName = hospital 
-            
+            HospitalName = hospitalName 
         };
 
         await _unitOfWork.PatientWriteRepository.CreateAsync(patientEntity);
     }
+
     public async Task DeletePatientAsync(int id)
     {
         var patient = await _unitOfWork.PatientReadRepository.GetByIdAsync(id);

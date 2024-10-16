@@ -16,12 +16,12 @@ public class Patient : BaseEntity
     public int? ContactInfoId { get; set; }
     public ContactInfo ContactInfo { get; set; }
 
-    public int?   HospitalId { get; set; } // Xəstəxana ID (nullable)
-    public string HospitalName { get; set; }
+    public int?   HospitalId { get; set; } 
+    public string? HospitalName { get; set; }
 
-    public Hospital Hospital { get; set; }
+    public Hospital? Hospital { get; set; }
 
-    public EmergencyContact EmergencyContact { get; set; }//Təcili əlaqə
+    public EmergencyContact EmergencyContact { get; set; }
     public int? EmergencyContactId { get; set; }
 
     public InsuranceDetails InsuranceDetails { get; set; }//Sığorta təfərrüatları

@@ -2,11 +2,9 @@
 using EHospital.Application.Abstractions;
 using EHospital.Application.Abstractions.Services;
 using EHospital.Application.Dtos.Entites.Doctor;
-using EHospital.Application.Dtos.Entites.Hospital;
 using EHospital.Application.Dtos.Entites.Patient;
 using EHospital.Application.Exceptions;
 using EHospital.Domain.Entities;
-using Microsoft.AspNetCore.Mvc;
 
 namespace EHospital.Application.Concretes.Services;
 
@@ -32,6 +30,55 @@ public class DoctorService : IDoctorService
         var doctor = await _unitOfWork.DoctorReadRepository.GetByIdAsync(id, "Hospital");
         return _mapper.Map<DoctorReadDto>(doctor);
     }
+
+    #region Try
+
+    //public async Task<DoctorReadDto> GetDoctorByIdAsync(int id)
+    //{
+    //    var doctor = await _unitOfWork.DoctorReadRepository.GetByIdAsync(id, "Hospital");
+    //    var doctorDto = _mapper.Map<DoctorReadDto>(doctor);
+
+    //    if (!string.IsNullOrEmpty(doctor.ImageUrl))
+    //    {
+    //        var httpClient = httpClientFactory.CreateClient();
+    //        var response = await httpClient.GetAsync($"http://localhost:5217/images/{doctor.ImageUrl}");
+
+    //        if (response.IsSuccessStatusCode)
+    //        {
+    //            var fileBytes = await response.Content.ReadAsByteArrayAsync();
+
+    //        }
+    //    }
+
+    //    return doctorDto;
+    //}
+    //[HttpGet("{id}")]
+    //public async Task<DoctorReadDto>? GetDoctorByIdAsync(int id)
+    //{
+    //    var doctor = await _unitOfWork.DoctorReadRepository.GetByIdAsync(id);
+
+    //    if (doctor == null)
+    //    {
+    //        throw new Exception("Doctor not found.");
+    //    }
+
+    //    var doctorReadDto = new DoctorReadDto
+    //    {
+    //        FirstName = doctor.FirstName,
+    //        LastName = doctor.LastName,
+    //        Title = doctor.Title,
+    //        Specialization = doctor.Specialization,
+    //        ContactNumber = doctor.ContactNumber,
+    //        Email = doctor.Email,
+    //        Address = doctor.Address,
+    //        Bio = doctor.Bio,
+    //        ImageUrl = doctor.ImageUrl,
+    //        HospitalName = doctor.Hospital.Name
+    //    };
+
+    //    return doctorReadDto;
+    //}
+    #endregion
 
     public async Task<IEnumerable<DoctorReadDto>> GetAllDoctorsAsync()
     {
@@ -72,7 +119,6 @@ public class DoctorService : IDoctorService
 
         doctor.Hospital = hospital;
 
-        // Doctoru yazırıq
         await _unitOfWork.DoctorWriteRepository.CreateAsync(doctor);
     }
 
@@ -104,7 +150,6 @@ public class DoctorService : IDoctorService
             throw new NotFoundException("Doctor not found");
         }
 
-        // Nullable HospitalId dəyərini yoxlayın
         if (doctorUpdateDto.HospitalId == null)
         {
             throw new ArgumentException("HospitalId cannot be null");
@@ -158,6 +203,8 @@ public class DoctorService : IDoctorService
         var patients = await _unitOfWork.DoctorReadRepository.GetPatientsByDoctorIdAsync(doctorId);
         return _mapper.Map<List<PatientDto>>(patients);
     }
+
+ 
     //[HttpGet("patients/{doctorId}")]
     //public async Task<IActionResult> GetAllPatientsByDoctorId(int doctorId)
     //{
