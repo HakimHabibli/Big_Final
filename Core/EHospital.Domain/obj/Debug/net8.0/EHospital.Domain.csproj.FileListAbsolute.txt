@@ -13,16 +13,16 @@ C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Domain\obj\Debug\net8.0\refin
 C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.pdb
 C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.genruntimeconfig.cache
 C:\Users\77upt\Desktop\FP\EHospital\Core\EHospital.Domain\obj\Debug\net8.0\ref\EHospital.Domain.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.deps.json
-C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.runtimeconfig.json
-C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.csproj.AssemblyReference.cache
 C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.AssemblyInfoInputs.cache
 C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.AssemblyInfo.cs
 C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.sourcelink.json
+C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.deps.json
+C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.runtimeconfig.json
+C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\bin\Debug\net8.0\EHospital.Domain.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\obj\Debug\net8.0\refint\EHospital.Domain.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\Core\EHospital.Domain\obj\Debug\net8.0\EHospital.Domain.pdb

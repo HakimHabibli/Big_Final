@@ -1,4 +1,5 @@
 ﻿using FluentValidation.Results;
+using System.Runtime.Serialization;
 
 namespace EHospital.Application.Exceptions;
 
@@ -15,7 +16,20 @@ public class ValidationException : Exception
     {
     }
 }
+public class UserCreateFailedException : Exception
+{
+    public UserCreateFailedException()
+    {
+    }
 
+    public UserCreateFailedException(string? message) : base(message)
+    {
+    }
+
+    public UserCreateFailedException(string? message, Exception? innerException) : base(message, innerException)
+    {
+    }
+}
 public class NotFoundException : Exception
 {
     public NotFoundException(string entityName, object key)

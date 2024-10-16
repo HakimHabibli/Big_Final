@@ -25,6 +25,12 @@ C:\Users\77upt\Desktop\FP\EHospital\Infrastructure\EHospital.Persistence\obj\Deb
 C:\Users\77upt\Desktop\FP\EHospital\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.pdb
 C:\Users\77upt\Desktop\FP\EHospital\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.genruntimeconfig.cache
 C:\Users\77upt\Desktop\FP\EHospital\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\ref\EHospital.Persistence.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.AssemblyInfo.cs
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.sourcelink.json
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\bin\Debug\net8.0\Loging.Api.deps.json
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\bin\Debug\net8.0\Loging.Api.runtimeconfig.json
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\bin\Debug\net8.0\appsettings.Development.json
@@ -40,12 +46,6 @@ C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\bin\Debug\net8.0\EHospital.Application.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\bin\Debug\net8.0\EHospital.Domain.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\bin\Debug\net8.0\Loging.Api.pdb
-C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.csproj.AssemblyReference.cache
-C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.AssemblyInfoInputs.cache
-C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.AssemblyInfo.cs
-C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.csproj.CoreCompileInputs.cache
-C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.sourcelink.json
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospita.A20B4A36.Up2Date
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\EHospital.Persistence.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Persistence\obj\Debug\net8.0\refint\EHospital.Persistence.dll

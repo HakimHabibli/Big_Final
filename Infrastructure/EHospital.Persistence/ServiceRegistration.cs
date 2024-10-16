@@ -3,9 +3,11 @@ using EHospital.Application.Abstractions.Repositories;
 using EHospital.Application.Abstractions.Services;
 using EHospital.Application.Concretes.Repositories;
 using EHospital.Application.Concretes.Services;
+using EHospital.Domain.Entities.Auth;
 using EHospital.Persistence.Concretes;
 using EHospital.Persistence.Concretes.Repositories;
 using EHospital.Persistence.Concretes.Services;
+using EHospital.Persistence.DAL;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EHospital.Persistence;
@@ -15,7 +17,19 @@ public static class ServiceRegistration
     public static void AddPersistenceService(this IServiceCollection services)
     {
 
+        services.AddIdentity<AppUser, AppRole>
+            (options =>
+            {
+                options.Password.RequiredLength = 3;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
 
+             
+            })
+            .AddEntityFrameworkStores<AppDbContext>();//AddEntityFreameworkStores hansi dbde store olacaqsa onu bildiririk 
+      
         #region Repositories
 
 
