@@ -5,7 +5,7 @@ using EHospital.Persistence.Concretes.Repositories;
 using EHospital.Persistence.DAL;
 
 namespace EHospital.Persistence.Concretes;
-//todo:Disponse ve Saavechange methodlarinin mentiqini anla sonra iclerini doldur 
+//todo:Disponse ve Saavechange methodlarinin mentiqini anla sonra iclerini doldur +:)
 public class UnitOfWork : IUnitOfWork
 {
     private readonly AppDbContext _appDbContext;

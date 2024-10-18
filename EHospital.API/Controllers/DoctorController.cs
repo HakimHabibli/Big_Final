@@ -7,6 +7,7 @@ using EHospital.Application.Futures.Queries.Doctor.GetAllDoctors;
 using EHospital.Application.Futures.Queries.Doctor.GetAllPatientsByDoctorId;
 using EHospital.Application.Futures.Queries.Doctor.GetDoctorById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -23,9 +24,8 @@ public class DoctorController : ControllerBase
         _mediator = mediator;
     }
 
-
-
     [HttpPost]
+    //[Authorize(Policy = "ADMIN")]
     public async Task<IActionResult> CreateDoctor([FromForm] DoctorCreateDto doctorCreateDto)
     {
         try
@@ -41,7 +41,6 @@ public class DoctorController : ControllerBase
         }
     }
 
-
     [HttpGet]
     public async Task<IActionResult> GetAllDoctors()
     {
@@ -51,8 +50,8 @@ public class DoctorController : ControllerBase
         return Ok(response.DoctorReadDtos);
     }
 
-
     [HttpPut]
+    //[Authorize(Policy = "ADMIN")]
     public async Task<IActionResult> UpdateDoctor([FromForm] DoctorUpdateDto doctorUpdateDto)
     {
         if (doctorUpdateDto == null || doctorUpdateDto.Id <= 0)
@@ -65,6 +64,7 @@ public class DoctorController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    //[Authorize(Policy = "ADMIN")]
     public async Task<IActionResult> Delete(DoctorDeleteRequest request)
     {
         var response = await _mediator.Send(request);
@@ -72,6 +72,7 @@ public class DoctorController : ControllerBase
     }
 
     [HttpGet("patients/{doctorId}")]
+    //[Authorize(Policy = "ADMIN")]
     public async Task<IActionResult> GetAllPatientsByDoctorId(int doctorId)
     {
         var query = new GetAllPatientsByDoctorIdQueryRequest(doctorId);
@@ -83,8 +84,8 @@ public class DoctorController : ControllerBase
         return Ok(response.PatientDtos);
     }
 
-
     [HttpGet("{id}")]
+    // [Authorize(Policy = "ADMIN")]
     public async Task<IActionResult> GetDoctorById(int id)
     {
         var query = new GetDoctorByIdQueryRequest { DoctorId = id };
@@ -95,5 +96,4 @@ public class DoctorController : ControllerBase
         }
         return Ok(response.DoctorReadDto);
     }
-
 }

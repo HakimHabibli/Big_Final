@@ -6,6 +6,7 @@ using EHospital.Application.Futures.Queries.Allergy.GetAllAllegiesByPatientId;
 using EHospital.Application.Futures.Queries.Allergy.GetAllAllergies;
 using EHospital.Application.Futures.Queries.Allergy.GetAllById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EHospital.API.Controllers;
@@ -22,6 +23,7 @@ public class AllergyController : ControllerBase
     }
 
     [HttpPost]
+   // [Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> CreateAllergy([FromBody] AllergyCreateDto allergyCreateDto)
     {
         var request = new AllergyCreateCommandRequest { AllergyCreateDto = allergyCreateDto };
@@ -30,6 +32,7 @@ public class AllergyController : ControllerBase
     }
 
     [HttpPut]
+    //[Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> UpdateAllergy([FromBody] AllergyUpdateDto allergyUpdateDto)
     {
         if (allergyUpdateDto == null || allergyUpdateDto.Id <= 0)
@@ -43,6 +46,7 @@ public class AllergyController : ControllerBase
     }
 
     [HttpDelete]
+    //[Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> DeleteAllergy([FromBody] AllergyDeleteDto allergyDeleteDto)
     {
         if (allergyDeleteDto == null || allergyDeleteDto.Id <= 0)
@@ -54,7 +58,9 @@ public class AllergyController : ControllerBase
         var response = await _mediator.Send(request);
         return StatusCode(StatusCodes.Status204NoContent, response.StatusCode);
     }
+
     [HttpGet("all")]
+    //[Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> GetAllAllergies()
     {
         var query = new GetAllAllergiesQueryRequest();
@@ -63,6 +69,7 @@ public class AllergyController : ControllerBase
     }
 
     [HttpGet("{id}")]
+    //[Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> GetAllergyById(int id)
     {
         var query = new GetAllergyByIdQueryRequest { Id = id };
@@ -71,6 +78,7 @@ public class AllergyController : ControllerBase
     }
 
     [HttpGet("patient/{patientId}")]
+    //[Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> GetAllergiesByPatientId(int patientId)
     {
         var query = new GetAllergiesByPatientIdQueryRequest { PatientId = patientId };

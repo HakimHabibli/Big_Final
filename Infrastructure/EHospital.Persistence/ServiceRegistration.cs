@@ -7,7 +7,10 @@ using EHospital.Domain.Entities.Auth;
 using EHospital.Persistence.Concretes;
 using EHospital.Persistence.Concretes.Repositories;
 using EHospital.Persistence.Concretes.Services;
+using EHospital.Persistence.Concretes.Services.Auth;
 using EHospital.Persistence.DAL;
+using EHospital.Persistence.Seed;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EHospital.Persistence;
@@ -16,20 +19,18 @@ public static class ServiceRegistration
 {
     public static void AddPersistenceService(this IServiceCollection services)
     {
+        services.AddScoped<RoleSeeder>();
 
-        services.AddIdentity<AppUser, AppRole>
-            (options =>
-            {
-                options.Password.RequiredLength = 3;
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireDigit = false;
-                options.Password.RequireLowercase = false;
-                options.Password.RequireUppercase = false;
+        services.AddIdentity<AppUser, AppRole>(options =>
+        {
+            options.Password.RequiredLength = 8;
+            options.Password.RequireDigit = true;
+            options.Password.RequireLowercase = true;
+            options.Password.RequireUppercase = true;
+            options.Password.RequireNonAlphanumeric = true; // Yalnız alfanumerik olmayan simvolların olmasını tələb edirik
+        })
+        .AddEntityFrameworkStores<AppDbContext>(); // Entity Framework istifadə edərək verilənlər bazası konfiqurasiyası
 
-             
-            })
-            .AddEntityFrameworkStores<AppDbContext>();//AddEntityFreameworkStores hansi dbde store olacaqsa onu bildiririk 
-      
         #region Repositories
 
 
@@ -77,6 +78,7 @@ public static class ServiceRegistration
         services.AddScoped<IAllergyService, AllergyService>();
         services.AddScoped<IPatientDoctorService, PatientsDoctorsService>();
         services.AddScoped<IDoctorSchedulesService, DoctorSchedulesService>();
+        services.AddScoped<ITokenService, TokenService>();
         #endregion
 
     }

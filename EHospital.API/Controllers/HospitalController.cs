@@ -7,12 +7,14 @@ using EHospital.Application.Futures.Queries.Hospital.GetAllHospitals;
 using EHospital.Application.Futures.Queries.Hospital.GetHospitalById;
 using EHospital.Application.Futures.Queries.Hospital.GetHospitalDetails;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EHospital.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+
 public class HospitalController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -22,19 +24,17 @@ public class HospitalController : ControllerBase
         _mediator = mediator;
     }
 
-    // Create api/<HospitalController>
     [HttpPost]
+    // [Authorize(Policy = "SuperAdmin")]
     public async Task<IActionResult> CreateHospitalAsync([FromForm] HospitalCreateCommandRequest request)
     {
         var response = await _mediator.Send(request);
-
         //return StatusCode(200, "Successfully created hospital.");
         //Daha yaxşı eləmək üçün daha dəqiq Status kod qaytarmaq üçün
         return StatusCode(StatusCodes.Status201Created, "Successfully created hospital.");
 
     }
 
-    // GET api/<HospitalController>
     [HttpGet]
     public async Task<IActionResult> GetAllHospitals()
     {
@@ -44,8 +44,8 @@ public class HospitalController : ControllerBase
         return Ok(response.HospitalReadDtos);
     }
 
-    // GET api/<HospitalController>/details/{id}
     [HttpGet("details/{id}")]
+    //[Authorize(Policy = "SuperAdmin")]
     public async Task<IActionResult> GetHospitalDetails(int id)
     {
         var query = new GetHospitalDetailsQueryRequest { HospitalId = id };
@@ -72,9 +72,8 @@ public class HospitalController : ControllerBase
         return Ok(response.HospitalReadDto);
     }
 
-
-    // PUT api/<HospitalController>
     [HttpPut]
+    // [Authorize(Policy = "SuperAdmin")]
     public async Task<IActionResult> UpdateHospital([FromForm] HospitalUpdateDto hospitalUpdateDto)
     {
         if (hospitalUpdateDto == null || hospitalUpdateDto.Id <= 0)
@@ -89,16 +88,13 @@ public class HospitalController : ControllerBase
         {
             return NoContent();
         }
-
         return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while updating the hospital.");
-
     }
 
-    // DELETE api/<HospitalController>/5
     [HttpDelete("{id}")]
+    //[Authorize(Policy = "SuperAdmin")]
     public async Task<IActionResult> Delete(HospitalDeleteCommandRequest request)
     {
-
         var response = await _mediator.Send(request);
         return StatusCode(204, "Successfully deleted hospital.");
     }

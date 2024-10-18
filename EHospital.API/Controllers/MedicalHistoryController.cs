@@ -4,6 +4,7 @@ using EHospital.Application.Futures.Commands.MedicalHistory.Create;
 using EHospital.Application.Futures.Commands.MedicalHistory.Delete;
 using EHospital.Application.Futures.Commands.MedicalHistory.Update;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EHospital.API.Controllers;
@@ -20,6 +21,7 @@ public class MedicalHistoryController : ControllerBase
     }
 
     [HttpPost]
+    // [Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> CreateMedicalHistory([FromBody] MedicalHistoryCreateDto medicalHistoryCreateDto)
     {
         var request = new MedicalHistoryCreateCommandRequest { MedicalHistoryCreateDto = medicalHistoryCreateDto };
@@ -28,13 +30,16 @@ public class MedicalHistoryController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    //[Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> DeleteMedicalHistory(MedicalHistoryDeleteDto medical)
     {
         var request = new MedicalHistoryDeleteCommandRequest { MedicalHistoryDeleteDto = medical };
         var response = await _mediator.Send(request);
         return StatusCode(StatusCodes.Status204NoContent, response.StatusCode);
     }
+
     [HttpPut]
+    //[Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> UpdateMedicalHistory([FromBody] MedicalHistoryUpdateDto medicalHistoryUpdateDto)
     {
         if (medicalHistoryUpdateDto == null || medicalHistoryUpdateDto.Id <= 0)
@@ -47,7 +52,9 @@ public class MedicalHistoryController : ControllerBase
 
         return StatusCode(StatusCodes.Status204NoContent, response.StatusCode);
     }
+
     [HttpGet]
+    //[Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> GetAllMedicalHistories()
     {
         var query = new GetAllMedicalHistoriesQueryRequest();
@@ -58,7 +65,9 @@ public class MedicalHistoryController : ControllerBase
         }
         return Ok(response.MedicalHistoryReadDtos);
     }
+
     [HttpGet("bySerialNumber/{serialNumber}")]
+    //[Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> GetMedicalHistoryBySerialNumber(string serialNumber)
     {
         var query = new GetMedicalHistoryBySerialNumberQueryRequest { SerialNumber = serialNumber };

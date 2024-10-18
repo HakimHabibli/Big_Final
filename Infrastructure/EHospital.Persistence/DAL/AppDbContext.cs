@@ -6,7 +6,7 @@ using System.Reflection;
 
 namespace EHospital.Persistence.DAL;
 
-public class AppDbContext : IdentityDbContext<AppUser,AppRole,string>
+public class AppDbContext : IdentityDbContext<AppUser,AppRole,int>
 {
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
@@ -31,7 +31,7 @@ public class AppDbContext : IdentityDbContext<AppUser,AppRole,string>
         base.OnModelCreating(modelBuilder);
     }
     /*
-     *Add-Migration AddDoctorSchedule -Project EHospital.Persistence -StartupProject EHospital.API
+     *Add-Migration AddUserProperty -Project EHospital.Persistence -StartupProject EHospital.API
  
      Update-Database -Project EHospital.Persistence -StartupProject EHospital.API
 

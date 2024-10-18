@@ -1,4 +1,5 @@
-﻿using EHospital.Application.Mappers;
+﻿using EHospital.Application.Abstractions.Services;
+using EHospital.Application.Mappers;
 using EHospital.Application.Validators.Hospital;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -20,7 +21,7 @@ public static class ServiceRegistration
         });
         services.AddValidatorsFromAssemblyContaining<HospitalCreateCommandRequestValidation>();
         services.AddFluentValidationAutoValidation();
-
+       
         services.AddHttpClient();
 
         //services.AddSingleton<ILogService>(sp => new MongoLogService());

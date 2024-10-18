@@ -1,47 +1,91 @@
 using EHospital.Application;
+using EHospital.Domain.Entities.Auth;
 using EHospital.Persistence;
 using EHospital.Persistence.DAL;
+using EHospital.Persistence.Seed;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(
         policy =>
         {
             policy.WithOrigins("http://localhost:3000",
-                                "http://localhost:3001");
+                                "http://localhost:3001",
+                                "http://localhost:5000")
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()
+                  .AllowCredentials();
         });
 });
+
+
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Add services to the container.
-builder.Services.AddPersistenceService();                           //ServiceRegistration Persistence Layer
-builder.Services.AddApplicationService(builder.Configuration);      //ServiceRegistration Application Layer
 
-
-
+builder.Services.AddPersistenceService();                           // ServiceRegistration Persistence Layer
+builder.Services.AddApplicationService(builder.Configuration);      // ServiceRegistration Application Layer
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidAudience = builder.Configuration["Token:Audience"],
+        ValidIssuer = builder.Configuration["Token:Issuer"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"]))
+    };
+});
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("USER", policy => policy.RequireRole("User"));
+    options.AddPolicy("ADMIN", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("DOCTOR", policy => policy.RequireRole("Doctor"));
+    options.AddPolicy("SUPERADMIN", policy => policy.RequireRole("Superadmin"));
+    options.AddPolicy("MODERATOR", policy => policy.RequireRole("Moderator"));
+    
+});
+
 var app = builder.Build();
 
-// Middleware-i pipeline-a ?lav? edin
-//app.UseMiddleware<ExceptionMiddleware>();
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var roleSeeder = services.GetRequiredService<RoleSeeder>();
+    await roleSeeder.SeedRoles();
+}
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseAuthorization();
 
 app.UseCors();
-app.MapControllers();
+app.UseAuthentication(); 
+app.UseAuthorization(); 
+app.MapControllers(); 
 
-app.Run();
+app.Run(); 

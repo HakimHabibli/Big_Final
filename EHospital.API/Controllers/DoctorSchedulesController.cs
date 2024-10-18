@@ -13,7 +13,6 @@ public class DoctorSchedulesController : ControllerBase
         _mediator = mediator;
     }
 
-
     [HttpPost("Create")]
     public async Task<IActionResult> CreateDoctorSchedule([FromBody] DoctorSchedulesCreateDto createDto)
     {
@@ -23,7 +22,6 @@ public class DoctorSchedulesController : ControllerBase
         return StatusCode(int.Parse(result.StatusCode), result);
     }
 
-
     [HttpPut]
     public async Task<IActionResult> UpdateDoctorSchedule([FromBody] DoctorSchedulesUpdateDto updateDto)
     {
@@ -32,7 +30,6 @@ public class DoctorSchedulesController : ControllerBase
         return StatusCode(int.Parse(result.StatusCode), result);
     }
 
-
     [HttpDelete]
     public async Task<IActionResult> DeleteDoctorSchedule(DoctorScheduleDeleteCommandRequest request)
     {
@@ -40,7 +37,6 @@ public class DoctorSchedulesController : ControllerBase
         return StatusCode(int.Parse(response.StatusCode), response);
         //Response daxilindeki Status code string olduguna gore stringi intə ceviririk 
     }
-
 
     [HttpGet("schedules/{doctorName}")]
     public async Task<IActionResult> GetDoctorScheduleByName(string doctorName)
@@ -56,7 +52,6 @@ public class DoctorSchedulesController : ControllerBase
             return StatusCode(int.Parse(result.StatusCode), result);
         }
     }
-
 
     [HttpGet("active")]
     public async Task<IActionResult> GetActiveSchedules()

@@ -260,6 +260,10 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -440,6 +444,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
             },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",

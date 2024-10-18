@@ -845,6 +845,70 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RolesController",
+    "Method": "AddRoleToUser",
+    "RelativePath": "api/Roles/AddRoleToUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EHospital.Application.Futures.Commands.UserRole.UpRole.AddRoleToUserCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RolesController",
+    "Method": "RemoveRoleFromUser",
+    "RelativePath": "api/Roles/RemoveRoleFromUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EHospital.Application.Futures.Commands.UserRole.DownRole.RemoveRoleFromUserCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.UsersController",
+    "Method": "CreateUser",
+    "RelativePath": "api/Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userCreateRequest",
+        "Type": "EHospital.Application.Futures.Commands.AppUser.Create.UserCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "api/Users/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLoginRequest",
+        "Type": "EHospital.Application.Futures.Commands.AppUser.Login.UserLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LogsController",
     "Method": "Post",
     "RelativePath": "Logs",
