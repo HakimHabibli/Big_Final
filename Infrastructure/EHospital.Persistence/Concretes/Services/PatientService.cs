@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using EHospital.Application.Abstractions;
 using EHospital.Application.Abstractions.Services;
+using EHospital.Application.Dtos.Entites.InsuranceDetails;
 using EHospital.Application.Dtos.Entites.Patient;
 using EHospital.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace EHospital.Application.Concretes.Services;
 
@@ -79,21 +81,25 @@ public class PatientService : IPatientService
 
     public async Task<List<PatientReadDto>> GetAllPatients()
     {
-        var patients = await _unitOfWork.PatientReadRepository.GetAllAsync();
-        if (patients == null) throw new Exception("Patients not found");
-     
-        return    _mapper.Map<List<PatientReadDto>>(patients);
-       
+        var patients = await _unitOfWork.PatientReadRepository
+            .GetAllAsync(false, "ContactInfo", "EmergencyContact", "InsuranceDetails");
+
+        if (patients == null || !patients.Any())
+            throw new Exception("Patients not found");
+
+        var patientsList = await patients.ToListAsync();
+
+        List<PatientReadDto> patientsDto = _mapper.Map<List<PatientReadDto>>(patientsList);
+
+        return patientsDto;
     }
 
     public async Task<PatientReadDto> GetPatientByIdAsync(int id)
     {
-        var patient = await _unitOfWork.PatientReadRepository.GetByIdAsync(id);
+        var patient = await _unitOfWork.PatientReadRepository.GetByIdAsync(id,"ContactInfo", "EmergencyContact", "InsuranceDetails");
 
         if (patient == null)
-        {
-            throw new Exception("Patient not found");
-        }
+          throw new Exception("Patient not found");
 
         return _mapper.Map<PatientReadDto>(patient);
 
@@ -101,13 +107,14 @@ public class PatientService : IPatientService
 
     public async Task<PatientReadDto> GetPatientBySerialNumberAsync(string serialNumber)
     {
-        var patient = await _unitOfWork.PatientReadRepository.GetBySerialNumberAsync(serialNumber);
+        var patient = await _unitOfWork.PatientReadRepository.GetBySerialNumberAsync(serialNumber,false, "ContactInfo", "EmergencyContact", "InsuranceDetails", "MedicalHistory","Allergy");
 
         if (patient == null)
         {
             throw new Exception("Patient not found");
         }
-
+        var medicalHistoriesCount = patient.MedicalHistories?.Count;
+        var allergiesCount = patient.Allergies?.Count;
         return _mapper.Map<PatientReadDto>(patient);
 
     }

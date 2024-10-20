@@ -503,7 +503,7 @@ namespace EHospital.Persistence.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 10, 17, 12, 25, 59, 79, DateTimeKind.Utc).AddTicks(3490));
+                        .HasDefaultValue(new DateTime(2024, 10, 19, 18, 33, 50, 705, DateTimeKind.Utc).AddTicks(9333));
 
                     b.Property<int?>("EmergencyContactId")
                         .HasColumnType("int");
@@ -517,7 +517,6 @@ namespace EHospital.Persistence.Migrations
                         .HasColumnType("int");
 
                     b.Property<int?>("HospitalId")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("HospitalName")
@@ -746,8 +745,7 @@ namespace EHospital.Persistence.Migrations
                     b.HasOne("EHospital.Domain.Entities.Hospital", "Hospital")
                         .WithMany("Patients")
                         .HasForeignKey("HospitalId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("EHospital.Domain.Entities.InsuranceDetails", "InsuranceDetails")
                         .WithOne("Patient")

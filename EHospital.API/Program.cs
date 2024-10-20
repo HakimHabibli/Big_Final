@@ -6,6 +6,7 @@ using EHospital.Persistence.Seed;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,7 +36,12 @@ builder.Services.AddApplicationService(builder.Configuration);      // ServiceRe
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "EHospital API", Version = "v1" });
+    //c.EnableAnnotations();
+});
 
 builder.Services.AddAuthentication(options =>
 {

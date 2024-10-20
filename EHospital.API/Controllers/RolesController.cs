@@ -1,5 +1,5 @@
-﻿using EHospital.Application.Futures.Commands.UserRole.DownRole;
-using EHospital.Application.Futures.Commands.UserRole.UpRole;
+﻿using EHospital.Application.Futures.Commands.UserRole.AddRole;
+using EHospital.Application.Futures.Commands.UserRole.DeleteRole;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

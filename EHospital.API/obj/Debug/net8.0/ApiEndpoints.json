@@ -854,7 +854,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "EHospital.Application.Futures.Commands.UserRole.UpRole.AddRoleToUserCommandRequest",
+        "Type": "EHospital.Application.Futures.Commands.UserRole.AddRole.AddRoleToUserCommandRequest",
         "IsRequired": true
       }
     ],
@@ -870,7 +870,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "EHospital.Application.Futures.Commands.UserRole.DownRole.RemoveRoleFromUserCommandRequest",
+        "Type": "EHospital.Application.Futures.Commands.UserRole.DeleteRole.RemoveRoleFromUserCommandRequest",
         "IsRequired": true
       }
     ],
@@ -891,6 +891,78 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.UsersController",
+    "Method": "GetAllUser",
+    "RelativePath": "api/Users/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EHospital.Application.Dtos.Auth.User.GetUserDto, EHospital.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.UsersController",
+    "Method": "GetByIdUser",
+    "RelativePath": "api/Users/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EHospital.Application.Dtos.Auth.User.GetUserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.UsersController",
+    "Method": "GetBySerialNumberUser",
+    "RelativePath": "api/Users/GetBySerialNumber/{serialNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serialNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EHospital.Application.Dtos.Auth.User.GetUserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "EHospital.API.Controllers.UsersController",

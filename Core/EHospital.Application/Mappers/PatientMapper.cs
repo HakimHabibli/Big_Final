@@ -21,6 +21,14 @@ public class PatientMapper : Profile
             .ForMember(dest => dest.EmergencyContact, opt => opt.MapFrom(src => src.EmergencyContact))
             .ForMember(dest => dest.HospitalName, opt => opt.MapFrom(src => src.HospitalName))  
             .ForMember(dest => dest.InsuranceDetails, opt => opt.MapFrom(src => src.InsuranceDetails));
+
+        CreateMap<Patient, PatientReadDto>()
+           .ForMember(dest => dest.MedicalHistories, opt => opt.MapFrom(src => src.MedicalHistories))
+           .ForMember(dest => dest.Allergies, opt => opt.MapFrom(src => src.Allergies))
+           .ForMember(dest => dest.ContactInfo, opt => opt.MapFrom(src => src.ContactInfo))
+           .ForMember(dest => dest.EmergencyContact, opt => opt.MapFrom(src => src.EmergencyContact))
+           .ForMember(dest => dest.HospitalName, opt => opt.MapFrom(src => src.HospitalName))
+           .ForMember(dest => dest.InsuranceDetails, opt => opt.MapFrom(src => src.InsuranceDetails)).ReverseMap();
     }
 }
 

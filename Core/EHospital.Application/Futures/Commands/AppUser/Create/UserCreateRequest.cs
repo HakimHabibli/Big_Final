@@ -3,6 +3,7 @@ using EHospital.Domain.Entities.Auth;
 using EHospital.Domain.Enums;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace EHospital.Application.Futures.Commands.AppUser.Create;
 
@@ -35,6 +36,12 @@ public class UserCreateHandler : IRequestHandler<UserCreateRequest, UserCreateRe
 
     public async Task<UserCreateResponse> Handle(UserCreateRequest request, CancellationToken cancellationToken)
     {
+        var existingUser = await _userManager.Users.FirstOrDefaultAsync(u => u.SerialNumber == request.SerialNumber);
+        if (existingUser != null)
+        {
+            throw new BusinessRuleException($"User with SerialNumber '{request.SerialNumber}' already exists.");
+        }
+
         var user = new Domain.Entities.Auth.AppUser
         {
             UserName = request.Username,
@@ -59,7 +66,6 @@ public class UserCreateHandler : IRequestHandler<UserCreateRequest, UserCreateRe
         }
         else
         {
-            // Xətaları əldə et və istisnaya əlavə et
             var errorMessages = string.Join(", ", result.Errors.Select(e => e.Description));
             throw new UserCreateFailedException($"User creation failed: {errorMessages}");
         }

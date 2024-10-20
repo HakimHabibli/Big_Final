@@ -10,7 +10,6 @@ using EHospital.Persistence.Concretes.Services;
 using EHospital.Persistence.Concretes.Services.Auth;
 using EHospital.Persistence.DAL;
 using EHospital.Persistence.Seed;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EHospital.Persistence;

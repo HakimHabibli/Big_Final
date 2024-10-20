@@ -1,6 +1,10 @@
 ﻿using EHospital.Application.Abstractions.Services;
 using EHospital.Application.Dtos.Entites.Appointment;
+using EHospital.Application.Futures.Queries.AppUser.GetAllUserQuery;
+using EHospital.Domain.Entities.Auth;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace EHospital.Application.Futures.Queries.Appointment.GetAllAppointment;
 

@@ -8,6 +8,7 @@ using EHospital.Application.Futures.Queries.Allergy.GetAllById;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace EHospital.API.Controllers;
 
@@ -23,7 +24,7 @@ public class AllergyController : ControllerBase
     }
 
     [HttpPost]
-   // [Authorize(Policy = "DOCTOR")]
+    // [Authorize(Policy = "DOCTOR")]
     public async Task<IActionResult> CreateAllergy([FromBody] AllergyCreateDto allergyCreateDto)
     {
         var request = new AllergyCreateCommandRequest { AllergyCreateDto = allergyCreateDto };

@@ -20,5 +20,9 @@
 	  <ProjectReference Include="..\..\src\EHospitalLogger\Loging.Api\Loging.Api.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Futures\Queries\AppUser\GetByIdUserQuery - Copy %283%29\" />
+  </ItemGroup>
+
 
 </Project>

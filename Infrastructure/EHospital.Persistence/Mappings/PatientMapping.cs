@@ -63,7 +63,7 @@ public class PatientMapping : BaseEntityMapping<Patient>
 
         builder.HasOne(p => p.Hospital)
                .WithMany(h => h.Patients)
-               .HasForeignKey(p => p.HospitalId)
+               .HasForeignKey(p => p.HospitalId).IsRequired(false)
                .OnDelete(DeleteBehavior.Restrict);
     }
 }

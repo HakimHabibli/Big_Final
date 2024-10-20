@@ -19,7 +19,7 @@ public class PatientReadRepository : ReadRepository<Patient>, IPatientReadReposi
     //    return await _appDbContext.Patients
     //        .FirstOrDefaultAsync(p => p.SerialNumber == serialNumber);
     //}
-    public async Task<Patient> GetBySerialNumberAsync(string serialNumber, bool asNoTracking = false)
+    public async Task<Patient> GetBySerialNumberAsync(string serialNumber, bool asNoTracking = false, params string[] includes)
     {
 
         if (string.IsNullOrWhiteSpace(serialNumber))
@@ -28,7 +28,11 @@ public class PatientReadRepository : ReadRepository<Patient>, IPatientReadReposi
         }
         var query = _appDbContext.Patients.AsQueryable();
 
-      
+        foreach (var include in includes)
+        {
+            query = query.Include(include);
+        }
+
         if (asNoTracking)
         {
             query = query.AsNoTracking();
