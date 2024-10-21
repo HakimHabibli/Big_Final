@@ -15,3 +15,4 @@ public class InsuranceDetailsMapper : Profile
         CreateMap<InsuranceDetails, InsuranceDetailsDeleteDto>().ReverseMap();
     }
 }
+

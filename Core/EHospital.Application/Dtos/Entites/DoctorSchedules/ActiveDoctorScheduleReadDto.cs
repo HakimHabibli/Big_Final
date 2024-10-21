@@ -26,7 +26,7 @@ public class UserDeactivatedScheduleReadDto
     public int ScheduleId { get; set; }
     public int DoctorId { get; set; }
     public string DoctorName { get; set; }
-    public DateTime ScheduleDate { get; set; }
+    public DateOnly ScheduleDate { get; set; }
     public bool IsActive { get; set; }
     public int? DeactivatedByUserId { get; set; }
     public DateTime? DeactivatedAt { get; set; }

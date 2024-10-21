@@ -454,22 +454,6 @@
   },
   {
     "ContainingType": "DoctorSchedulesController",
-    "Method": "DeactivateDoctorSchedule",
-    "RelativePath": "api/DoctorSchedules/deactivate",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "deactivateDto",
-        "Type": "EHospital.Application.Dtos.Entites.DoctorSchedules.DoctorScheduleDeactivateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "DoctorSchedulesController",
     "Method": "GetDoctorScheduleByName",
     "RelativePath": "api/DoctorSchedules/schedules/{doctorName}",
     "HttpMethod": "GET",
@@ -733,6 +717,64 @@
       {
         "Name": "serialNumber",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.NotificationController",
+    "Method": "GetActiveDoctorSchedules",
+    "RelativePath": "api/Notification/active-doctor-schedules",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.NotificationController",
+    "Method": "DeactivateDoctorSchedule",
+    "RelativePath": "api/Notification/deactivate-doctor-schedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EHospital.Application.Dtos.Entites.DoctorSchedules.UserScheduleDeactivateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.NotificationController",
+    "Method": "ReactivateDoctorSchedule",
+    "RelativePath": "api/Notification/reactivate-doctor-schedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EHospital.Application.Dtos.Entites.DoctorSchedules.UserScheduleReactivateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.NotificationController",
+    "Method": "GetUserDeactivatedSchedules",
+    "RelativePath": "api/Notification/user-deactivated-schedules/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

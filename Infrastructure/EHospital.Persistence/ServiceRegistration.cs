@@ -6,6 +6,7 @@ using EHospital.Application.Concretes.Services;
 using EHospital.Domain.Entities.Auth;
 using EHospital.Persistence.Concretes;
 using EHospital.Persistence.Concretes.Repositories;
+using EHospital.Persistence.Concretes.Repositories.NewFolder;
 using EHospital.Persistence.Concretes.Services;
 using EHospital.Persistence.Concretes.Services.Auth;
 using EHospital.Persistence.DAL;
@@ -59,6 +60,10 @@ public static class ServiceRegistration
 
         services.AddScoped<IDoctorSchedulesReadRepository, DoctorSchedulesReadRepository>();
         services.AddScoped<IDoctorSchedulesWriteRepository, DoctorSchedulesWriteRepository>();
+
+        services.AddScoped<IUserDeactivatedScheduleReadRepository, UserDeactivatedScheduleReadRepository>();
+        services.AddScoped<IUserDeactivatedScheduleWriteRepository, UserDeactivatedScheduleWriteRepository>();
+
         services.AddScoped<IHospitalReadRepository, HospitalReadRepository>();
         services.AddScoped<IHospitalWriteRepository, HospitalWriteRepository>();
 
@@ -77,6 +82,7 @@ public static class ServiceRegistration
         services.AddScoped<IAllergyService, AllergyService>();
         services.AddScoped<IPatientDoctorService, PatientsDoctorsService>();
         services.AddScoped<IDoctorSchedulesService, DoctorSchedulesService>();
+        services.AddScoped<IUserDeactivatedScheduleService, UserDeactivatedScheduleService>();
         services.AddScoped<ITokenService, TokenService>();
         #endregion
 
