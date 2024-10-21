@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EHospital.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+708ceeed0b68d77c3f14edaa5889a2a28cbde142")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6930337731fc3a82811415f43bf051a6d07c0d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("EHospital.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EHospital.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

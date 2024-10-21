@@ -12,11 +12,10 @@ public class DoctorSchedulesReadDto : BaseEntityDto//Doctor daxilinde istifade e
 public class DoctorSchedulesDto : BaseEntityDto//Ana sehife ucun 
 {
     public int DoctorId { get; set; }
-    //public List<DoctorDto> Doctors { get; set; }
     public DateOnly Date { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
-    public bool IsActive { get; set; } = true; // Varsayılan dəyər
+    public bool IsActive { get; set; } = true;
 }
 
 
@@ -43,3 +42,5 @@ public class DoctorSchedulesUpdateDto : BaseEntityDto
 public class DoctorSchedulesDeleteDto : BaseEntityDto
 {
 }
+
+

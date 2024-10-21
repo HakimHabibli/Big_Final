@@ -503,7 +503,7 @@ namespace EHospital.Persistence.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 10, 19, 18, 33, 50, 705, DateTimeKind.Utc).AddTicks(9333));
+                        .HasDefaultValue(new DateTime(2024, 10, 21, 11, 29, 16, 97, DateTimeKind.Utc).AddTicks(4550));
 
                     b.Property<int?>("EmergencyContactId")
                         .HasColumnType("int");
@@ -567,6 +567,28 @@ namespace EHospital.Persistence.Migrations
                     b.HasIndex("DoctorId");
 
                     b.ToTable("PatientDoctors");
+                });
+
+            modelBuilder.Entity("EHospital.Domain.Entities.UserDeactivatedSchedule", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DeactivatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DoctorScheduleId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserDeactivatedSchedules");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

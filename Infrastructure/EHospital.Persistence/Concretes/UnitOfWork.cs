@@ -37,7 +37,8 @@ public class UnitOfWork : IUnitOfWork
     private IMedicalHistoryWriteRepository? _medicalHistoryWriteRepository;
     private IPatientReadRepository? _patientReadRepository;
     private IPatientWriteRepository? _patientWriteRepository;
-
+    private IUserDeactivatedScheduleReadRepository _userDeactivatedScheduleReadRepository;
+    private IUserDeactivatedScheduleWriteRepository _userDeactivatedScheduleWriteRepository;
 
     #endregion
 
@@ -77,6 +78,10 @@ public class UnitOfWork : IUnitOfWork
     public IPatientReadRepository PatientReadRepository => _patientReadRepository ?? new PatientReadRepository(_appDbContext);
 
     public IPatientWriteRepository PatientWriteRepository => _patientWriteRepository ?? new PatientWriteRepository(_appDbContext);
+
+    public IUserDeactivatedScheduleReadRepository UserDeactivatedScheduleReadRepository => throw new NotImplementedException();
+
+    public IUserDeactivatedScheduleWriteRepository UserDeactivatedScheduleWriteRepository => throw new NotImplementedException();
 
     #endregion
 

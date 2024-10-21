@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace EHospital.Configurations;
-
 public class PatientMapping : BaseEntityMapping<Patient>
 {
     public override void Configure(EntityTypeBuilder<Patient> builder)

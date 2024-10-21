@@ -454,6 +454,22 @@
   },
   {
     "ContainingType": "DoctorSchedulesController",
+    "Method": "DeactivateDoctorSchedule",
+    "RelativePath": "api/DoctorSchedules/deactivate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deactivateDto",
+        "Type": "EHospital.Application.Dtos.Entites.DoctorSchedules.DoctorScheduleDeactivateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DoctorSchedulesController",
     "Method": "GetDoctorScheduleByName",
     "RelativePath": "api/DoctorSchedules/schedules/{doctorName}",
     "HttpMethod": "GET",

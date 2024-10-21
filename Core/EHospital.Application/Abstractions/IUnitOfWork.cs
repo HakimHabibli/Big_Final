@@ -24,6 +24,7 @@ public interface IUnitOfWork
     IMedicalHistoryWriteRepository MedicalHistoryWriteRepository { get; }
     IPatientReadRepository PatientReadRepository { get; }
     IPatientWriteRepository PatientWriteRepository { get; }
-
+    IUserDeactivatedScheduleReadRepository UserDeactivatedScheduleReadRepository { get; }
+    IUserDeactivatedScheduleWriteRepository UserDeactivatedScheduleWriteRepository { get; }
     Task<int> SaveChangeAsync(CancellationToken cancellationToken);
 }

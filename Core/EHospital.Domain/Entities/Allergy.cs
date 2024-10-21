@@ -14,6 +14,3 @@ public class Allergy:BaseEntity
     public int? PatientId { get; set; } // Foreign key
     public Patient Patient { get; set; } // Navigation property
 }
-
-
-

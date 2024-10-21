@@ -60,4 +60,14 @@ public class DoctorSchedulesController : ControllerBase
         var result = await _mediator.Send(query);
         return StatusCode(int.Parse(result.StatusCode), result);
     }
+
+
+
+    //[HttpPut("deactivate")]
+    //public async Task<IActionResult> DeactivateDoctorSchedule([FromBody] DoctorScheduleDeactivateDto deactivateDto)
+    //{
+    //    var request = new DeactivateDoctorScheduleCommandRequest { DoctorScheduleDeactivateDto = deactivateDto };
+    //    var response = await _mediator.Send(request);
+    //    return StatusCode(int.Parse(response.StatusCode), response);
+    //}
 }

@@ -3,40 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\ehospital.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|solutionrelative:ehospital.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\futures\\commands\\appuser\\create\\usercreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\futures\\commands\\appuser\\create\\usercreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\futures\\queries\\appuser\\getserialnumberuserquery\\getuserbyserialnumberqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\futures\\queries\\appuser\\getserialnumberuserquery\\getuserbyserialnumberqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\futures\\queries\\appuser\\getbyiduserquery\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\futures\\queries\\appuser\\getbyiduserquery\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\futures\\queries\\appuser\\getalluserquery\\getalluserqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\futures\\queries\\appuser\\getalluserquery\\getalluserqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\dtos\\auth\\user\\getalluserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\dtos\\auth\\user\\getalluserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\ehospital.api\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|solutionrelative:ehospital.api\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\ehospital.api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|solutionrelative:ehospital.api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\futures\\queries\\appointment\\getallappointment\\getallappointmentsqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\futures\\queries\\appointment\\getallappointment\\getallappointmentsqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7042148-C720-465C-89B0-D82489A1809B}|Infrastructure\\EHospital.Persistence\\EHospital.Persistence.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\infrastructure\\ehospital.persistence\\concretes\\services\\userdeactivatedscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7042148-C720-465C-89B0-D82489A1809B}|Infrastructure\\EHospital.Persistence\\EHospital.Persistence.csproj|solutionrelative:infrastructure\\ehospital.persistence\\concretes\\services\\userdeactivatedscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 218,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserCreateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Commands\\AppUser\\Create\\UserCreateRequest.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Futures\\Commands\\AppUser\\Create\\UserCreateRequest.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Commands\\AppUser\\Create\\UserCreateRequest.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Futures\\Commands\\AppUser\\Create\\UserCreateRequest.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAADwvz8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:50:04.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetUserBySerialNumberQueryRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetSerialNumberUserQuery\\GetUserBySerialNumberQueryRequest.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetSerialNumberUserQuery\\GetUserBySerialNumberQueryRequest.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetSerialNumberUserQuery\\GetUserBySerialNumberQueryRequest.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetSerialNumberUserQuery\\GetUserBySerialNumberQueryRequest.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:43:04.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetUserByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetByIdUserQuery\\GetUserByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetByIdUserQuery\\GetUserByIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetByIdUserQuery\\GetUserByIdQueryHandler.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetByIdUserQuery\\GetUserByIdQueryHandler.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:25:36.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetAllUserDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Dtos\\Auth\\User\\GetAllUserDto.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Dtos\\Auth\\User\\GetAllUserDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Dtos\\Auth\\User\\GetAllUserDto.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Dtos\\Auth\\User\\GetAllUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:23:31.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PatientController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\PatientController.cs",
-              "RelativeDocumentMoniker": "EHospital.API\\Controllers\\PatientController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\PatientController.cs",
-              "RelativeToolTip": "EHospital.API\\Controllers\\PatientController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:10:42.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "EHospital.API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "EHospital.API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAhwB4AAAAgAAAAAAAAAA==",
+              "Title": "UserDeactivatedScheduleService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Infrastructure\\EHospital.Persistence\\Concretes\\Services\\UserDeactivatedScheduleService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\EHospital.Persistence\\Concretes\\Services\\UserDeactivatedScheduleService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Infrastructure\\EHospital.Persistence\\Concretes\\Services\\UserDeactivatedScheduleService.cs",
+              "RelativeToolTip": "Infrastructure\\EHospital.Persistence\\Concretes\\Services\\UserDeactivatedScheduleService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwCUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:08:54.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "EHospital.API\\Controllers\\RolesController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "EHospital.API\\Controllers\\RolesController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:08:53.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetAllUserQueryRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetAllUserQuery\\GetAllUserQueryRequest.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetAllUserQuery\\GetAllUserQueryRequest.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetAllUserQuery\\GetAllUserQueryRequest.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Futures\\Queries\\AppUser\\GetAllUserQuery\\GetAllUserQueryRequest.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:07:46.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetAllAppointmentsQueryRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Queries\\Appointment\\GetAllAppointment\\GetAllAppointmentsQueryRequest.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Futures\\Queries\\Appointment\\GetAllAppointment\\GetAllAppointmentsQueryRequest.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Queries\\Appointment\\GetAllAppointment\\GetAllAppointmentsQueryRequest.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Futures\\Queries\\Appointment\\GetAllAppointment\\GetAllAppointmentsQueryRequest.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:02:32.02Z",
+              "WhenOpened": "2024-10-21T11:24:56.685Z",
               "EditorCaption": ""
             }
           ]
