@@ -180,6 +180,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ChatController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Chat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ChatController\u002BChatRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatHistoryController",
+    "Method": "GetAllChatHistories",
+    "RelativePath": "api/ChatHistory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatHistoryController",
+    "Method": "GetChatHistoryByUserEmail",
+    "RelativePath": "api/ChatHistory/user/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EHospital.API.Controllers.DoctorController",
     "Method": "CreateDoctor",
     "RelativePath": "api/Doctor",

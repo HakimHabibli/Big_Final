@@ -4,7 +4,7 @@ using EHospital.Application.Dtos.Entites.Doctor;
 namespace EHospital.Application.Dtos.Entites.DoctorSchedules;
 public class DoctorSchedulesReadDto : BaseEntityDto//Doctor daxilinde istifade etmek ucun 
 {
-    public DateOnly Date { get; set; }
+    public DateTime Date { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
 
@@ -12,7 +12,7 @@ public class DoctorSchedulesReadDto : BaseEntityDto//Doctor daxilinde istifade e
 public class DoctorSchedulesDto : BaseEntityDto//Ana sehife ucun 
 {
     public int DoctorId { get; set; }
-    public DateOnly Date { get; set; }
+    public DateTime Date { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
     public bool IsActive { get; set; } = true;
@@ -32,7 +32,7 @@ public class DoctorSchedulesCreateDto : BaseAuditableEntityDto
 
 public class DoctorSchedulesUpdateDto : BaseEntityDto
 {
-    public DateOnly Date { get; set; }
+    public DateTime Date { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
 

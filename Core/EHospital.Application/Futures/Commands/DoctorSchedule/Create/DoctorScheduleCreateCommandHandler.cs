@@ -27,9 +27,9 @@ public class DoctorScheduleCreateCommandHandler : IRequestHandler<DoctorSchedule
             await _service.CreateDoctorSchedulesAsync(request.DoctorSchedulesCreateDto);
             response.StatusCode = "201";
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-
+            Console.WriteLine($"Error: {ex.Message}");
             response.StatusCode = "500";
         }
         return response;

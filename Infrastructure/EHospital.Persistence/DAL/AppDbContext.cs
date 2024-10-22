@@ -24,6 +24,7 @@ public class AppDbContext : IdentityDbContext<AppUser,AppRole,int>
     public DbSet<PatientDoctor> PatientDoctors { get; set; }
     public DbSet<DoctorSchedules> DoctorSchedules { get; set; }
     public DbSet<UserDeactivatedSchedule> UserDeactivatedSchedules { get; set; }
+    public DbSet<ChatHistory> ChatHistories { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
