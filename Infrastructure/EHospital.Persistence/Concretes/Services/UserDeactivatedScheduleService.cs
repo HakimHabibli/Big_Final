@@ -28,7 +28,7 @@ public class UserDeactivatedScheduleService : IUserDeactivatedScheduleService
     public async Task<List<UserDeactivatedScheduleReadDto>> GetUserDeactivatedSchedulesAsync(int userId)
     {
         var deactivatedSchedules = await _unitOfWork.UserDeactivatedScheduleReadRepository
-            .GetWhereAsync(schedule => schedule.UserId == userId, includeProperties: "DoctorSchedule");
+            .GetWhereAsync(schedule => schedule.UserId == userId);
 
         return _mapper.Map<List<UserDeactivatedScheduleReadDto>>(deactivatedSchedules);
     }

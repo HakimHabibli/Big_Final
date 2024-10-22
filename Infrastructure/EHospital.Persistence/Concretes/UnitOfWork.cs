@@ -2,6 +2,7 @@
 using EHospital.Application.Abstractions.Repositories;
 using EHospital.Application.Concretes.Repositories;
 using EHospital.Persistence.Concretes.Repositories;
+using EHospital.Persistence.Concretes.Repositories.NewFolder;
 using EHospital.Persistence.DAL;
 
 namespace EHospital.Persistence.Concretes;
@@ -79,16 +80,16 @@ public class UnitOfWork : IUnitOfWork
 
     public IPatientWriteRepository PatientWriteRepository => _patientWriteRepository ?? new PatientWriteRepository(_appDbContext);
 
-    public IUserDeactivatedScheduleReadRepository UserDeactivatedScheduleReadRepository => throw new NotImplementedException();
+    public IUserDeactivatedScheduleReadRepository UserDeactivatedScheduleReadRepository => _userDeactivatedScheduleReadRepository ?? new UserDeactivatedScheduleReadRepository(_appDbContext);
 
-    public IUserDeactivatedScheduleWriteRepository UserDeactivatedScheduleWriteRepository => throw new NotImplementedException();
+    public IUserDeactivatedScheduleWriteRepository UserDeactivatedScheduleWriteRepository => _userDeactivatedScheduleWriteRepository ?? new UserDeactivatedScheduleWriteRepository(_appDbContext);
 
     #endregion
 
     //public void Dispose()
     //{
     //    throw new NotImplementedException();
-    //}
+    //}     
     /*
      DbContext daxilində Savechage yazırıq bura Həmin methodu veririk
      */

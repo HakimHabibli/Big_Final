@@ -13,14 +13,16 @@ public class UserDeactivatedScheduleReadRepository : ReadRepository<UserDeactiva
     }
 
 
-    public async Task<IEnumerable<UserDeactivatedSchedule>> GetWhereAsync(Expression<Func<UserDeactivatedSchedule, bool>> predicate, string includeProperties = "")
+    public async Task<IEnumerable<UserDeactivatedSchedule>> GetWhereAsync(Expression<Func<UserDeactivatedSchedule, bool>> predicate, params string[] includes)
     {
         var query = _appDbContext.UserDeactivatedSchedules.AsQueryable();
-        foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+        foreach (var includeProperty in includes)
         {
             query = query.Include(includeProperty);
         }
-        return await query.Where(predicate).ToListAsync();
+        return await query
+            .Where(predicate)
+            .ToListAsync();
     }
 
     public async Task<UserDeactivatedSchedule> GetSingleAsync(Expression<Func<UserDeactivatedSchedule, bool>> predicate)
