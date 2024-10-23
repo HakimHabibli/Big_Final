@@ -480,6 +480,16 @@
   },
   {
     "ContainingType": "DoctorSchedulesController",
+    "Method": "GetAllDoctorSchedules",
+    "RelativePath": "api/DoctorSchedules/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DoctorSchedulesController",
     "Method": "CreateDoctorSchedule",
     "RelativePath": "api/DoctorSchedules/Create",
     "HttpMethod": "POST",
@@ -490,6 +500,22 @@
         "Name": "createDto",
         "Type": "EHospital.Application.Dtos.Entites.DoctorSchedules.DoctorSchedulesCreateDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DoctorSchedulesController",
+    "Method": "GetDoctorScheduleById",
+    "RelativePath": "api/DoctorSchedules/id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -777,7 +803,7 @@
   {
     "ContainingType": "EHospital.API.Controllers.NotificationController",
     "Method": "DeactivateDoctorSchedule",
-    "RelativePath": "api/Notification/deactivate-doctor-schedule",
+    "RelativePath": "api/Notification/deactivate-schedule",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

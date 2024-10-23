@@ -1,5 +1,4 @@
-﻿using EHospital.Application.Dtos.Entites.Patient;
-
+﻿
 namespace EHospital.Application.Abstractions.Services;
 
 public interface IPatientService

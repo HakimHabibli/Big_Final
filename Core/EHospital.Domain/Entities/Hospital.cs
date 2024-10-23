@@ -1,8 +1,4 @@
-﻿using EHospital.Domain.Common;
-using Microsoft.AspNetCore.Http;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace EHospital.Domain.Entities;
+﻿namespace EHospital.Domain.Entities;
 
 public class Hospital : BaseAuditableEntity
 {

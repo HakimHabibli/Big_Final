@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "NotificationService.Controllers.NotificationController",
+    "Method": "SendNotification",
+    "RelativePath": "api/Notification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notification",
+        "Type": "NotificationService.Models.Notification",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

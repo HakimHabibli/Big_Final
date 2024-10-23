@@ -1,7 +1,4 @@
-﻿using AutoMapper;
-using EHospital.Application.Dtos.Entites.ContactInfo;
-using EHospital.Domain.Entities;
-
+﻿
 namespace EHospital.Application.Mappers;
 
 public class ContactInfoMapper : Profile

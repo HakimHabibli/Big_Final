@@ -9,7 +9,6 @@ namespace EHospital.Application.Concretes.Services;
 
 public class DoctorSchedulesService : IDoctorSchedulesService
 {
-
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
@@ -28,7 +27,7 @@ public class DoctorSchedulesService : IDoctorSchedulesService
     }
     public async Task<DoctorSchedulesReadDto> GetDoctorSchedulesByIdAsync(int scheduleId)
     {
-        var schedule = await _unitOfWork.DoctorSchedulesReadRepository.GetByIdAsync(scheduleId);
+        var schedule = await _unitOfWork.DoctorSchedulesReadRepository.GetByIdAsync(scheduleId,includes:"Doctor");
         if (schedule == null) throw new KeyNotFoundException("Doctor Schedules not found");
 
         var scheduleDto = _mapper.Map<DoctorSchedulesReadDto>(schedule);
@@ -36,14 +35,11 @@ public class DoctorSchedulesService : IDoctorSchedulesService
     }
     public async Task<IEnumerable<DoctorSchedulesReadDto>> GetActiveDoctorSchedulesAsync()
     {
-        var schedules = await _unitOfWork.DoctorSchedulesReadRepository.FindAsync(schedule => schedule.IsActive);
+        var schedules = await _unitOfWork.DoctorSchedulesReadRepository.FindAsync(schedule => schedule.IsActive,includes:"Doctor");
         if (schedules == null) throw new KeyNotFoundException("Active Doctor Schedules not found");
         var scheduleDtos = _mapper.Map<IEnumerable<DoctorSchedulesReadDto>>(schedules);
         return scheduleDtos;
     }
-
-
-
     public async Task DeleteDoctorSchedulesAsync(DoctorSchedulesDeleteDto doctorDeleteDto)
     {
         var schedule = await _unitOfWork.DoctorSchedulesReadRepository.GetByIdAsync(doctorDeleteDto.Id);
@@ -56,22 +52,18 @@ public class DoctorSchedulesService : IDoctorSchedulesService
             throw new ArgumentException("Schedule not found with the provided ID.");
         }
     }
-
-
-
     public async Task<IEnumerable<DoctorSchedulesReadDto>> GetAllDoctorSchedulesAsync()
     {
-        var schedules = await _unitOfWork.DoctorSchedulesReadRepository.GetAllAsync();
+        var schedules = await _unitOfWork.DoctorSchedulesReadRepository.GetAllAsync(false,"Doctor");
         return _mapper.Map<IEnumerable<DoctorSchedulesReadDto>>(schedules);
     }
-
     public async Task<DoctorReadDto> GetDoctorSchedulesByDoctorNameAsync(string doctorFirstName)
     {
         var doctor = await _unitOfWork.DoctorReadRepository.FindAsync(
-            d => d.FirstName.Equals(doctorFirstName, StringComparison.OrdinalIgnoreCase), //Böyük və kiçik hərfi ignor edir 
-            asNoTracking: true,
-            includes: new string[] { "Schedules" }
-        );
+          d => d.FirstName.ToLower() == doctorFirstName.ToLower(),  
+          asNoTracking: true,
+          includes: new string[] { "DoctorSchedules" , "Hospital"}
+      );
 
         if (!doctor.Any())
         {
@@ -80,8 +72,6 @@ public class DoctorSchedulesService : IDoctorSchedulesService
 
         return _mapper.Map<DoctorReadDto>(doctor.FirstOrDefault());
     }
-
-
     public async Task UpdateDoctorSchedulesAsync(DoctorSchedulesUpdateDto doctorUpdateDto)
     {
         var schedule = await _unitOfWork.DoctorSchedulesReadRepository.GetByIdAsync(doctorUpdateDto.Id);
@@ -95,6 +85,5 @@ public class DoctorSchedulesService : IDoctorSchedulesService
             throw new ArgumentException("Schedule not found with the provided ID.");
         }
     }
-
 
 }

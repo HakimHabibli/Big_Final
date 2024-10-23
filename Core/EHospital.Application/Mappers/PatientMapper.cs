@@ -1,10 +1,4 @@
-﻿using AutoMapper;
-using EHospital.Application.Abstractions;
-using EHospital.Application.Abstractions.Repositories;
-using EHospital.Application.Dtos.Entites.Patient;
-using EHospital.Domain.Entities;
-
-namespace EHospital.Application.Mappers;
+﻿namespace EHospital.Application.Mappers;
 
 public class PatientMapper : Profile
 {

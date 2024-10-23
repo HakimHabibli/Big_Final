@@ -1,7 +1,4 @@
-﻿using EHospital.Application.Dtos.Entites.DoctorSchedules;
-using EHospital.Domain.Entities;
-
-namespace EHospital.Application.Abstractions.Services;
+﻿namespace EHospital.Application.Abstractions.Services;
 
 public interface IUserDeactivatedScheduleService
 {

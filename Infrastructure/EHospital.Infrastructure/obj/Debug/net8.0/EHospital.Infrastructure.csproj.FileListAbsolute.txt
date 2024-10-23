@@ -34,6 +34,9 @@ C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructu
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Application.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Domain.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\Loging.Api.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\MongoDB.Driver.Core.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\AWSSDK.Core.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Application.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\EHospital.Domain.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\Infrastructure\EHospital.Infrastructure\bin\Debug\net8.0\Loging.Api.pdb

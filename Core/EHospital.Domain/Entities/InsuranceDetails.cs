@@ -1,6 +1,4 @@
-﻿using EHospital.Domain.Common;
-
-namespace EHospital.Domain.Entities;
+﻿namespace EHospital.Domain.Entities;
 
 public class InsuranceDetails : BaseEntity
 {

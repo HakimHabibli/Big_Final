@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\images\\77ba8d11-5ae0-4f17-8ad2-0f3bd0c74a9d.jpeg"
     },
     {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\Capture.PNG",
+      "PackagePath": "staticwebassets\\images\\Capture.PNG"
+    },
+    {
       "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\DoctorName.jpeg",
       "PackagePath": "staticwebassets\\images\\DoctorName.jpeg"
     },
@@ -31,6 +35,14 @@
     {
       "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\Salam.jpeg",
       "PackagePath": "staticwebassets\\images\\Salam.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\b7357afa-c65a-4cdc-80b0-9c78bc48a91d.PNG",
+      "PackagePath": "staticwebassets\\images\\b7357afa-c65a-4cdc-80b0-9c78bc48a91d.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\src\\EHospitalImage\\wwwroot\\images\\be2f0515-b287-4c2c-9747-44314609b33d.jpeg",
+      "PackagePath": "staticwebassets\\images\\be2f0515-b287-4c2c-9747-44314609b33d.jpeg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ImageService.Microsoft.AspNetCore.StaticWebAssets.props",

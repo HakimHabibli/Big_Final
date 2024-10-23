@@ -15,6 +15,7 @@ public class AppointmentReadRepository : ReadRepository<Appointment>, IAppointme
     public async Task<List<Appointment>> GetDoctorIdAsync(int doctorId)
     {
         return await _appDbContext.Appointments
+            .Include(a=>a.Doctor).Include(a=>a.Patient)
             .Where(a => a.DoctorId == doctorId)
             .ToListAsync();
     }
@@ -22,6 +23,7 @@ public class AppointmentReadRepository : ReadRepository<Appointment>, IAppointme
     public async Task<List<Appointment>> GetPatientIdAsync(int patientId)
     {
         return await _appDbContext.Appointments
+            .Include(a => a.Doctor).Include(a => a.Patient)
             .Where(a => a.PatientId == patientId)
             .ToListAsync();
     }

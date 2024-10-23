@@ -17,13 +17,13 @@ public static class ServiceRegistration
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         services.AddMediatR(cfg =>
         {
-            cfg.RegisterServicesFromAssembly(typeof(ServiceRegistration).Assembly);
+            cfg.RegisterServicesFromAssembly(typeof(DeactivateDoctorScheduleCommandHandler).Assembly);
         });
         services.AddValidatorsFromAssemblyContaining<HospitalCreateCommandRequestValidation>();
         services.AddFluentValidationAutoValidation();
        
         services.AddHttpClient();
 
-        //services.AddSingleton<ILogService>(sp => new MongoLogService());
+        
     }
 }

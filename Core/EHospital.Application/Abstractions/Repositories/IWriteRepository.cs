@@ -1,6 +1,4 @@
-﻿using EHospital.Domain.Common;
-
-namespace EHospital.Application.Abstractions.Repositories;
+﻿namespace EHospital.Application.Abstractions.Repositories;
 
 public interface IWriteRepository<T> : IRepository<T> where T : BaseEntity, new()
 {

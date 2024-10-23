@@ -3,56 +3,120 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\ehospital.api\\controllers\\chathistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|solutionrelative:ehospital.api\\controllers\\chathistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\userdeactivatedschedulemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\userdeactivatedschedulemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\ehospital.api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|solutionrelative:ehospital.api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\patientdoctormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\patientdoctormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\ehospital.api\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F74EF4D8-7E68-4E0E-A6F2-D91D2019D378}|EHospital.API\\EHospital.API.csproj|solutionrelative:ehospital.api\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\patientmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\patientmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7042148-C720-465C-89B0-D82489A1809B}|Infrastructure\\EHospital.Persistence\\EHospital.Persistence.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\infrastructure\\ehospital.persistence\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7042148-C720-465C-89B0-D82489A1809B}|Infrastructure\\EHospital.Persistence\\EHospital.Persistence.csproj|solutionrelative:infrastructure\\ehospital.persistence\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\medicalhistorymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\medicalhistorymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Infrastructure\\EHospital.Persistence\\Migrations\\20241022201534_AddChatHistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\EHospital.Persistence\\Migrations\\20241022201534_AddChatHistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F777EC0-38BA-4F23-8330-40C0C0D57194}|Core\\EHospital.Domain\\EHospital.Domain.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.domain\\entities\\chathistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F777EC0-38BA-4F23-8330-40C0C0D57194}|Core\\EHospital.Domain\\EHospital.Domain.csproj|solutionrelative:core\\ehospital.domain\\entities\\chathistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\insurancedetailsmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\insurancedetailsmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F777EC0-38BA-4F23-8330-40C0C0D57194}|Core\\EHospital.Domain\\EHospital.Domain.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.domain\\entities\\auth\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F777EC0-38BA-4F23-8330-40C0C0D57194}|Core\\EHospital.Domain\\EHospital.Domain.csproj|solutionrelative:core\\ehospital.domain\\entities\\auth\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\hospitalmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\hospitalmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\validators\\doctorschedule\\doctorschedulescreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\validators\\doctorschedule\\doctorschedulescreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\dtos\\entites\\doctorschedules\\doctorschedulesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\dtos\\entites\\doctorschedules\\doctorschedulesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\emergencycontactmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\emergencycontactmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\doctorschedulesmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\doctorschedulesmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F777EC0-38BA-4F23-8330-40C0C0D57194}|Core\\EHospital.Domain\\EHospital.Domain.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.domain\\entities\\doctorschedules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F777EC0-38BA-4F23-8330-40C0C0D57194}|Core\\EHospital.Domain\\EHospital.Domain.csproj|solutionrelative:core\\ehospital.domain\\entities\\doctorschedules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\doctormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\doctormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7042148-C720-465C-89B0-D82489A1809B}|Infrastructure\\EHospital.Persistence\\EHospital.Persistence.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\infrastructure\\ehospital.persistence\\concretes\\services\\doctorschedulesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7042148-C720-465C-89B0-D82489A1809B}|Infrastructure\\EHospital.Persistence\\EHospital.Persistence.csproj|solutionrelative:infrastructure\\ehospital.persistence\\concretes\\services\\doctorschedulesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\contactinfomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\contactinfomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\futures\\commands\\doctorschedule\\create\\doctorschedulecreatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\futures\\commands\\doctorschedule\\create\\doctorschedulecreatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\appointmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\appointmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\mappers\\allergymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\mappers\\allergymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\exceptions\\usercreatefailedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\exceptions\\usercreatefailedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\behaviors\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\behaviors\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\iuserdeactivatedscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\iuserdeactivatedscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\imedicalhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\imedicalhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\ipatientdoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\ipatientdoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\iinsurancedetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\iinsurancedetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\iemergencycontactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\iemergencycontactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\icontactinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\icontactinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|c:\\users\\asus\\desktop\\new folder\\big_final\\core\\ehospital.application\\abstractions\\services\\idoctorschedulesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B6008C-7A96-4FC2-A451-E4147D4BE0CB}|Core\\EHospital.Application\\EHospital.Application.csproj|solutionrelative:core\\ehospital.application\\abstractions\\services\\idoctorschedulesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,172 +125,386 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 218,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatHistoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\ChatHistoryController.cs",
-              "RelativeDocumentMoniker": "EHospital.API\\Controllers\\ChatHistoryController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\ChatHistoryController.cs",
-              "RelativeToolTip": "EHospital.API\\Controllers\\ChatHistoryController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\GlobalUsings.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:27:32.855Z",
+              "WhenOpened": "2024-10-23T19:52:37.567Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserDeactivatedScheduleMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\UserDeactivatedScheduleMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\UserDeactivatedScheduleMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\UserDeactivatedScheduleMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\UserDeactivatedScheduleMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:58:14.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "EHospital.API\\Controllers\\ChatController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "EHospital.API\\Controllers\\ChatController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
+              "Title": "PatientDoctorMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\PatientDoctorMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\PatientDoctorMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\PatientDoctorMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\PatientDoctorMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:16:12.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20241022201534_AddChatHistory.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Infrastructure\\EHospital.Persistence\\Migrations\\20241022201534_AddChatHistory.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\EHospital.Persistence\\Migrations\\20241022201534_AddChatHistory.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Infrastructure\\EHospital.Persistence\\Migrations\\20241022201534_AddChatHistory.cs",
-              "RelativeToolTip": "Infrastructure\\EHospital.Persistence\\Migrations\\20241022201534_AddChatHistory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:15:34.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Infrastructure\\EHospital.Persistence\\DAL\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\EHospital.Persistence\\DAL\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Infrastructure\\EHospital.Persistence\\DAL\\AppDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\EHospital.Persistence\\DAL\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:14:50.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChatHistory.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\Entities\\ChatHistory.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Domain\\Entities\\ChatHistory.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\Entities\\ChatHistory.cs",
-              "RelativeToolTip": "Core\\EHospital.Domain\\Entities\\ChatHistory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:14:13.177Z",
+              "WhenOpened": "2024-10-23T19:58:10.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HospitalController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\HospitalController.cs",
-              "RelativeDocumentMoniker": "EHospital.API\\Controllers\\HospitalController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\EHospital.API\\Controllers\\HospitalController.cs",
-              "RelativeToolTip": "EHospital.API\\Controllers\\HospitalController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFAAAABBAAAAAAAAAA==",
+              "Title": "PatientMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\PatientMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\PatientMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\PatientMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\PatientMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:06:29.467Z",
+              "WhenOpened": "2024-10-23T19:58:06.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MedicalHistoryMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\MedicalHistoryMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\MedicalHistoryMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\MedicalHistoryMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\MedicalHistoryMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:58:02.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InsuranceDetailsMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\InsuranceDetailsMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\InsuranceDetailsMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\InsuranceDetailsMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\InsuranceDetailsMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:57:47.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\Entities\\Auth\\AppUser.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Domain\\Entities\\Auth\\AppUser.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\Entities\\Auth\\AppUser.cs",
-              "RelativeToolTip": "Core\\EHospital.Domain\\Entities\\Auth\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "HospitalMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\HospitalMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\HospitalMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\HospitalMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\HospitalMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:13:29.29Z",
+              "WhenOpened": "2024-10-23T19:57:42.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DoctorSchedulesMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\DoctorSchedulesMapper.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\DoctorSchedulesMapper.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\DoctorSchedulesMapper.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\DoctorSchedulesMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:00:50.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DoctorSchedules.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\Entities\\DoctorSchedules.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Domain\\Entities\\DoctorSchedules.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Domain\\Entities\\DoctorSchedules.cs",
-              "RelativeToolTip": "Core\\EHospital.Domain\\Entities\\DoctorSchedules.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T18:53:24.025Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "DoctorSchedulesCreateDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Validators\\DoctorSchedule\\DoctorSchedulesCreateDtoValidator.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Validators\\DoctorSchedule\\DoctorSchedulesCreateDtoValidator.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Validators\\DoctorSchedule\\DoctorSchedulesCreateDtoValidator.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Validators\\DoctorSchedule\\DoctorSchedulesCreateDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
+              "Title": "EmergencyContactMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\EmergencyContactMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\EmergencyContactMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\EmergencyContactMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\EmergencyContactMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T18:49:37.504Z",
+              "WhenOpened": "2024-10-23T19:57:30.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "DoctorSchedulesDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Dtos\\Entites\\DoctorSchedules\\DoctorSchedulesDto.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Dtos\\Entites\\DoctorSchedules\\DoctorSchedulesDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Dtos\\Entites\\DoctorSchedules\\DoctorSchedulesDto.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Dtos\\Entites\\DoctorSchedules\\DoctorSchedulesDto.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwBkAAAABAAAAAAAAAA==",
+              "Title": "DoctorSchedulesMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\DoctorSchedulesMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\DoctorSchedulesMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\DoctorSchedulesMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\DoctorSchedulesMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T18:47:45.062Z"
+              "WhenOpened": "2024-10-23T19:57:23.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DoctorMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\DoctorMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\DoctorMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\DoctorMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\DoctorMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:57:17.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ContactInfoMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\ContactInfoMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\ContactInfoMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\ContactInfoMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\ContactInfoMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:56:58.782Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "DoctorSchedulesService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Infrastructure\\EHospital.Persistence\\Concretes\\Services\\DoctorSchedulesService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\EHospital.Persistence\\Concretes\\Services\\DoctorSchedulesService.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Infrastructure\\EHospital.Persistence\\Concretes\\Services\\DoctorSchedulesService.cs",
-              "RelativeToolTip": "Infrastructure\\EHospital.Persistence\\Concretes\\Services\\DoctorSchedulesService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAkwBcAAAAIAAAAAAAAAA==",
+              "Title": "AppointmentMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\AppointmentMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\AppointmentMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\AppointmentMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\AppointmentMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T18:43:30.448Z"
+              "WhenOpened": "2024-10-23T19:56:51.699Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "DoctorScheduleCreateCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Commands\\DoctorSchedule\\Create\\DoctorScheduleCreateCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Futures\\Commands\\DoctorSchedule\\Create\\DoctorScheduleCreateCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Futures\\Commands\\DoctorSchedule\\Create\\DoctorScheduleCreateCommandHandler.cs",
-              "RelativeToolTip": "Core\\EHospital.Application\\Futures\\Commands\\DoctorSchedule\\Create\\DoctorScheduleCreateCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
+              "Title": "AllergyMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\AllergyMapper.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Mappers\\AllergyMapper.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Mappers\\AllergyMapper.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Mappers\\AllergyMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T18:43:08.583Z"
+              "WhenOpened": "2024-10-23T19:56:29.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:56:17.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserCreateFailedException.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Exceptions\\UserCreateFailedException.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Exceptions\\UserCreateFailedException.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Exceptions\\UserCreateFailedException.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Exceptions\\UserCreateFailedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:56:16.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UnAuthorizedException.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Exceptions\\UnAuthorizedException.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Exceptions\\UnAuthorizedException.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Exceptions\\UnAuthorizedException.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Exceptions\\UnAuthorizedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:56:14.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Exceptions\\ValidationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:55:22.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ValidationBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Behaviors\\ValidationBehavior.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Behaviors\\ValidationBehavior.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Behaviors\\ValidationBehavior.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Behaviors\\ValidationBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:55:03.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IUserDeactivatedScheduleService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IUserDeactivatedScheduleService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IUserDeactivatedScheduleService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IUserDeactivatedScheduleService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IUserDeactivatedScheduleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:53:30.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\ITokenService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\ITokenService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:53:25.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IPatientService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IPatientService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IPatientService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IPatientService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IPatientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:53:21.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IPatientDoctorService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IPatientDoctorService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IPatientDoctorService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IPatientDoctorService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IPatientDoctorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:53:13.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IMedicalHistoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IMedicalHistoryService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IMedicalHistoryService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IMedicalHistoryService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IMedicalHistoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:53:06.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IInsuranceDetailsService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IInsuranceDetailsService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IInsuranceDetailsService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IInsuranceDetailsService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IInsuranceDetailsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:53:04.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IHospitalService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IHospitalService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IHospitalService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IHospitalService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IHospitalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:52:55.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IEmergencyContactService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IEmergencyContactService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IEmergencyContactService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IEmergencyContactService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IEmergencyContactService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:52:53.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IDoctorService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IDoctorService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IDoctorService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IDoctorService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IDoctorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:52:30.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IContactInfoService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IContactInfoService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IContactInfoService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IContactInfoService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IContactInfoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:52:28.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IDoctorSchedulesService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IDoctorSchedulesService.cs",
+              "RelativeDocumentMoniker": "Core\\EHospital.Application\\Abstractions\\Services\\IDoctorSchedulesService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\New folder\\Big_Final\\Core\\EHospital.Application\\Abstractions\\Services\\IDoctorSchedulesService.cs",
+              "RelativeToolTip": "Core\\EHospital.Application\\Abstractions\\Services\\IDoctorSchedulesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:52:27.311Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -17,18 +17,18 @@ public class PatientCreateCommandHandler : IRequestHandler<PatientCreateCommandR
     {
         PatientCreateCommandResponse response = new PatientCreateCommandResponse();
 
-        await _patientService.CreatePatientAsync(request.PatientCreateDto); // Patient yaratma əmri
+        await _patientService.CreatePatientAsync(request.PatientCreateDto);
 
-        response.StatusCode = "201"; // Statusun uğurla yaradıldığını bildirir
+        response.StatusCode = "201"; 
 
         return response;
     }
 }
 public class PatientCreateCommandRequest : IRequest<PatientCreateCommandResponse>
 {
-    public PatientDto PatientCreateDto { get; set; } // Dto burada saxlanılır
+    public PatientDto PatientCreateDto { get; set; } 
 }
 public class PatientCreateCommandResponse
 {
-    public string StatusCode { get; set; } // Status kodu üçün cavab
+    public string StatusCode { get; set; } 
 }

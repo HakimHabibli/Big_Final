@@ -9,7 +9,7 @@ public class DoctorSchedulesCreateDtoValidator : AbstractValidator<DoctorSchedul
     {
         RuleFor(s => s.Date)
             .NotEmpty().WithMessage("Date is required.");
-        //.Must(BeAValidDate).WithMessage("Date must be a valid date.");
+       
 
         RuleFor(s => s.StartTime)
             .NotEmpty().WithMessage("Start time is required.");
@@ -39,8 +39,6 @@ public class DoctorSchedulesUpdateDtoValidator : AbstractValidator<DoctorSchedul
         RuleFor(s => s.DoctorId)
             .GreaterThan(0).WithMessage("DoctorId must be a positive integer.");
 
-        RuleFor(s => s.Doctor)
-            .NotNull().WithMessage("Doctor information is required.");
     }
 }
 

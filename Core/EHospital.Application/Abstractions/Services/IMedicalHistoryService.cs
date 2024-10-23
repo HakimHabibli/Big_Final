@@ -1,5 +1,4 @@
-﻿using EHospital.Application.Dtos.Entites.MedicalHistory;
-
+﻿
 namespace EHospital.Application.Abstractions.Services;
 
 public interface IMedicalHistoryService

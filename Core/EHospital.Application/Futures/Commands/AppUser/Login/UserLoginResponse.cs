@@ -10,6 +10,7 @@ public class UserLoginResponse
 {
     public Task<TokenDto> Token { get; set; }
     public string Message { get; set; }
+    public string UserName { get; set; }
 }
 public class UserLoginRequest : IRequest<UserLoginResponse> 
 {
@@ -42,11 +43,12 @@ public class UserLoginHandler : IRequestHandler<UserLoginRequest, UserLoginRespo
 
         if (result.Succeeded) 
         {
-            Task<TokenDto> token = _tokenService.CreateToken(user,5);
+            Task<TokenDto> token = _tokenService.CreateToken(user,60);
             return new UserLoginResponse
             {
                 Token = token,
-                Message = "User Successfully Login"
+                Message = "User Successfully Login",
+                UserName = user.FullName
             };
         }
         throw new UnAuthorizedException(message: "User Name or Password incorrect :)");

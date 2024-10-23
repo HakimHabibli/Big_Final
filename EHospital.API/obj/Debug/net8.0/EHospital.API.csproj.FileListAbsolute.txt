@@ -296,8 +296,6 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospi
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.API.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.API.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\AWSSDK.Core.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\DnsClient.dll
@@ -308,6 +306,10 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Humani
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MediatR.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Build.dll
@@ -331,6 +333,9 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Micros
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -352,8 +357,6 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Micros
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MongoDB.Bson.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MongoDB.Driver.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MongoDB.Driver.Core.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\NuGet.Common.dll
@@ -367,6 +370,7 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\NuGet.
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\NuGet.Versioning.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\SharpCompress.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Snappier.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -532,9 +536,6 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtim
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
@@ -544,6 +545,9 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospi
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Infrastructure.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Persistence.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Loging.Api.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MongoDB.Driver.Core.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
+C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\AWSSDK.Core.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Application.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Domain.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Infrastructure.pdb
@@ -571,11 +575,3 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\obj\Debug\net8.0\refint
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\obj\Debug\net8.0\EHospital.API.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\obj\Debug\net8.0\EHospital.API.genruntimeconfig.cache
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\obj\Debug\net8.0\ref\EHospital.API.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll

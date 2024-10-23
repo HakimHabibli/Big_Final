@@ -24,7 +24,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Core\EHospital.Application\EHospital.Application.csproj" />
     <ProjectReference Include="..\Core\EHospital.Domain\EHospital.Domain.csproj" />
-    <ProjectReference Include="..\Infrastructure\EHospital.Infrastructure\EHospital.Infrastructure.csproj" />
     <ProjectReference Include="..\Infrastructure\EHospital.Persistence\EHospital.Persistence.csproj" />
   </ItemGroup>
 

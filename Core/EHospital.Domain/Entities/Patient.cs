@@ -1,7 +1,4 @@
-﻿using EHospital.Domain.Common;
-using EHospital.Domain.Enums;
-
-namespace EHospital.Domain.Entities;
+﻿namespace EHospital.Domain.Entities;
 
 public class Patient : BaseEntity
 {

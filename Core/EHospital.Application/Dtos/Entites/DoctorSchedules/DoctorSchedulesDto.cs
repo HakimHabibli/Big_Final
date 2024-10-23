@@ -7,8 +7,11 @@ public class DoctorSchedulesReadDto : BaseEntityDto//Doctor daxilinde istifade e
     public DateTime Date { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
+    public string DoctorName { get; set; }
+    public bool IsActive { get; set; } = true;
 
 }
+
 public class DoctorSchedulesDto : BaseEntityDto//Ana sehife ucun 
 {
     public int DoctorId { get; set; }
@@ -18,16 +21,13 @@ public class DoctorSchedulesDto : BaseEntityDto//Ana sehife ucun
     public bool IsActive { get; set; } = true;
 }
 
-
-
-
-
 public class DoctorSchedulesCreateDto : BaseAuditableEntityDto
 {
     public DateTime Date { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
     public int DoctorId { get; set; }
+    public bool IsActive { get; set; } = true;
 }
 
 public class DoctorSchedulesUpdateDto : BaseEntityDto
@@ -37,8 +37,9 @@ public class DoctorSchedulesUpdateDto : BaseEntityDto
     public TimeSpan EndTime { get; set; }
 
     public int DoctorId { get; set; }
-    public DoctorDto Doctor { get; set; }
+    public bool IsActive { get; set; } 
 }
+
 public class DoctorSchedulesDeleteDto : BaseEntityDto
 {
 }

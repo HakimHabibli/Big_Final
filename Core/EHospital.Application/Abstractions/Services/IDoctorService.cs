@@ -1,7 +1,4 @@
-﻿using EHospital.Application.Dtos.Entites.Doctor;
-using EHospital.Application.Dtos.Entites.Patient;
-
-namespace EHospital.Application.Abstractions.Services;
+﻿namespace EHospital.Application.Abstractions.Services;
 
 public interface IDoctorService
 {

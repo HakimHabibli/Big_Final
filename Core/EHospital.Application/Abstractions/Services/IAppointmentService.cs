@@ -1,6 +1,4 @@
-﻿using EHospital.Application.Dtos.Entites.Appointment;
-
-namespace EHospital.Application.Abstractions.Services;
+﻿namespace EHospital.Application.Abstractions.Services;
 
 public interface IAppointmentService
 {

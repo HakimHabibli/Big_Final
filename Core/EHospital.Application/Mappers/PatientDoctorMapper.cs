@@ -1,8 +1,4 @@
-﻿using AutoMapper;
-using EHospital.Application.Dtos.Entites.PatientDoctor;
-using EHospital.Domain.Entities;
-
-namespace EHospital.Application.Mappers;
+﻿namespace EHospital.Application.Mappers;
 
 public class PatientDoctorMapper : Profile
 {

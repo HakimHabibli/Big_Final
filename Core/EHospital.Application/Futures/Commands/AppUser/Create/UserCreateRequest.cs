@@ -42,6 +42,11 @@ public class UserCreateHandler : IRequestHandler<UserCreateRequest, UserCreateRe
             throw new BusinessRuleException($"User with SerialNumber '{request.SerialNumber}' already exists.");
         }
 
+        var existingUserByEmail = await _userManager.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
+        if (existingUserByEmail != null)
+        {
+            throw new BusinessRuleException($"User with Email '{request.Email}' already exists.");
+        }
         var user = new Domain.Entities.Auth.AppUser
         {
             UserName = request.Username,

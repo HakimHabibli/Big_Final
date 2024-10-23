@@ -61,13 +61,33 @@ public class DoctorSchedulesController : ControllerBase
         return StatusCode(int.Parse(result.StatusCode), result);
     }
 
+    [HttpGet("all")]
+    public async Task<IActionResult> GetAllDoctorSchedules()
+    {
+        var query = new GetAllDoctorSchedulesQueryRequest();
+        var result = await _mediator.Send(query);
+        if (result.StatusCode == "200")
+        {
+            return Ok(result.DoctorSchedules);
+        }
+        else
+        {
+            return StatusCode(int.Parse(result.StatusCode), result.Message);
+        }
+    }
+    [HttpGet("id")]
+    public async Task<IActionResult> GetDoctorScheduleById(int id)
+    {
+        var query = new GetDoctorScheduleByIdQueryRequest { ScheduleId = id };
+        var result = await _mediator.Send(query);
+        if (result.StatusCode == "200")
+        {
+            return Ok(result.DoctorSchedule);
+        }
+        else
+        {
+            return StatusCode(int.Parse(result.StatusCode), result.Message);
+        }
+    }
 
-
-    //[HttpPut("deactivate")]
-    //public async Task<IActionResult> DeactivateDoctorSchedule([FromBody] DoctorScheduleDeactivateDto deactivateDto)
-    //{
-    //    var request = new DeactivateDoctorScheduleCommandRequest { DoctorScheduleDeactivateDto = deactivateDto };
-    //    var response = await _mediator.Send(request);
-    //    return StatusCode(int.Parse(response.StatusCode), response);
-    //}
 }

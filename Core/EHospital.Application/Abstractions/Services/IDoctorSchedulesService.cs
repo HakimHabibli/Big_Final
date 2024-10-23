@@ -1,5 +1,4 @@
-﻿using EHospital.Application.Dtos.Entites.Doctor;
-using EHospital.Application.Dtos.Entites.DoctorSchedules;
+﻿
 
 namespace EHospital.Application.Abstractions.Services;
 

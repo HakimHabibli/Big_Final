@@ -1,6 +1,4 @@
-﻿using EHospital.Application.Abstractions.Repositories;
-
-namespace EHospital.Application.Abstractions;
+﻿namespace EHospital.Application.Abstractions;
 
 public interface IUnitOfWork
 {

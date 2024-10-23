@@ -1,7 +1,4 @@
-﻿using EHospital.Domain.Entities;
-using System.Linq.Expressions;
-
-namespace EHospital.Application.Abstractions.Repositories;
+﻿namespace EHospital.Application.Abstractions.Repositories;
 
 public interface IDoctorSchedulesReadRepository : IReadRepository<DoctorSchedules> 
 {

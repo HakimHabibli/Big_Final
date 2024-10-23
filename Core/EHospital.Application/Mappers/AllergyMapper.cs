@@ -1,7 +1,4 @@
-﻿using AutoMapper;
-using EHospital.Application.Dtos.Entites.Allergy;
-using EHospital.Domain.Entities;
-
+﻿
 namespace EHospital.Application.Mappers;
 
 public class AllergyMapper : Profile

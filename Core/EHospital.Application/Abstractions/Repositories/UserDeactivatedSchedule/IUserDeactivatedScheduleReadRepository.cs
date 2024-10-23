@@ -1,8 +1,4 @@
 ﻿
-using EHospital.Application.Abstractions.Repositories;
-using EHospital.Domain.Entities;
-using System.Linq.Expressions;
-
 public interface IUserDeactivatedScheduleReadRepository : IReadRepository<UserDeactivatedSchedule>
 {
 

@@ -23,6 +23,7 @@ public class NotificationController : ControllerBase
         return Ok(response);
     }
 
+
     [HttpGet("user-deactivated-schedules/{userId}")]
     public async Task<IActionResult> GetUserDeactivatedSchedules(int userId)
     {
@@ -31,16 +32,17 @@ public class NotificationController : ControllerBase
         return Ok(response.userDeactivatedScheduleReadDtos);
     }
 
-    [HttpPost("deactivate-doctor-schedule")]
+
+
+    [HttpPost("deactivate-schedule")]
     public async Task<IActionResult> DeactivateDoctorSchedule([FromBody] UserScheduleDeactivateDto dto)
     {
-        var request = new DeactivateDoctorScheduleCommandRequest
-        {
-            UserScheduleDeactivateDto = dto
-        };
+        var request = new DeactivateDoctorScheduleCommandRequest { UserScheduleDeactivateDto = dto };
         var response = await _mediator.Send(request);
-        return StatusCode(int.Parse(response.StatusCode), "Doctor schedule deactivated successfully.");
+
+        return StatusCode(int.Parse(response.StatusCode), response);
     }
+
 
     [HttpPost("reactivate-doctor-schedule")]
     public async Task<IActionResult> ReactivateDoctorSchedule([FromBody] UserScheduleReactivateDto dto)

@@ -1,5 +1,4 @@
-﻿using EHospital.Application.Dtos.Auth;
-using EHospital.Domain.Entities.Auth;
+﻿
 
 namespace EHospital.Application.Abstractions.Services;
 
