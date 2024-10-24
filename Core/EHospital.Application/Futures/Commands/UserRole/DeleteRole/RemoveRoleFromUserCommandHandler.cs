@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 namespace EHospital.Application.Futures.Commands.UserRole.DeleteRole;
 public class RemoveRoleFromUserCommandRequest : IRequest<RemoveRoleFromUserCommandResponse>
 {
-    public string UserId { get; set; }
+    public int UserId { get; set; }
     public string Role { get; set; }
 }
 
@@ -25,7 +25,7 @@ public class RemoveRoleFromUserCommandHandler : IRequestHandler<RemoveRoleFromUs
 
     public async Task<RemoveRoleFromUserCommandResponse> Handle(RemoveRoleFromUserCommandRequest request, CancellationToken cancellationToken)
     {
-        var user = await _userManager.FindByIdAsync(request.UserId);
+        var user = await _userManager.FindByIdAsync(request.UserId.ToString());
         if (user == null)
         {
             return new RemoveRoleFromUserCommandResponse

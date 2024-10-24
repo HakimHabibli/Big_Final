@@ -105,7 +105,7 @@ public class DoctorService : IDoctorService
             { 
                 await doctorCreateDTO.ImageFile.CopyToAsync(ms);
                 var fileBytes = ms.ToArray();
-                newFileName = Guid.NewGuid().ToString() + Path.GetExtension(doctorCreateDTO.ImageFile.FileName);
+                newFileName = /*Guid.NewGuid().ToString() + */doctorCreateDTO.ImageFile.FileName /*+ Path.GetExtension(doctorCreateDTO.ImageFile.FileName)*/;
                 content.Add(new ByteArrayContent(fileBytes), "file", newFileName);
 
             }
@@ -179,7 +179,7 @@ public class DoctorService : IDoctorService
             {
                 await doctorUpdateDto.ImageFile.CopyToAsync(ms);
                 var fileBytes = ms.ToArray();
-                newFileName = Guid.NewGuid().ToString() + Path.GetExtension(doctorUpdateDto.ImageFile.FileName);
+                newFileName = /*Guid.NewGuid().ToString() +*/ doctorUpdateDto.ImageFile.FileName/*+Path.GetExtension(doctorUpdateDto.ImageFile.FileName)*/;
                 content.Add(new ByteArrayContent(fileBytes), "file", doctorUpdateDto.ImageFile.FileName);
             }
 
