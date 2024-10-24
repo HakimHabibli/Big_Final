@@ -542,7 +542,6 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtim
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Application.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Domain.dll
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Infrastructure.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Persistence.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Loging.Api.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MongoDB.Driver.Core.dll
@@ -550,7 +549,6 @@ C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\MongoD
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\AWSSDK.Core.dll
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Application.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Domain.pdb
-C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Infrastructure.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\EHospital.Persistence.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\bin\Debug\net8.0\Loging.Api.pdb
 C:\Users\Asus\Desktop\New folder\Big_Final\EHospital.API\obj\Debug\net8.0\EHospital.API.csproj.AssemblyReference.cache

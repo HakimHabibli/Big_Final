@@ -3,7 +3,6 @@ using EHospital.Application.Dtos.Entites.Appointment;
 using MediatR;
 
 namespace EHospital.Application.Futures.Queries.Appointment.GetAppointmentsByDoctorId;
-
 public class GetAppointmentsByDoctorIdQueryRequest : IRequest<GetAppointmentsByDoctorIdQueryResponse>
 {
     public int DoctorId { get; set; }

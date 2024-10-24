@@ -165,6 +165,22 @@
   },
   {
     "ContainingType": "EHospital.API.Controllers.AppointmentController",
+    "Method": "GetAppointmentById",
+    "RelativePath": "api/Appointment/Id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EHospital.API.Controllers.AppointmentController",
     "Method": "GetAppointmentsByPatientId",
     "RelativePath": "api/Appointment/patient/{patientId}",
     "HttpMethod": "GET",

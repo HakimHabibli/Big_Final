@@ -33,7 +33,7 @@ public class ExceptionMiddleware
             //    await _logService.LogAsync(logEntry);
             //}
         }
-        catch (ValidationException ex)
+        catch (EHospital.Application.Exceptions.ValidationException ex)
         {
             await HandleValidationExceptionAsync(context, ex);
         }
@@ -67,7 +67,7 @@ public class ExceptionMiddleware
         context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
         await context.Response.WriteAsJsonAsync(new { message = ex.Message });
     }
-    private async Task HandleValidationExceptionAsync(HttpContext context, ValidationException ex)
+    private async Task HandleValidationExceptionAsync(HttpContext context, EHospital.Application.Exceptions.ValidationException ex)
     {
 
         var logEntry = new LogEntry

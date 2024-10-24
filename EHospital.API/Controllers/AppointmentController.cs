@@ -4,6 +4,7 @@ using EHospital.Application.Futures.Commands.Appointment.Create;
 using EHospital.Application.Futures.Commands.Appointment.Delete;
 using EHospital.Application.Futures.Commands.Appointment.Update;
 using EHospital.Application.Futures.Queries.Appointment.GetAllAppointment;
+using EHospital.Application.Futures.Queries.Appointment.GetAppointmentById;
 using EHospital.Application.Futures.Queries.Appointment.GetAppointmentsByDoctorId;
 using EHospital.Application.Futures.Queries.Appointment.GetAppointmentsByPatientId;
 using MediatR;
@@ -87,5 +88,12 @@ public class AppointmentController : ControllerBase
         var query = new GetAppointmentsByPatientIdQueryRequest { PatientId = patientId };
         var response = await _mediator.Send(query);
         return Ok(response.Appointments);
+    }
+    [HttpGet("Id")]
+    public async Task<IActionResult> GetAppointmentById(int id) 
+    {
+        var query = new GetAppointmentByIdQueryRequest { AppointmentId = id };
+        var response = await _mediator.Send(query);
+        return Ok(response.appointmentReadDto);
     }
 }

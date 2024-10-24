@@ -8,4 +8,5 @@ public interface IAppointmentService
     Task<List<AppointmentReadDto>> GetAppointmentsByDoctorAsync(int doctorId); // Həkimin rezervləri
     Task<List<AppointmentReadDto>> GetAllAppointmentAsync();
     Task<List<AppointmentReadDto>> GetAppointmentsByPatientAsync(int patientId); // Xəstənin rezervləri
+    Task<AppointmentReadDto> GetByIdAppointmentAsync(int id);
 }

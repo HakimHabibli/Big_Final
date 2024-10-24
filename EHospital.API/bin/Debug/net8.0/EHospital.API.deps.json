@@ -11,7 +11,6 @@
           "AutoMapper": "13.0.1",
           "EHospital.Application": "1.0.0",
           "EHospital.Domain": "1.0.0",
-          "EHospital.Infrastructure": "1.0.0",
           "EHospital.Persistence": "1.0.0",
           "MediatR": "12.4.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
@@ -2312,21 +2311,6 @@
           }
         }
       },
-      "EHospital.Infrastructure/1.0.0": {
-        "dependencies": {
-          "AutoMapper": "13.0.1",
-          "EHospital.Application": "1.0.0",
-          "EHospital.Domain": "1.0.0",
-          "MediatR": "12.4.0",
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "runtime": {
-          "EHospital.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "EHospital.Persistence/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
@@ -3823,11 +3807,6 @@
       "sha512": ""
     },
     "EHospital.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "EHospital.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

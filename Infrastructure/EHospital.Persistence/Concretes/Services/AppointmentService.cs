@@ -63,4 +63,13 @@ public class AppointmentService : IAppointmentService
 
         await _unitOfWork.AppointmentWriteRepository.UpdateAsync(appointment);
     }
+    public async Task<AppointmentReadDto> GetByIdAppointmentAsync(int id) 
+    {
+        var appointment = await _unitOfWork.AppointmentReadRepository.GetByIdAsync(id);
+        if (appointment == null)
+        {
+            throw new KeyNotFoundException("Appointment not found.");
+        }
+        return _mapper.Map<AppointmentReadDto>(appointment);
+    }
 }
