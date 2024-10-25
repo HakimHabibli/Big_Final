@@ -35,6 +35,7 @@ public class GetAllUserQueryHandler : IRequestHandler<GetAllUserQueryRequest, Ge
 
             userDtos.Add(new GetUserDto
             {
+                Id = user.Id,
                 FullName = user.FullName,
                 Email = user.Email,
                 SerialNumber = user.SerialNumber,
