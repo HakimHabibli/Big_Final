@@ -31,7 +31,7 @@ public class ChatController : ControllerBase
             return Unauthorized("User is not logged in.");
         }
 
-        var apiKey = "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";
+        var apiKey = "AIKey";
         var url = "https://api.openai.com/v1/chat/completions";
 
         var content = new StringContent(
@@ -56,7 +56,7 @@ public class ChatController : ControllerBase
             dynamic responseJson = JsonConvert.DeserializeObject(responseBody);
             string aiMessage = responseJson.choices[0].message.content;
 
-            // Chat tarixini məlumat bazasında saxlayırıq
+            
             var chatHistory = new ChatHistory
             {
                 UserEmail = userEmail,

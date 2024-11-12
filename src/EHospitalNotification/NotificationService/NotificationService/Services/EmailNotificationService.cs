@@ -8,8 +8,8 @@ public class EmailNotificationService : INotificationService
 {
     private readonly string _smtpServer = "smtp.gmail.com";
     private readonly int _smtpPort = 587;
-    private readonly string _senderEmail = "77uptvc@code.edu.az"; 
-    private readonly string _senderPassword = "roge ymad uakv bvel"; 
+    private readonly string _senderEmail = "YourMail"; 
+    private readonly string _senderPassword = "YourMailKey"; 
 
     public async Task SendNotificationAsync(Notification notification)
     {

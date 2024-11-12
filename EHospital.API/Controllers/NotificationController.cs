@@ -1,5 +1,6 @@
 ﻿using EHospital.Application.Dtos.Entites.DoctorSchedules;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EHospital.API.Controllers;
@@ -35,6 +36,7 @@ public class NotificationController : ControllerBase
 
 
     [HttpPost("deactivate-schedule")]
+    [Authorize]
     public async Task<IActionResult> DeactivateDoctorSchedule([FromBody] UserScheduleDeactivateDto dto)
     {
         var request = new DeactivateDoctorScheduleCommandRequest { UserScheduleDeactivateDto = dto };
